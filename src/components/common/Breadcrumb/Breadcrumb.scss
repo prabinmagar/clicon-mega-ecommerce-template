@@ -1,0 +1,52 @@
+.comp-breadcrumb {
+  background: #f2f4f5;
+
+  .seg-breadcrumb {
+    padding: 26px 0;
+
+    .breadcrumb-list {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      column-gap: 8px;
+      color: #5f6c72;
+
+      .bc-item-wrap {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+
+        &:last-child {
+          .bc-item-text {
+            color: #2da5f3;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .bc-item {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+      }
+
+      .bc-item-icon {
+        display: none;
+
+        &.show {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      
+      .bc-sep {
+        width: 12px;
+        height: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

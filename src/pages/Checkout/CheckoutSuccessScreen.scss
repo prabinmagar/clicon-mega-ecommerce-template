@@ -1,0 +1,46 @@
+.pg-checkout-succ {
+  .elem-chkout-succ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 124px 0;
+    max-width: 424px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .chkout-succ-icon{
+    max-width: 88px;
+  }
+
+  .chkout-succ-ttl{
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  .chkout-succ-lead{
+    color: #5F6C72;
+  }
+
+  .chkout-succ-btns {
+    display: flex;
+    gap: 12px;
+    margin-top: 32px;
+
+    .btn {
+      height: 48px;
+      padding-right: 24px;
+      padding-left: 24px;
+      column-gap: 8px;
+
+      .btn-text{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    }
+  }
+}

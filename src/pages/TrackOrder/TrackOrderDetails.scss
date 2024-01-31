@@ -1,0 +1,220 @@
+.pg-trkorder-det {
+  .seg-trkorder-det {
+    max-width: 984px;
+    margin: 72px auto;
+    border-radius: 3px;
+    border: 1px solid var(--Gray-100, #e4e7e9);
+
+    .trkorder-top {
+      padding: 24px;
+      border-bottom: 1px solid #e4e7e9;
+      display: grid;
+      row-gap: 24px;
+    }
+
+    .elem-trkorder-info {
+      padding: 24px;
+      border: 1px solid #f7e99e;
+      background: #fdfae7;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .trkorder-info-l {
+        display: grid;
+        row-gap: 8px;
+      }
+
+      .info-order-no {
+        font-size: 20px;
+      }
+      .info-order-data {
+        font-size: 14px;
+        color: #475156;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .dot {
+          display: inline-block;
+          width: 3px;
+          height: 3px;
+          border-radius: 100%;
+          background-color: #475156;
+          margin: 0 8px;
+        }
+      }
+
+      .info-order-total {
+        color: #2da5f3;
+        font-weight: 600;
+        font-size: 28px;
+      }
+    }
+
+    .elem-trkorder-arrival {
+      color: #475156;
+      span {
+        font-weight: 500;
+        color: #191c1f;
+      }
+    }
+
+    .elem-trkorder {
+      min-height: 112px;
+
+      .trkorder-bar {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 674px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .ordertrk-step {
+        position: relative;
+
+        &.completed {
+          .ordertrk-status-dot {
+            background: #fa8232;
+          }
+
+          .status-completed-icon {
+            opacity: 1;
+          }
+
+          .ordertrk-info-icon {
+            color: #2db324;
+            opacity: 1;
+          }
+
+          & + .ordertrk-line{
+            background-color: #fa8232;
+          }
+        }
+
+        &.progress {
+          .ordertrk-status-dot {
+            background: #fa8232;
+            outline-color: #fff;
+          }
+          .ordertrk-info-icon{
+            opacity: 1;
+          }
+        }
+      }
+
+      .ordertrk-line {
+        flex: 1;
+        height: 8px;
+        background: #ffe7d6;
+      }
+
+      .ordertrk-status-dot {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        outline: 3px solid #fa8232;
+        outline-offset: -1px;
+        border-radius: 100%;
+      }
+
+      .status-completed-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        opacity: 0;
+      }
+
+      .ordertrk-info {
+        position: absolute;
+        top: calc(100% + 24px);
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        .ordertrk-text-stat {
+          white-space: nowrap;
+          font-weight: 500;
+        }
+
+        .ordertrk-info-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 32px;
+          height: 32px;
+          padding: 1px;
+          color: #FA8232;
+          opacity: 0.5;
+          svg {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .trkorder-btm {
+      padding: 24px;
+
+      .trkorder-act-ttl {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 24px;
+      }
+
+      .act-list {
+        display: grid;
+        row-gap: 16px;
+      }
+
+      .act-item {
+        display: grid;
+        column-gap: 16px;
+        grid-template-columns: 48px auto;
+
+        &.act-green {
+          .item-icon {
+            background: #eaf7e9;
+            border: 1px solid #d5f0d3;
+          }
+        }
+
+        &.act-blue {
+          .item-icon {
+            background: #eaf6fe;
+            border: 1px solid #d5edfd;
+          }
+        }
+      }
+
+      .item-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 2px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .item-content {
+        display: grid;
+        row-gap: 8px;
+
+        .item-date {
+          color: #77878f;
+        }
+      }
+    }
+  }
+}

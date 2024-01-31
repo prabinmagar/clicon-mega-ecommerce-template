@@ -1,0 +1,35 @@
+.comp-countdown{
+    .seg-cntdown{
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+    }
+    .cntdown-label{
+        font-weight: 500;
+    }
+    .cntdown-dp{
+        background-color: #F3DE6D;
+        border-radius: 2px;
+        padding: 10px 12px;
+
+        .dp-text{
+            font-size: 16px;
+        }
+        .dp-sep{
+            margin-right: 6px;
+            margin-left: 6px;
+        }
+    }
+}
+
+@media(max-width: 576px){
+    .comp-countdown{
+        .cntdown-dp{
+            padding: 6px 10px;
+
+            .dp-text{
+                font-size: 14px;
+            }
+        }
+    }
+}

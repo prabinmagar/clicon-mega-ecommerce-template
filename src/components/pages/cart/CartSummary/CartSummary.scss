@@ -1,0 +1,47 @@
+.comp-cartsum {
+  .elem-cartsum {
+    padding: 20px 24px;
+    border: 1px solid #e4e7e9;
+    border-radius: 4px;
+  }
+
+  .ctsum-top {
+    .ctsum-ttl {
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    .ctsum-list {
+      padding: 20px 0;
+      display: grid;
+      gap: 10px;
+
+      .ctsum-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .ctsum-item-lbl {
+        color: #5f6c72;
+      }
+    }
+  }
+
+  .ctsum-btm {
+    border-top: 1px solid #E4E7E9;
+    .ctsum-total {
+      padding: 16px 0 24px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .ctsum-total-val {
+      font-weight: 600;
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+}

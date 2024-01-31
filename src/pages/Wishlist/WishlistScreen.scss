@@ -1,0 +1,120 @@
+.pg-wishlist {
+  .seg-wishlist {
+    border: 1px solid #e4e7e9;
+    margin: 72px 0;
+    border-radius: 4px;
+  }
+
+  .elem-wish-head {
+    padding: 20px 24px;
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+
+  .elem-wish-tbl {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead {
+      background: #f2f4f5;
+
+      th {
+        padding: 12px 24px;
+        color: #475156;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: left;
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          padding: 12px 24px;
+        }
+
+        &:first-child {
+          td {
+            padding-top: 24px;
+          }
+        }
+
+        &:last-child {
+          td {
+            padding-bottom: 24px;
+          }
+        }
+      }
+
+      .tbl-prod {
+        display: grid;
+        grid-template-columns: 72px auto;
+        max-width: 580px;
+        column-gap: 16px;
+        align-items: center;
+      }
+
+      .tbl-prod-img {
+        width: 72px;
+        height: 72px;
+      }
+      .tbl-prod-ttl {
+        color: #475156;
+        font-weight: 400;
+      }
+
+      .tbl-old-price {
+        color: #929fa5;
+      }
+      .tbl-price {
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+
+        .tbl-old-price {
+          text-decoration: line-through;
+        }
+      }
+
+      .tbl-new-price {
+        font-weight: 500;
+      }
+
+      .tbl-status {
+        font-weight: 600;
+        text-transform: uppercase;
+
+        &.in-stock {
+          color: #2db224;
+        }
+        &.out-of-stock {
+          color: #ee5858;
+        }
+      }
+
+      .tbl-btns{
+        display: flex;
+        column-gap: 24px;
+
+        .btn-text{
+            font-weight: 700;
+        }
+
+        .btn-addtocart{
+            height: 48px;
+            font-size: 14px;
+            column-gap: 8px;
+        }
+
+        .btn-remove{
+            color: #929FA5;
+        }
+      }
+    }
+  }
+}

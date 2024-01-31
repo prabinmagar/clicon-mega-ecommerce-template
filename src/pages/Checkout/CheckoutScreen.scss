@@ -1,0 +1,94 @@
+.pg-checkout {
+  .seg-checkout-gridbox {
+    padding: 72px 0;
+    display: grid;
+    column-gap: 24px;
+    grid-template-columns: 872px auto;
+  }
+
+  .elem-ordersum {
+    border: 1px solid #E4E7E9;
+    border-radius: 4px;
+    padding: 20px 24px 24px 24px;
+
+    .elem-cartsum {
+      padding: 20px 24px;
+      border: 1px solid #e4e7e9;
+      border-radius: 4px;
+    }
+
+    .ordsum-ttl {
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    .ordsum-prods{
+      margin-top: 20px;
+      margin-bottom: 24px;
+      display: grid;
+      row-gap: 12px;
+
+      .ordsum-proditem{
+        display: grid;
+        grid-template-columns: 64px auto;
+        column-gap: 16px;
+      }
+
+      .proditem-img{
+        padding: 2px;
+      }
+
+      .proditem-info{
+        padding: 8px 0;
+      }
+
+      .proditem-qty-price{
+        margin-top: 6px;
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+
+        .proditem-qty, .proditem-symbol{
+          color: #5F6C72;
+        }
+        .proditem-price{
+          font-weight: 600;
+          color: #2DA5F3;
+        }
+      }
+    }
+
+    .ordsum-list {
+      padding-bottom: 16px;
+      display: grid;
+      gap: 10px;
+
+      .ordsum-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .ordsum-item-lbl {
+        color: #5f6c72;
+      }
+    }
+
+    .ordsum-btm {
+      border-top: 1px solid #e4e7e9;
+      .ordsum-total {
+        padding: 16px 0 24px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .ordsum-total-val {
+        font-weight: 600;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}

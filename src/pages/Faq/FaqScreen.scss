@@ -1,0 +1,16 @@
+.pg-faq {
+  .seg-faq-gridbox {
+    margin: 72px 0;
+  }
+
+  .elem-faq-ttl{
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .seg-faq-gridbox{
+    display: grid;
+    grid-template-columns: 760px auto;
+    column-gap: 136px;
+  }
+}

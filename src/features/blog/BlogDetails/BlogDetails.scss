@@ -1,0 +1,78 @@
+.comp-blog-det {
+  .metadat-list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .metadat-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .metadat-icon {
+      color: #fa8232;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .metadat-text {
+      color: #475156;
+    }
+  }
+
+  .blog-det-ttl {
+    margin-top: 16px;
+    font-size: 32px;
+    margin-bottom: 24px;
+    font-weight: 600;
+  }
+
+  .blog-det-content {
+    margin: 32px 0;
+    .content-stylings {
+      display: block;
+
+      p, span, ul{
+        font-size: 16px;
+      }
+
+      & > *{
+        margin-bottom: 32px;
+      }
+
+      p + p{
+        margin-top: -16px;
+      }
+
+      img {
+        width: auto;
+        margin-right: 24px;
+        display: inline;
+
+        & + img{
+          margin-right: 0;
+        }
+      }
+
+      blockquote{
+        position: relative;
+        box-shadow: 4px 0px 0px 0px #FA8232 inset;
+        background: #FFF3EB;
+        padding: 40px;
+        font-size: 20px;
+        padding-left: 120px;
+        &::after{
+          content: "";
+          position: absolute;
+          background: url("../../../assets/icons/double_quotes.svg") no-repeat;
+          width: 56px;
+          height: 56px;
+          left: 40px;
+          top: 40px;
+        }
+      }
+    }
+  }
+}

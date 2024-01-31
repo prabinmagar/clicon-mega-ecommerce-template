@@ -1,0 +1,30 @@
+.blog-late-block {
+  border: 1px solid #e4e7e9;
+  border-radius: 6px;
+  padding: 24px;
+
+  .blog-sidebar-ttl {
+    margin-bottom: 24px;
+  }
+  .blog-late-list {
+    display: grid;
+    row-gap: 24px;
+  }
+  .blog-late-item {
+    display: grid;
+    grid-template-columns: 104px auto;
+    gap: 16px;
+    align-items: center;
+  }
+  .blog-late-ttl {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  .blog-late-date {
+    color: #77878f;
+  }
+}

@@ -1,0 +1,45 @@
+.comp-coupon {
+  .elem-coupon {
+    border: 1px solid #e4e7e9;
+    border-radius: 4px;
+  }
+
+  .coupon-ttl {
+    padding: 20px 24px;
+    font-weight: 500;
+    font-size: 18px;
+    border-bottom: 1px solid #E4E7E9;
+  }
+  
+  .coupon-form {
+    padding: 24px;
+    display: grid;
+    row-gap: 16px;
+
+    .form-ctrl {
+      border: 1px solid #e4e7e9;
+      height: 44px;
+      border-radius: 2px;
+      outline: 0;
+      padding: 0 12px;
+      width: 100%;
+
+      &::placeholder{
+        color: #77878F;
+      }
+    }
+    .form-btn {
+      width: 100%;
+      background: #2da5f3;
+      color: #fff;
+      border: none;
+      outline: 0;
+      border-radius: 2px;
+      height: 48px;
+      padding: 0 24px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+}

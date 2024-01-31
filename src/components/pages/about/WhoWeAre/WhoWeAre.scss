@@ -1,0 +1,65 @@
+.comp-wwr {
+  .seg-wwr-gridbox {
+    display: grid;
+    grid-template-columns: auto 648px;
+    column-gap: 136px;
+    padding-top: 72px;
+    padding-bottom: 124px;
+  }
+
+  .elem-wwr-badge {
+    background: #2da5f3;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 2px;
+    margin-bottom: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .elem-wwr-ttl {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+  .elem-wwr-lead {
+    font-size: 16px;
+    color: #475156;
+    margin-bottom: 32px;
+  }
+  .elem-wwr-feats {
+    display: grid;
+    row-gap: 16px;
+
+    .wwr-feat-item {
+      display: grid;
+      grid-template-columns: 24px auto;
+      column-gap: 12px;
+    }
+
+    .feat-item-bullet {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #2db324;
+      width: 24px;
+      height: 24px;
+    }
+
+    .feat-item-txt {
+      font-size: 16px;
+    }
+    .elem-gbox-img {
+      overflow: hidden;
+      border-radius: 4px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

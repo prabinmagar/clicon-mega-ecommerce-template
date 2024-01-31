@@ -1,0 +1,41 @@
+.comp-teams{
+    padding: 72px 0;
+    .seg-teams-ttl{
+        font-size: 32px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .elem-teams-list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        margin-top: 40px;
+    }
+    .elem-teams-item{
+        padding: 24px;
+        display: grid;
+        gap: 16px;
+        grid-template-columns: 64px auto;
+        align-items: center;
+        border: 1px solid #E4E7E9;
+        border-radius: 3px;
+    }
+    .teams-item-img{
+        width: 64px;
+        height: 64px;
+        border-radius: 100%;
+        overflow: hidden;
+    }
+    .teams-item-info{
+        display: grid;
+        row-gap: 6px;
+    }
+    .teams-info-name{
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .teams-info-desig{
+        color: #475156;
+    }
+}

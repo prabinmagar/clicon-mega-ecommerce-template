@@ -1,11 +1,12 @@
-import RoutesConfig from "./routes";
 import "./styles/styles.scss";
+import { BrowserRouter as Router } from "react-router-dom";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
   return (
-    <>
-      <RoutesConfig />
-    </>
+    <Router>
+      <AppRoutes />
+    </Router>
   );
 }
 

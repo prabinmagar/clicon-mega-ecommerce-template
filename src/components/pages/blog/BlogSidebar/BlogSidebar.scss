@@ -1,0 +1,13 @@
+.comp-blog-sidebar {
+  .blog-sidebar-ttl {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .elem-blog-blocklist{
+    display: grid;
+    row-gap: 24px;
+  }
+}

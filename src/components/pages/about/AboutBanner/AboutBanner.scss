@@ -1,0 +1,26 @@
+.comp-abt-bnr{
+    display: flex;
+    align-items: center;
+    min-height: 440px;
+
+    .seg-abt-bnr-ttl{
+        font-size: 32px;
+        font-weight: 600;
+        max-width: 300px;
+        margin-bottom: 16px;
+    }
+    .seg-abt-bnr-lead{
+        max-width: 300px;
+        margin-bottom: 24px;
+    }
+    .seg-abt-bnr-btn{
+        width: 72px;
+        height: 72px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FA8232;
+        color:  #fff;
+    }
+}

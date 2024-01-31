@@ -1,0 +1,106 @@
+.comp-newsl {
+  background: #1b6392;
+  padding: 72px 0;
+  text-align: center;
+  color: #fff;
+
+  .newsl-lead-ttl {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .newsl-lead-text {
+    opacity: 0.7;
+    font-size: 16px;
+    max-width: 536px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .newsl-form {
+    margin: 32px 0;
+
+    .input-group {
+      padding: 10px 12px;
+      column-gap: 16px;
+      max-width: 624px;
+      margin-right: auto;
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 3px;
+      box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.12);
+
+      .input-gp-ctrl {
+        width: 100%;
+        height: 48px;
+        border: 0;
+        font-size: 16px;
+        outline: 0;
+        padding-left: 16px;
+        color: #77878f;
+
+        &::placeholder {
+          color: #77878f;
+        }
+      }
+
+      .input-gp-btn {
+        height: 48px;
+
+        .btn-text {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .newsl-sep-line {
+    height: 1px;
+    max-width: 424px;
+    background: rgba(255, 255, 255, 0.12);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .seg-companies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 48px;
+    flex-wrap: wrap;
+  }
+  
+  .elem-company {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+
+@media(max-width: 576px){
+  .comp-newsl{
+    .newsl-lead-ttl{
+      font-size: 24px;
+    }
+    .newsl-form{
+      margin: 24px 0;
+      .input-group{
+        flex-direction: column;
+
+        .input-gp-btn{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

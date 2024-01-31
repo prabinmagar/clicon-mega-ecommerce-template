@@ -1,9 +1,9 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import { ProductModalProvider } from "./context/ProductModalContext.jsx";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <ProductModalProvider>
     <App />
-  </React.StrictMode>,
-)
+  </ProductModalProvider>
+);

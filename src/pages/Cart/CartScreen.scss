@@ -1,0 +1,28 @@
+.pg-cart {
+
+  .seg-cart-gridbox{
+    margin: 72px 0 80px 0;
+    display: grid;
+    grid-template-columns: 872px auto;
+    gap: 24px;
+    align-items: start;
+  }
+
+  .elem-gbox-l {
+    border: 1px solid #E4E7E9;
+    border-radius: 4px;
+
+    .elem-gbox-ttl {
+      font-size: 18px;
+      font-weight: 500;
+      padding: 20px 24px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+
+  .elem-gbox-r{
+    display: grid;
+    row-gap: 24px;
+  }
+}

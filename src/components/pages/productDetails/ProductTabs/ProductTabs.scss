@@ -1,0 +1,96 @@
+.comp-prodtabs {
+  .seg-prodtabs {
+    border: 1px solid #e4e7e9;
+    border-radius: 4px;
+  }
+
+  .tab-head {
+    min-height: 56px;
+    padding: 18px 20px;
+    color: #5f6c72;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .tab-body {
+    padding: 40px;
+  }
+
+  .tab-elem-ttl {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  // customization of plugin
+  .react-tabs__tab-list {
+    border: none;
+    border-bottom: 1px solid #e4e7e9;
+
+    .react-tabs__tab--selected {
+      border: none;
+      border-radius: 0;
+      box-shadow: 0px -3px 0px 0px #fa8232 inset, 0px 1px 0px 0px #fff inset;
+    }
+    .react-tabs__tab {
+      padding: 0 !important;
+      bottom: 0;
+    }
+  }
+
+  // description tab
+  .tab-body-des {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    .elem-tab-des {
+      padding-right: 24px;
+    }
+    .elem-tab-feat {
+      padding: 0 24px;
+      border-right: 1px solid #E4E7E9;
+
+      .tab-ft-list{
+        display: grid;
+        row-gap: 12px;
+      }
+
+      .tab-ft-item {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+
+        .item-icon {
+          width: 24px;
+          height: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fa8232;
+        }
+      }
+    }
+    .elem-tab-shipinfo {
+      padding: 0 24px;
+
+      .tab-shif-list{
+        display: grid;
+        row-gap: 10px;
+      }
+
+      .tab-shif-item{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 4px;
+
+        .item-lbl{
+            font-weight: 500;
+        }
+        .item-val{
+            color: #5F6C72;
+        }
+      }
+    }
+  }
+}

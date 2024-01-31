@@ -1,0 +1,146 @@
+.pg-compare {
+  .seg-compare {
+    border: 1px solid #e4e7e9;
+    border-radius: 4px;
+    margin: 72px 0;
+  }
+
+  .elem-compare-tbl {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .tbl-block {
+    border-right: 1px solid #e4e7e9;
+    // display: flex;
+    // flex-direction: column;
+
+    &.tbl-head {
+    //   align-self: stretch;
+
+      .tbl-cell {
+        color: #475156;
+      }
+    }
+
+    .tbl-cell {
+      min-height: 44px;
+
+      &:not(.cell-prod) {
+        padding: 12px 32px;
+      }
+
+      &:nth-child(even) {
+        background: #f2f4f5;
+      }
+    }
+  }
+
+  .cell-empty {
+    flex: 1;
+  }
+
+  .cell-prod {
+    .prod-wrap {
+      display: grid;
+      gap: 16px;
+      padding: 32px;
+    }
+    .prod-rmv-btn {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #929fa5;
+      border: 2px solid #929fa5;
+      border-radius: 100%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .prod-img {
+      max-width: 270px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .prod-ttl {
+      font-size: 16px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -webkit-line-clamp: 3;
+    }
+
+    .prod-btns {
+      display: flex;
+      column-gap: 12px;
+      .btn {
+        column-gap: 8px;
+        height: 48px;
+        flex: 1;
+
+        .btn-text {
+          font-size: 14px;
+        }
+      }
+
+      .icon-btn {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2px;
+
+        &.icobtn-gray {
+          border: 2px solid #e4e7e9;
+          color: #adb7bc;
+        }
+        &.icobtn-primary {
+          border: 2px solid #ffe7d6;
+          color: #fa8232;
+        }
+      }
+    }
+  }
+
+  .cell-rate {
+    .rate-wrap {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      column-gap: 2px;
+
+      .rate-icon {
+        color: #fa8232;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .rate-val {
+        color: #77878f;
+        margin-left: 4px;
+      }
+    }
+  }
+
+  .cell-price {
+    font-weight: 600;
+    font-size: 16px;
+    color: #2da5f3;
+  }
+
+  [class$="-stock"] {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .cell-in-stock {
+    color: #2db224;
+  }
+
+  .cell-out-stock {
+    color: #ee5858;
+  }
+}

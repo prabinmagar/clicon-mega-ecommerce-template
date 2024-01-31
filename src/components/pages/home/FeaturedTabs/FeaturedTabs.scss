@@ -1,0 +1,159 @@
+
+.comp-feat-tabs {
+  .seg-gridbox {
+    display: grid;
+    grid-template-columns: 312px auto;
+    column-gap: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .elem-gbox-offers {
+    background: #f3de6d;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .offers-content {
+      padding: 32px 18px 16px 18px;
+      text-align: center;
+    }
+
+    .offers-img {
+      margin-top: auto;
+    }
+
+    .text-md {
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #be4646;
+    }
+    .text-lg {
+      font-size: 32px;
+      font-weight: 600;
+      text-transform: capitalize;
+      margin-top: 8px;
+      margin-bottom: 12px;
+    }
+    .text-sm {
+      color: #475156;
+      font-size: 16px;
+    }
+
+    .text-offers {
+      margin-top: 16px;
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .offers-label {
+      font-weight: 500;
+    }
+
+    .offers-deadline {
+      background-color: #fff;
+      padding: 6px 12px;
+      text-transform: uppercase;
+      font-weight: 600;
+      border-radius: 2px;
+    }
+  }
+
+  .tabs-head {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 16px;
+    row-gap: 10px;
+  }
+
+  .tabs-btns {
+    margin-left: auto;
+
+    .tab-btn {
+      color: #5f6c72;
+      padding: 8px;
+      text-transform: capitalize;
+      font-weight: 600;
+
+      &.active {
+        border-bottom: 1px solid #fa8232;
+        color: #191c1f;
+      }
+    }
+  }
+
+  .tabs-body {
+    margin-top: 24px;
+  }
+
+  // react-tabs customization
+  .react-tabs__tab {
+    padding: 0;
+  }
+
+  .react-tabs__tab,
+  .react-tabs__tab-list,
+  .react-tabs__tab--selected {
+    border: none !important;
+  }
+
+  .react-tabs__tab-list{
+    margin-bottom: 4px;
+    margin-left: auto;
+  }
+}
+
+@media(max-width: 1200px){
+  .comp-feat-tabs{
+    .seg-gridbox{
+      grid-template-columns: 240px auto;
+      gap: 16px;
+    }
+  }
+}
+
+
+@media(max-width: 992px){
+  .comp-feat-tabs{
+    .seg-gridbox{
+      grid-template-columns: 100%;
+    }
+    .elem-gbox-offers{
+      flex-direction: row;
+      .offers-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .offers-img{
+        max-width: 280px;
+      }
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .comp-feat-tabs{
+    .react-tabs__tab-list{
+      margin-left: 0;
+    }
+  }
+}
+
+@media(max-width: 576px){
+  .comp-feat-tabs{
+    .elem-gbox-offers{
+      flex-direction: column;
+      .offers-img{
+        max-width: 100%;
+      }
+    }
+  }
+}

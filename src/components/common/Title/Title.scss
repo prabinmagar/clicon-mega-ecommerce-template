@@ -1,0 +1,11 @@
+.comp-title {
+  .ttl-text {
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  &.centered{
+    text-align: center;
+  }
+}

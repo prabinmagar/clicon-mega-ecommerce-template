@@ -1,0 +1,17 @@
+.blog-gallery-block{
+    border: 1px solid #E4E7E9;
+    border-radius: 6px;
+    padding: 24px;
+
+    .blog-gallery-list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .blog-gallery-item{
+        height: 80px;
+        overflow: hidden;
+        border-radius: 2px;
+    }
+}

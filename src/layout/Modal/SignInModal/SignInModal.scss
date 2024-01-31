@@ -1,0 +1,67 @@
+
+.comp-modal-signin{
+    background: #fff;
+    box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.12);
+    border: 1px solid #E4E7E9;
+    border-radius: 4px;
+    padding: 32px;
+    width: 424px;
+    z-index: 2;
+    margin-top: 12px;
+
+    .form-ttl{
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .form-item{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+    }
+    .form-lbl{
+        margin-bottom: 8px;
+    }
+    .form-ctrl{
+        height: 44px;
+        width: 100%;
+        border-radius: 2px;
+        border: 1px solid #e4e7e4;
+        outline: 0;
+        padding-left: 16px;
+        padding-right: 16px;
+        font-size: 14px;
+        font-family: inherit;
+    }
+    .btn{
+        width: 100%;
+
+        &.btn-login{
+            margin-top: 4px;
+        }
+
+        &.btn-create-ac{
+            border-color: #FFE7D6;
+        }
+    }
+
+    .form-sep{
+        display: flex;
+        align-items: center;
+        margin-top: 12px;
+        margin-bottom: 24px;
+        column-gap: 8px;
+
+        .sep-line{
+            height: 1px;
+            background: #E4E7E9;
+            width: 100%;
+        }
+
+        .sep-text{
+            white-space: nowrap;
+            color: #77878F;
+        }
+    }
+}
