@@ -733,6 +733,12 @@ export const paymentOpts = [
   },
 ];
 
+export const compareData = [
+  {
+    id: 1,
+  },
+];
+
 export const teams = [
   {
     id: 1,
@@ -945,5 +951,78 @@ export const comments = [
     authorImg: Images.Person5,
     date: "7 Apr, 2021",
     content: "Nulla molestie interdum ultricies. ",
+  },
+];
+
+export const faqData = [
+  {
+    id: 1,
+    title: "Suspendisse ultrices pharetra libero sed interdum.",
+    content: `<p>
+    Nulla malesuada iaculis nisi, vitae sagittis lacus laoreet in.
+    Morbi aliquet pulvinar orci non vulputate. Donec aliquet
+    ullamcorper gravida. Interdum et malesuada fames ac ante ipsum
+    primis in faucibus. Sed molestie accumsan dui, non iaculis
+    magna mattis id. Ut consectetur massa at viverra euismod.
+    Interdum et malesuada fames ac ante ipsum primis in faucibus.
+    Praesent eget sem purus.
+  </p>
+  <ul>
+    <li>
+      Vivamus sed est non arcu porta aliquet et vitae nulla.
+    </li>
+    <li>
+      Integer et lacus vitae justo fermentum rutrum. In nec
+      ultrices massa.
+    </li>
+    <li>
+      Proin blandit nunc risus, at semper turpis sagittis nec.
+    </li>
+    <li>Quisque ut dolor erat.</li>
+  </ul>`,
+  },
+  {
+    id: 2,
+    title: "Fusce molestie condimentum facilisis.",
+    content: `<p>
+    Nulla malesuada iaculis nisi, vitae sagittis lacus laoreet in.
+  </p>`,
+  },
+  {
+    id: 3,
+    title: "Quisque quis nunc quis urna tempor lobortis vel non orci.",
+    content: `<p>
+    Nulla malesuada iaculis nisi, vitae sagittis lacus laoreet in.
+    Morbi aliquet pulvinar orci non vulputate. Donec aliquet
+    ullamcorper gravida. Interdum et malesuada fames ac ante ipsum
+    primis in faucibus. Sed molestie accumsan dui, non iaculis
+    magna mattis id. Ut consectetur massa at viverra euismod.
+    Interdum et malesuada fames ac ante ipsum primis in faucibus.
+    Praesent eget sem purus.
+  </p>`,
+  },
+  {
+    id: 4,
+    title:
+      "Donec rutrum ultrices ante nec malesuada. In accumsan eget nisi a rhoncus.",
+    content: ` <p>
+    Interdum et malesuada fames ac ante ipsum primis in faucibus.
+    Sed molestie accumsan dui, non iaculis magna mattis id. Ut
+    consectetur massa at viverra euismod. Interdum et malesuada
+    fames ac ante ipsum primis in faucibus. Praesent eget sem
+    purus.
+  </p>`,
+  },
+  {
+    id: 5,
+    title: "Nulla sed sapien maximus, faucibus massa vitae.",
+    content: `<p>
+    Morbi aliquet pulvinar orci non vulputate. Donec aliquet
+    ullamcorper gravida. Interdum et malesuada fames ac ante ipsum
+    primis in faucibus. Sed molestie accumsan dui, non iaculis
+    magna mattis id. Ut consectetur massa at viverra euismod.
+    Interdum et malesuada fames ac ante ipsum primis in faucibus.
+    Praesent eget sem purus.
+  </p>`,
   },
 ];

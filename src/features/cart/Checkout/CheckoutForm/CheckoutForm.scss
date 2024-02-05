@@ -1,5 +1,5 @@
-.comp-chkout-form {
-  .seg-chkout-form{
+.comp-checkout-form {
+  .segment-checkout-form {
     display: grid;
     row-gap: 40px;
   }
@@ -9,19 +9,19 @@
     min-width: 180px;
 
     select {
-      border: 1px solid #e4e7e9;
+      border: 1px solid var(--platinum);
       border-radius: 2px;
-      background-color: #fff;
+      background-color: var(--white);
       height: 44px;
       padding: 10px 32px 10px 16px;
       outline: 0;
       appearance: none;
       width: 100%;
-      color: #475156;
+      color: var(--outerspace);
     }
 
     .select-icon {
-      color: #adb7bc;
+      color: var(--french-gray);
       position: absolute;
       top: 50%;
       right: 16px;
@@ -32,12 +32,12 @@
     }
   }
 
-  .elem-chkout-ttl {
+  .checkout-form-ttl {
     font-weight: 500;
     font-size: 18px;
   }
 
-  .billinfo-form {
+  .billing-info-form {
     padding-top: 24px;
     display: grid;
     row-gap: 16px;
@@ -64,7 +64,7 @@
   .form-elem {
     .form-ctrl {
       width: 100%;
-      border: 1px solid #e4e7e9;
+      border: 1px solid var(--platinum);
       outline: 0;
       border-radius: 2px;
       height: 44px;
@@ -72,7 +72,7 @@
       font-family: inherit;
 
       &::placeholder {
-        color: #77878f;
+        color: var(--slate-gray);
       }
     }
 
@@ -81,14 +81,14 @@
       display: block;
 
       .form-ctrl-opt {
-        color: #929fa5;
+        color: var(--cadet-gray);
         padding-left: 4px;
       }
     }
 
-    textarea{
-      &.form-ctrl{
-        border: 1px solid #e4e7e9;
+    textarea {
+      &.form-ctrl {
+        border: 1px solid var(--platinum);
         border-radius: 2px;
         padding: 12px 16px;
         height: 124px;
@@ -121,16 +121,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
+      }
 
-        .check-icon {
-          color: #fff;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          opacity: 0;
-          visibility: hidden;
-          transition: all 100ms ease-in-out;
-        }
+      .check-icon {
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 100ms ease-in-out;
       }
 
       .form-ctrl {
@@ -141,8 +141,8 @@
         z-index: 1;
 
         &:checked + .check-box {
-          background: #fa8232;
-          border-color: #fa8232;
+          background: var(--pumpkin);
+          border-color: var(--pumpkin);
           visibility: visible;
           opacity: 1;
 
@@ -155,7 +155,7 @@
     }
 
     .form-lbl {
-      color: #475156;
+      color: var(--outerspace);
     }
   }
 
@@ -177,8 +177,8 @@
 
       &:checked + .radio-check {
         opacity: 1;
-        border-color: #fa8232;
-        background: #fa8232;
+        border-color: var(--pumpkin);
+        background: var(--pumpkin);
       }
     }
 
@@ -200,29 +200,29 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        background-color: #fff;
+        background-color: var(--white);
         border-radius: 100%;
       }
     }
   }
 
-  .elem-chkout-payopt {
-    border: 1px solid #e4e7e9;
+  .checkout-pay-options {
+    border: 1px solid var(--platinum);
     border-radius: 4px;
 
-    .elem-chkout-ttl {
+    .checkout-form-ttl {
       padding: 20px 32px;
-      border-bottom: 1px solid #e4e7e9;
+      border-bottom: 1px solid var(--platinum);
     }
   }
 
-  .payopt-list {
+  .pay-options-list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     padding: 24px;
-    border-bottom: 1px solid #e4e7e9;
+    border-bottom: 1px solid var(--platinum);
 
-    .payopt-img {
+    .pay-options-img {
       width: 32px;
       height: 32px;
       display: flex;
@@ -230,34 +230,147 @@
       justify-content: center;
     }
 
-    .payopt-name {
+    .pay-options-name {
       margin-top: 8px;
       margin-bottom: 16px;
       font-weight: 500;
+      text-align: center;
     }
 
-    .payopt-item {
+    .pay-options-item {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      border-right: 1px solid #e4e7e9;
+      border-right: 1px solid var(--platinum);
+      padding: 0 6px;
 
-      &:last-child{
+      &:last-child {
         border-right: 0;
       }
     }
   }
 
-  .payopt-form{
+  .pay-options-form {
     padding: 32px;
     display: grid;
     row-gap: 16px;
   }
 
-  .elem-chkout-addinfo{
-    .elem-chkout-ttl{
+  .checkout-additional-info {
+    .checkout-form-ttl {
       margin-bottom: 24px;
     }
   }
 }
+
+@media (max-width: 1400px) {
+  .comp-checkout-form {
+    .billing-info-form {
+      padding-top: 20px;
+    }
+
+    .checkout-pay-options {
+      .checkout-form-ttl {
+        padding: 16px 20px;
+      }
+    }
+
+    .checkout-additional-info {
+      .checkout-form-ttl {
+        margin-bottom: 20px;
+      }
+    }
+
+    .pay-options-list {
+      padding: 20px;
+    }
+
+    .pay-options-form {
+      padding: 20px;
+    }
+
+    .segment-checkout-form {
+      row-gap: 32px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .comp-checkout-form {
+    .form-elem-cols-4 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .comp-checkout-form {
+    .form-elem-cols-2 {
+      &:has(.form-ctrl-cols-2) {
+        grid-template-columns: 100%;
+      }
+    }
+
+    .billing-info-form {
+      padding-top: 16px;
+    }
+
+    .pay-options-list{
+      padding: 0;
+      
+      .pay-options-name{
+        margin-top: 6px;
+        margin-bottom: 12px;
+      }
+      .pay-options-item{
+        padding: 8px 4px;
+      }
+    }
+
+    .checkout-pay-options {
+      .checkout-form-ttl {
+        padding: 12px 16px;
+      }
+    }
+
+    .checkout-additional-info {
+      .checkout-form-ttl {
+        margin-bottom: 16px;
+      }
+    }
+
+    .pay-options-form {
+      padding: 16px;
+    }
+
+    .segment-checkout-form {
+      row-gap: 24px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .comp-checkout-form {
+    .form-ctrl-cols-2,
+    .form-elem-cols-2,
+    .form-elem-cols-4 {
+      grid-template-columns: 100%;
+    }
+
+    .pay-options-list{
+      .pay-options-item{
+        border: 0;
+        row-gap: 10px;
+      }
+      .pay-options-name{
+        display: none;
+      }
+      .pay-options-img{
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+}
+

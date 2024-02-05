@@ -7,8 +7,8 @@ import "./BlogSidebar.scss";
 const BlogSidebar = () => {
   return (
     <div className="comp-blog-sidebar">
-      <div className="seg-blog-sidebar">
-        <div className="elem-blog-blocklist">
+      <div className="segment-blog-sidebar">
+        <div className="blog-sidebar-blocks">
           <BlogFilter />
           <BlogLatest />
           <BlogGallery />

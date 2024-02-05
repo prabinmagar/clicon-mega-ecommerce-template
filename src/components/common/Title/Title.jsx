@@ -13,7 +13,7 @@ export default Title;
 
 Title.propTypes = {
   titleText: PropTypes.string,
-  isCentered: PropTypes.bool
+  isCentered: PropTypes.bool,
 };
 
 Title.propDefault = {

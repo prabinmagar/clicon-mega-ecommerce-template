@@ -4,17 +4,17 @@ import { topics } from "../../../../data/mockData";
 
 const PopularTopics = () => {
   return (
-    <div className="comp-ptopics">
+    <div className="comp-support-topics">
       <div className="container">
-        <div className="seg-ptopics">
-          <h3 className="elem-ptopics-ttl">popular topics</h3>
-          <div className="elem-ptopics-list">
+        <div className="segment-support-topics">
+          <h3 className="support-topics-ttl">popular topics</h3>
+          <div className="support-topics-list">
             {topics?.map((topic) => (
-              <div key={topic.id} className="ptopics-item">
-                <span className="ptopics-item-dot"></span>
+              <div key={topic.id} className="support-topics-item">
+                <span className="support-topics-item-dot"></span>
                 <Link>{topic.question}</Link>
               </div>
-            ))} 
+            ))}
           </div>
         </div>
       </div>

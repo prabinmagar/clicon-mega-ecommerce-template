@@ -2,11 +2,11 @@ import "./Coupon.scss";
 
 const Coupon = () => {
   return (
-    <div className="comp-coupon">
-      <div className="seg-coupon">
-        <div className="elem-coupon">
-          <p className="coupon-ttl">Coupon Code</p>
-          <form className="coupon-form" action="">
+    <div className="comp-coupon-code">
+      <div className="segment-coupon-code">
+        <div className="coupon-code">
+          <p className="coupon-code-ttl">Coupon Code</p>
+          <form className="coupon-code-form" action="">
             <input
               type="email"
               className="form-ctrl"

@@ -1,5 +1,5 @@
 .pg-sign {
-  .seg-sign-tabs {
+  .segment-sign-tabs {
     max-width: 425px;
     margin: 100px auto;
     box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.12);
@@ -14,14 +14,14 @@
     padding: 16px 4px;
     text-align: center;
     width: 100%;
-    color: #77878f;
+    color: var(--slate-gray);
   }
 
   .react-tabs__tab-list {
     display: flex;
     align-items: center;
     border-bottom: 0;
-    border-bottom: 1px solid #e4e7e9;
+    border-bottom: 1px solid var(--platinum);
     width: 100%;
     margin-bottom: 0;
 
@@ -31,10 +31,10 @@
       border: 0;
       padding: 0;
       &.react-tabs__tab--selected {
-        border-bottom: 3px solid #fa8232;
+        border-bottom: 3px solid var(--pumpkin);
 
         .tab-head {
-          color: #191c1f;
+          color: var(--eerie-black);
         }
 
         &::after {
@@ -46,5 +46,62 @@
 
   .tab-body {
     padding: 24px 32px 32px 32px;
+  }
+}
+
+
+@media(max-width: 1400px){
+  .pg-sign{
+    .segment-sign-tabs{
+      margin: 72px auto;
+    }
+  }
+}
+
+@media(max-width: 1200px){
+  .pg-sign{
+    .segment-sign-tabs{
+      margin: 60px auto;
+    }
+  }
+}
+
+@media(max-width: 992px){
+  .pg-sign{
+    .segment-sign-tabs{
+      margin: 40px auto;
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .pg-sign{
+    .segment-sign-tabs{
+      margin: 32px auto;
+    }
+  }
+}
+
+@media(max-width: 576px){
+  .pg-sign{
+    .tab-body{
+      padding: 24px;
+    }
+  }
+}
+
+@media(max-width: 480px){
+  .pg-sign{
+    .tab-body{
+      padding: 20px;
+    }
+  }
+}
+
+@media(max-width: 360px){
+  .pg-sign{
+    .tab-body{
+      padding: 16px;
+    }
   }
 }

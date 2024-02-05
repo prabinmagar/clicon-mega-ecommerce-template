@@ -28,23 +28,23 @@ const CartListItem = ({ cartItem }) => {
     <>
       <tr key={cartItem.productId}>
         <td>
-          <div className="tbl-prod">
-            <div className="tbl-rmv-btn">
+          <div className="table-product">
+            <div className="table-remove-btn">
               <XCircle size={16} weight="bold" />
             </div>
-            <div className="tbl-prod-img">
+            <div className="table-product-img">
               <img src={cartItem.images[0]} alt="" />
             </div>
-            <h4 className="tbl-prod-ttl">{cartItem.productName}</h4>
+            <h4 className="table-product-ttl">{cartItem.productName}</h4>
           </div>
         </td>
         <td>
           {cartItem.discountPercentage === 0 ? (
-            <div className="tbl-new-price">{cartItem.price}</div>
+            <div className="table-new-price">{cartItem.price}</div>
           ) : (
-            <div className="tbl-price">
-              <div className="tbl-old-price">${cartItem.price}</div>
-              <div className="tbl-new-price">
+            <div className="table-price">
+              <div className="table-old-price">${cartItem.price}</div>
+              <div className="table-new-price">
                 $
                 {getPriceAfterDiscount(
                   cartItem.price,
@@ -55,7 +55,7 @@ const CartListItem = ({ cartItem }) => {
           )}
         </td>
         <td>
-          <div className="tbl-qty">
+          <div className="table-qty">
             <button
               type="button"
               className="dec-qty-btn"

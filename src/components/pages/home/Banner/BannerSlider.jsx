@@ -20,10 +20,10 @@ const BannerSlider = () => {
       >
         <SwiperSlide>
           <div className="banner-item">
-            <div className="item-l">
-              <p className="item-text-t">the best place to play</p>
-              <h3 className="item-ttl">Xbox Consoles</h3>
-              <div className="item-text">
+            <div className="banner-item-l">
+              <p className="banner-item-text-t">the best place to play</p>
+              <h3 className="banner-item-ttl">Xbox Consoles</h3>
+              <div className="banner-item-text">
                 Save up to 50% on select Xbox games. Get 3 months of PC Game
                 Pass for $2 USD.
               </div>
@@ -34,20 +34,20 @@ const BannerSlider = () => {
                 </span>
               </button>
             </div>
-            <div className="item-r">
-              <div className="item-img">
+            <div className="banner-item-r">
+              <div className="banner-item-img">
                 <img src={Images.Banner1} alt="" />
-                <div className="item-tag price">$299</div>
+                <div className="banner-item-tag price">$299</div>
               </div>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="banner-item">
-            <div className="item-l">
-              <p className="item-text-t">the best place to play</p>
-              <h3 className="item-ttl">Xbox Consoles</h3>
-              <div className="item-text">
+            <div className="banner-item-l">
+              <p className="banner-item-text-t">the best place to play</p>
+              <h3 className="banner-item-ttl">Xbox Consoles</h3>
+              <div className="banner-item-text">
                 Save up to 50% on select Xbox games. Get 3 months of PC Game
                 Pass for $2 USD.
               </div>
@@ -58,20 +58,20 @@ const BannerSlider = () => {
                 </span>
               </button>
             </div>
-            <div className="item-r">
-              <div className="item-img">
+            <div className="banner-item-r">
+              <div className="banner-item-img">
                 <img src={Images.Banner1} alt="" />
-                <div className="item-tag price">$299</div>
+                <div className="banner-item-tag price">$299</div>
               </div>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="banner-item">
-            <div className="item-l">
-              <p className="item-text-t">the best place to play</p>
-              <h3 className="item-ttl">Xbox Consoles</h3>
-              <div className="item-text">
+            <div className="banner-item-l">
+              <p className="banner-item-text-t">the best place to play</p>
+              <h3 className="banner-item-ttl">Xbox Consoles</h3>
+              <div className="banner-item-text">
                 Save up to 50% on select Xbox games. Get 3 months of PC Game
                 Pass for $2 USD.
               </div>
@@ -82,10 +82,10 @@ const BannerSlider = () => {
                 </span>
               </button>
             </div>
-            <div className="item-r">
-              <div className="item-img">
+            <div className="banner-item-r">
+              <div className="banner-item-img">
                 <img src={Images.Banner1} alt="" />
-                <div className="item-tag price">$299</div>
+                <div className="banner-item-tag price">$299</div>
               </div>
             </div>
           </div>

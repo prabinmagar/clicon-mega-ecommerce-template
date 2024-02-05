@@ -1,25 +1,25 @@
 
-.comp-sc-categories {
+.comp-categories {
   padding-top: 36px;
   padding-bottom: 36px;
 
-  .seg-head {
+  .segment-categories-head {
     text-align: center;
   }
 
-  .seg-slider {
+  .segment-categories-slider {
     margin-top: 40px;
 
-    .elem-cat-item {
+    .categories-item {
       display: grid;
       row-gap: 16px;
       text-align: center;
-      border: 1px solid #e4e7e9;
+      border: 1px solid var(--platinum);
       border-radius: 4px;
       padding: 24px 12px;
     }
 
-    .item-img {
+    .categories-item-img {
       max-width: 148px;
       margin-right: auto;
       margin-left: auto;
@@ -33,12 +33,12 @@
       height: 48px;
       width: 48px;
       border-radius: 100%;
-      background: #fa8232;
+      background: var(--pumpkin);
       display: flex;
       align-items: center;
       justify-content: center;
       z-index: 2;
-      color: #fff;
+      color: var(--white);
       cursor: pointer;
       transition: all 300ms ease-in-out;
 
@@ -58,14 +58,14 @@
 
 
 @media(max-width: 576px){
-  .comp-sc-categories{
+  .comp-categories{
     padding-top: 24px;
     padding-bottom: 24px;
 
-    .seg-slider{
+    .segment-categories-slider{
       margin-top: 24px;
 
-      .elem-cat-item{
+      .categories-item{
         padding: 16px 12px;
       }
     }

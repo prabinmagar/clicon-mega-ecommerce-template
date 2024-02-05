@@ -1,52 +1,77 @@
 .comp-breadcrumb {
-  background: #f2f4f5;
+  background: var(--antiflash-white);
 
-  .seg-breadcrumb {
+  .segment-breadcrumb {
     padding: 26px 0;
+  }
 
-    .breadcrumb-list {
-      display: flex;
+  .breadcrumb-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    color: var(--payne-gray);
+  }
+
+  .breadcrumb-item-wrap {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+
+    &:last-child {
+      .breadcrumb-item-text {
+        color: var(--celes-blue);
+        font-weight: 500;
+      }
+    }
+  }
+
+  .breadcrumb-item {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+
+  .breadcrumb-item-icon {
+    display: none;
+
+    &.show {
+      display: inline-flex;
       align-items: center;
-      flex-wrap: wrap;
-      column-gap: 8px;
-      color: #5f6c72;
+      justify-content: center;
+    }
+  }
 
-      .bc-item-wrap {
-        display: flex;
-        align-items: center;
-        column-gap: 8px;
+  .breadcrumb-sep {
+    width: 12px;
+    height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
-        &:last-child {
-          .bc-item-text {
-            color: #2da5f3;
-            font-weight: 500;
-          }
-        }
-      }
+@media (max-width: 992px) {
+  .comp-breadcrumb {
+    .segment-breadcrumb {
+      padding: 16px 0;
+    }
+  }
+}
 
-      .bc-item {
-        display: flex;
-        align-items: center;
-        column-gap: 8px;
-      }
+@media (max-width: 576px) {
+  .comp-breadcrumb {
+    .segment-breadcrumb {
+      padding: 12px 0;
+    }
+  }
+}
 
-      .bc-item-icon {
-        display: none;
-
-        &.show {
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-        }
-      }
-      
-      .bc-sep {
-        width: 12px;
-        height: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+@media (max-width: 480px) {
+  .comp-breadcrumb {
+    .segment-breadcrumb {
+      padding: 10px 0;
     }
   }
 }

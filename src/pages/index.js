@@ -3,7 +3,6 @@ export { default as Home } from "./Home/HomeScreen";
 export { default as Shop } from "./Shop/ShopScreen";
 export { default as ProductDetails } from "./ProductDetails/ProductDetailsScreen";
 export { default as Cart } from "./Cart/CartScreen";
-export { default as Error } from "./Error/ErrorScreen";
 export { default as NotFound } from "./NotFound/NotFoundScreen";
 export { default as TrackOrder } from "./TrackOrder/TrackOrderScreen";
 export { default as TrackOrderDetails } from "./TrackOrder/TrackOrderDetailsScreen";

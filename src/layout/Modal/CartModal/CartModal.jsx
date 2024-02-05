@@ -6,34 +6,37 @@ import { Link } from "react-router-dom";
 const CartModal = () => {
   return (
     <div className="comp-modal-cart">
-      <div className="seg-cart">
-        <div className="elem-cart-head">
+      <button type="button" className="cart-modal-close-btn">
+        <X size={16} />
+      </button>
+      <div className="segment-cart">
+        <div className="modal-cart-head">
           <h4 className="cart-head-ttl">
             Shopping Cart <span className="cart-item-count">(02)</span>
           </h4>
         </div>
-        <div className="elem-cart-list">
+        <div className="modal-cart-list">
           {cart &&
             cart[0]?.items?.map((cartItem) => {
               return (
                 <div className="cart-item" key={cartItem.productId}>
-                  <div className="item-img">
+                  <div className="cart-item-img">
                     <img src={cartItem.images[0]} alt="" />
                   </div>
-                  <div className="item-content-wrap">
-                    <div className="item-content">
-                      <div className="item-ttl">{cartItem.productName}</div>
-                      <div className="item-info">
-                        <span className="item-info-qty">
+                  <div className="cart-item-content-wrap">
+                    <div className="cart-item-content">
+                      <div className="cart-item-ttl">{cartItem.productName}</div>
+                      <div className="cart-item-info">
+                        <span className="cart-item-info-qty">
                           {cartItem.quantity}
                         </span>
-                        <span className="item-info-times">x</span>
-                        <span className="item-info-price">
-                          {cartItem.price}
+                        <span className="cart-item-info-times">x</span>
+                        <span className="cart-item-info-price">
+                          ${cartItem.price}
                         </span>
                       </div>
                     </div>
-                    <button type="button" className="item-remove">
+                    <button type="button" className="cart-item-remove">
                       <X size={16} />
                     </button>
                   </div>
@@ -41,7 +44,7 @@ const CartModal = () => {
               );
             })}
         </div>
-        <div className="elem-cart-foot">
+        <div className="modal-cart-foot">
           <div className="cart-foot-total">
             <p className="total-lbl">Sub-Total:</p>
             <p className="total-val">${cart[0].totalPrice} USD</p>

@@ -69,13 +69,13 @@ const LangDropdown = () => {
   }, []);
 
   return (
-    <div className="wdgt-langdrop">
-      <div className="seg-langdrop" ref={countryLangRef}>
-        <div className="elem-drop-active" onClick={handleDroplistEnable}>
-          <span className="drop-active-text">
+    <div className="widget-lang-dropdown">
+      <div className="segment-lang-dropdown" ref={countryLangRef}>
+        <div className="lang-dropdown-active" onClick={handleDroplistEnable}>
+          <span className="dropdown-active-text">
             {selectedCountry?.language.key}
           </span>
-          <span className="drop-active-icon">
+          <span className="dropdown-active-icon">
             {isDroplistEnabled ? (
               <CaretUp size={16} />
             ) : (
@@ -83,8 +83,10 @@ const LangDropdown = () => {
             )}
           </span>
         </div>
-        <div className={`elem-drop-list ${isDroplistEnabled ? "show" : ""}`}>
-          <div className="drop-list-wrap scrollbar">
+        <div
+          className={`lang-dropdown-list ${isDroplistEnabled ? "show" : ""}`}
+        >
+          <div className="dropdown-list-wrap scrollbar">
             {countries?.map((country) => {
               if (Object.keys(country?.languages)) {
                 const langKey = Object.keys(country?.languages)[0];
@@ -92,7 +94,7 @@ const LangDropdown = () => {
 
                 return (
                   <div
-                    className={`drop-item ${
+                    className={`dropdown-item ${
                       selectedCountry.country === country?.name?.common
                         ? "selected"
                         : ""
@@ -105,11 +107,11 @@ const LangDropdown = () => {
                       })
                     }
                   >
-                    <div className="item-icon">
+                    <div className="dropdown-item-icon">
                       <img src={country?.flags?.png} alt="" />
                     </div>
-                    <span className="item-text">{langValue}</span>
-                    <span className="item-mark">
+                    <span className="dropdown-item-text">{langValue}</span>
+                    <span className="dropdown-item-mark">
                       <Check size={16} />
                     </span>
                   </div>

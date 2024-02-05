@@ -7,8 +7,8 @@ const NotFoundScreen = () => {
   return (
     <div className="pg-not-found">
       <div className="container">
-        <div className="seg-not-found">
-          <div className="elem-not-found">
+        <div className="segment-not-found">
+          <div className="not-found">
             <div className="not-found-img">
               <img src={Images.PageNotFound} alt="" />
             </div>

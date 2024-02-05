@@ -1,16 +1,61 @@
-.pg-faq {
-  .seg-faq-gridbox {
+.pg-help {
+  .segment-help-gridbox {
     margin: 72px 0;
-  }
-
-  .elem-faq-ttl{
-    font-size: 32px;
-    font-weight: 600;
-  }
-
-  .seg-faq-gridbox{
     display: grid;
     grid-template-columns: 760px auto;
     column-gap: 136px;
+  }
+
+  .gridbox-faq-ttl {
+    font-size: 32px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 1400px) {
+  .pg-help {
+    .segment-help-gridbox {
+      margin: 60px 0;
+      grid-template-columns: 60% auto;
+      column-gap: 32px;
+    }
+
+    .gridbox-faq-ttl {
+      font-size: 28px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .pg-help {
+    .segment-help-gridbox {
+      margin: 40px 0;
+      column-gap: 24px;
+    }
+
+    .gridbox-faq-ttl {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .pg-help {
+    .segment-help-gridbox {
+      margin: 32px 0;
+    }
+
+    .gridbox-faq-ttl {
+      font-size: 20px;
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .pg-help{
+    .segment-help-gridbox{
+      grid-template-columns: 100%;
+      row-gap: 24px;
+    }
   }
 }

@@ -1,6 +1,5 @@
-
-.comp-feat-tabs {
-  .seg-gridbox {
+.comp-featured-tabs {
+  .segment-gridbox {
     display: grid;
     grid-template-columns: 312px auto;
     column-gap: 24px;
@@ -8,8 +7,8 @@
     padding-bottom: 32px;
   }
 
-  .elem-gbox-offers {
-    background: #f3de6d;
+  .featured-gridbox-offers {
+    background: var(--arylide-yellow);
     border-radius: 3px;
     display: flex;
     flex-direction: column;
@@ -37,7 +36,7 @@
       margin-bottom: 12px;
     }
     .text-sm {
-      color: #475156;
+      color: var(--outerspace);
       font-size: 16px;
     }
 
@@ -56,7 +55,7 @@
     }
 
     .offers-deadline {
-      background-color: #fff;
+      background-color: var(--white);
       padding: 6px 12px;
       text-transform: uppercase;
       font-weight: 600;
@@ -64,7 +63,7 @@
     }
   }
 
-  .tabs-head {
+  .featured-tabs-head {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -73,23 +72,23 @@
     row-gap: 10px;
   }
 
-  .tabs-btns {
+  .featured-tabs-btns {
     margin-left: auto;
 
-    .tab-btn {
-      color: #5f6c72;
+    .featured-tab-btn {
+      color: var(--payne-gray);
       padding: 8px;
       text-transform: capitalize;
       font-weight: 600;
 
       &.active {
-        border-bottom: 1px solid #fa8232;
-        color: #191c1f;
+        border-bottom: 1px solid var(--pumpkin);
+        color: var(--eerie-black);
       }
     }
   }
 
-  .tabs-body {
+  .featured-tabs-body {
     margin-top: 24px;
   }
 
@@ -104,54 +103,53 @@
     border: none !important;
   }
 
-  .react-tabs__tab-list{
+  .react-tabs__tab-list {
     margin-bottom: 4px;
     margin-left: auto;
   }
 }
 
-@media(max-width: 1200px){
-  .comp-feat-tabs{
-    .seg-gridbox{
+@media (max-width: 1200px) {
+  .comp-featured-tabs {
+    .segment-gridbox {
       grid-template-columns: 240px auto;
       gap: 16px;
     }
   }
 }
 
-
-@media(max-width: 992px){
-  .comp-feat-tabs{
-    .seg-gridbox{
+@media (max-width: 992px) {
+  .comp-featured-tabs {
+    .segment-gridbox {
       grid-template-columns: 100%;
     }
-    .elem-gbox-offers{
+    .featured-gridbox-offers {
       flex-direction: row;
-      .offers-content{
+      .offers-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
       }
-      .offers-img{
+      .offers-img {
         max-width: 280px;
       }
     }
   }
 }
 
-@media(max-width: 768px){
-  .comp-feat-tabs{
-    .react-tabs__tab-list{
+@media (max-width: 768px) {
+  .comp-featured-tabs {
+    .react-tabs__tab-list {
       margin-left: 0;
     }
   }
 }
 
-@media(max-width: 576px){
-  .comp-feat-tabs{
-    .elem-gbox-offers{
+@media (max-width: 576px) {
+  .comp-featured-tabs {
+    .featured-gridbox-offers {
       flex-direction: column;
-      .offers-img{
+      .offers-img {
         max-width: 100%;
       }
     }

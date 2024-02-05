@@ -1,0 +1,352 @@
+.pg-track-order-details {
+  .segment-track-order-details {
+    max-width: 984px;
+    margin: 72px auto;
+    border-radius: 3px;
+    border: 1px solid var(--platinum);
+  }
+
+  .track-order-top {
+    padding: 24px;
+    border-bottom: 1px solid var(--platinum);
+    display: grid;
+    row-gap: 24px;
+  }
+
+  .track-order-info {
+    padding: 24px;
+    border: 1px solid var(--vanilla);
+    background: #fdfae7;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    .track-order-info-l {
+      display: grid;
+      row-gap: 8px;
+    }
+
+    .info-order-no {
+      font-size: 20px;
+    }
+    .info-order-data {
+      font-size: 14px;
+      color: var(--outerspace);
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .dot {
+        display: inline-block;
+        width: 3px;
+        height: 3px;
+        border-radius: 100%;
+        background-color: var(--outerspace);
+        margin: 0 8px;
+      }
+    }
+
+    .info-order-total {
+      color: var(--celes-blue);
+      font-weight: 600;
+      font-size: 28px;
+    }
+  }
+
+  .track-order-arrival {
+    color: var(--outerspace);
+    span {
+      font-weight: 500;
+      color: var(--eerie-black);
+    }
+  }
+
+  .track-order {
+    min-height: 112px;
+
+    .track-order-bar {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 674px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .order-track-step {
+      position: relative;
+
+      &.completed {
+        .order-track-status-dot {
+          background: var(--pumpkin);
+        }
+
+        .status-completed-icon {
+          opacity: 1;
+        }
+
+        .order-track-info-icon {
+          color: var(--kelly-green);
+          opacity: 1;
+        }
+
+        & + .order-track-line {
+          background-color: var(--pumpkin);
+        }
+      }
+
+      &.progress {
+        .order-track-status-dot {
+          background: var(--pumpkin);
+          outline-color: var(--white);
+        }
+        .order-track-info-icon {
+          opacity: 1;
+        }
+      }
+    }
+
+    .order-track-line {
+      flex: 1;
+      height: 8px;
+      background: var(--champagne-pink);
+    }
+
+    .order-track-status-dot {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      outline: 3px solid var(--pumpkin);
+      outline-offset: -1px;
+      border-radius: 100%;
+    }
+
+    .status-completed-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      opacity: 0;
+    }
+
+    .order-track-info {
+      position: absolute;
+      top: calc(100% + 24px);
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .order-track-text-stat {
+      white-space: nowrap;
+      font-weight: 500;
+    }
+
+    .order-track-info-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      padding: 1px;
+      color: var(--pumpkin);
+      opacity: 0.5;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .track-order-btm {
+    padding: 24px;
+
+    .track-order-activity-ttl {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .activity-list {
+      display: grid;
+      row-gap: 16px;
+    }
+
+    .activity-item {
+      display: grid;
+      column-gap: 16px;
+      grid-template-columns: 48px auto;
+
+      &.activity-green {
+        .activity-item-icon {
+          background: var(--honeydew);
+          border: 1px solid #d5f0d3;
+        }
+      }
+
+      &.activity-blue {
+        .activity-item-icon {
+          background: #eaf6fe;
+          border: 1px solid #d5edfd;
+        }
+      }
+    }
+
+    .activity-item-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 2px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .activity-item-content {
+      display: grid;
+      row-gap: 8px;
+    }
+
+    .activity-item-date {
+      color: var(--slate-gray);
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .pg-track-order-details {
+    .segment-track-order-details {
+      margin: 60px auto;
+    }
+
+    .track-order-top, .track-order-btm, .track-order-info{
+      padding: 20px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .pg-track-order-details {
+    .segment-track-order-details {
+      margin: 40px auto;
+    }
+
+    .track-order-top, .track-order-btm, .track-order-info{
+      padding: 16px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .pg-track-order-details {
+    .segment-track-order-details {
+      margin: 32px auto;
+    }
+
+    .track-order{
+      .track-order-bar{
+        max-width: 580px;
+      }
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .pg-track-order-details{
+    .track-order{
+      .track-order-bar{
+        max-width: 400px;
+      }
+    }
+
+    .track-order-info{
+      .info-order-total{
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media(max-width: 576px){
+  .pg-track-order-details{
+    .track-order-top{
+      row-gap: 20px;
+    }
+    .track-order{
+      .track-order-bar{
+        max-width: 340px;
+      }
+    }
+
+    .track-order-info{
+      padding: 12px;
+    }
+
+    .track-order-btm{
+      .activity-list{
+        row-gap: 12px;
+      }
+      .track-order-activity-ttl{
+        margin-bottom: 20px;
+      }
+
+      .activity-item{
+        column-gap: 12px;
+      }
+
+      .activity-item-content{
+        row-gap: 4px;
+      }
+      .activity-item-date{
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media(max-width: 480px){
+  .pg-track-order-details{
+    .track-order{
+      .track-order-bar{
+        flex-direction: column;
+        height: 340px;
+        padding: 20px 0;
+        margin-right: -2%;
+      }
+
+      .order-track-line{
+        width: 8px;
+        height: 100%;
+      }
+
+      .order-track-info{
+        left: auto;
+        right: calc(100% + 12px);
+        top: 50%;
+        transform: translate(0, -50%);
+        align-items: flex-end;
+        gap: 6px;
+      }
+    }
+  }
+}
+
+
+@media(max-width: 360px){
+  .pg-track-order-details{
+    .track-order{
+      .track-order-bar{
+        height: 300px;
+        margin-right: -5%;
+      }
+    }
+  }
+}

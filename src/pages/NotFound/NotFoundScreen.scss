@@ -1,47 +1,94 @@
 .pg-not-found {
-    .elem-not-found {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 124px;
-      max-width: 424px;
-      margin-right: auto;
-      margin-left: auto;
-      text-align: center;
-    }
-  
-    .not-found-img{
-      max-width: 500px;
-    }
-  
-    .not-found-ttl{
-      margin-bottom: 24px;
-      font-weight: 600;
-      font-size: 36px;
-    }
-  
-    .not-found-lead{
-      color: #475156;
-      font-size: 16px;
-    }
-  
-    .not-found-btns {
-      display: flex;
-      gap: 12px;
-      margin-top: 24px;
-  
-      .btn {
-        height: 48px;
-        padding-right: 24px;
-        padding-left: 24px;
-        column-gap: 8px;
-        
-        .btn-text{
-            font-size: 14px;
-            font-weight: 700;
-        }
-      }
+  .not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 124px;
+    max-width: 424px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .not-found-img {
+    max-width: 500px;
+  }
+
+  .not-found-ttl {
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 36px;
+  }
+
+  .not-found-lead {
+    color: var(--outerspace);
+    font-size: 16px;
+  }
+
+  .not-found-btns {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .pg-not-found {
+    .not-found {
+      margin: 100px auto;
     }
   }
-  
+}
+
+@media (max-width: 1200px) {
+  .pg-not-found {
+    .not-found {
+      margin: 80px auto;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .pg-not-found {
+    .not-found {
+      margin: 60px auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .pg-not-found {
+    .not-found {
+      margin: 40px auto;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .pg-not-found {
+    .not-found-ttl {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+
+    .not-found-img {
+      max-width: 320px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .pg-not-found {
+    .not-found-img {
+      max-width: 240px;
+    }
+    .not-found-ttl {
+      font-size: 24px;
+    }
+    .not-found-btns {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}

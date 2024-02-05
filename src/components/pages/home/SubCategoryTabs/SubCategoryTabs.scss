@@ -1,6 +1,6 @@
 
-.comp-subfeat-tabs {
-  .seg-gridbox {
+.comp-subfeatured-tabs {
+  .segment-gridbox {
     display: grid;
     grid-template-columns: auto 312px;
     column-gap: 24px;
@@ -8,12 +8,12 @@
     padding-bottom: 32px;
   }
 
-  .elem-gbox-offers {
+  .subfeatured-gridbox-offers {
     display: grid;
     row-gap: 24px;
 
     .offers-t {
-      background: #f7e99e;
+      background: var(--vanilla);
       border-radius: 4px;
       display: flex;
       align-items: center;
@@ -35,7 +35,7 @@
       }
       .text-sm {
         font-size: 16px;
-        color: #475156;
+        color: var(--outerspace);
       }
       .text-offers {
         margin-top: 16px;
@@ -46,11 +46,11 @@
         column-gap: 8px;
       }
       .offers-label {
-        color: #475156;
+        color: var(--outerspace);
       }
       .offers-price {
         padding: 6px 12px;
-        background: #fff;
+        background: var(--white);
         font-weight: 600;
         font-size: 16px;
       }
@@ -72,7 +72,7 @@
       text-align: center;
       background: #124261;
       border-radius: 4px;
-      color: #fff;
+      color: var(--white);
 
       .offers-badge {
         background: rgba(255, 255, 255, 0.12);
@@ -93,7 +93,7 @@
       .text-md {
         font-size: 18px;
         span {
-          color: #ebc80c;
+          color: var(--jonquil);
           font-weight: 600;
         }
       }
@@ -109,7 +109,7 @@
     }
   }
 
-  .tabs-head {
+  .subfeatured-tabs-head {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -118,20 +118,20 @@
     row-gap: 10px;
   }
 
-  .tabs-btns {
-    .tab-btn {
-      color: #5f6c72;
+  .subfeatured-tabs-btns {
+    .subfeatured-tab-btn {
+      color: var(--payne-gray);
       padding: 8px;
       text-transform: capitalize;
       font-weight: 600;
       &.active {
-        border-bottom: 1px solid #fa8232;
-        color: #191c1f;
+        border-bottom: 1px solid var(--pumpkin);
+        color: var(--eerie-black);
       }
     }
   }
 
-  .tabs-body {
+  .subfeatured-tabs-body {
     margin-top: 24px;
   }
 
@@ -154,13 +154,13 @@
 
 
 @media(max-width: 1200px){
-  .comp-subfeat-tabs{
-    .seg-gridbox{
+  .comp-subfeatured-tabs{
+    .segment-gridbox{
       grid-template-columns: auto 240px;
       gap: 16px;
     }
 
-    .elem-gbox-offers{
+    .subfeatured-gridbox-offers{
       .offers-t{
         padding: 16px;
       }
@@ -172,13 +172,13 @@
 }
 
 @media(max-width: 1200px){
-  .comp-subfeat-tabs{
-    .seg-gridbox{
+  .comp-subfeatured-tabs{
+    .segment-gridbox{
       grid-template-columns: 100%;
       gap: 24px;
     }
 
-    .elem-gbox-offers{
+    .subfeatured-gridbox-offers{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 16px;
@@ -187,8 +187,8 @@
 }
 
 @media(max-width: 768px){
-  .comp-subfeat-tabs{
-    .elem-gbox-offers{
+  .comp-subfeatured-tabs{
+    .subfeatured-gridbox-offers{
       grid-template-columns: 100%;
     }
 

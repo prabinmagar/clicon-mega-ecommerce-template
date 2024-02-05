@@ -57,58 +57,55 @@ const HeaderTop = () => {
   return (
     <div className="comp-header-top">
       <div className="container">
-        <div className="seg-header-top">
-          <div className="elem-top-greet">
-            <p className="text">Welcome to Clicon online eCommerce store.</p>
-          </div>
-
-          <div className="elem-media-and-drops">
+        <div className="segment-header-top">
+          <p>Welcome to Clicon online eCommerce store.</p>
+          <div className="header-top-right">
             {/* social media */}
-            <div className="elem-media">
-              <p className="media-lbl">Follow us:</p>
-              <ul className="media-list">
-                <li className="media-item">
+            <div className="header-top-media">
+              <p className="header-top-media-lbl">Follow us:</p>
+              <ul className="header-top-media-list">
+                <li className="header-top-media-item">
                   <Link to="/">
                     <TwitterLogo size={16} weight="fill" />
                   </Link>
                 </li>
-                <li className="media-item">
+                <li className="header-top-media-item">
                   <Link to="/">
                     <FacebookLogo size={16} weight="fill" />
                   </Link>
                 </li>
-                <li className="media-item">
+                <li className="header-top-media-item">
                   <Link to="/">
                     <PinterestLogo size={16} weight="fill" />
                   </Link>
                 </li>
-                <li className="media-item">
+                <li className="header-top-media-item">
                   <Link to="/">
                     <RedditLogo size={16} weight="fill" />
                   </Link>
                 </li>
-                <li className="media-item">
+                <li className="header-top-media-item">
                   <Link to="/">
                     <YoutubeLogo size={16} weight="fill" />
                   </Link>
                 </li>
-                <li className="media-item">
+                <li className="header-top-media-item">
                   <Link to="/">
                     <InstagramLogo size={16} weight="fill" />
                   </Link>
                 </li>
               </ul>
             </div>
-            <div className="elem-sep-line"></div>
+            <div className="header-top-line"></div>
 
-            <div className="elem-drops">
+            <div className="header-top-dropdowns">
               <LangDropdown />
-              <div className="dropdown drop-currency" ref={currencyRef}>
-                <div className="drop-active" onClick={handleDroplistEnable}>
-                  <span className="drop-active-text">
+              <div className="dropdown dropdown-currency" ref={currencyRef}>
+                <div className="dropdown-active" onClick={handleDroplistEnable}>
+                  <span className="dropdown-active-text">
                     {selectedCurrency.symbol}
                   </span>
-                  <span className="drop-active-icon">
+                  <span className="dropdown-active-icon">
                     {isDroplistEnabled ? (
                       <CaretUp size={16} />
                     ) : (
@@ -116,19 +113,21 @@ const HeaderTop = () => {
                     )}
                   </span>
                 </div>
-                <div className={`drop-list ${isDroplistEnabled ? "show" : ""}`}>
+                <div
+                  className={`dropdown-list ${isDroplistEnabled ? "show" : ""}`}
+                >
                   {currencies?.map((currency) => {
                     return (
                       <div
-                        className="drop-item"
+                        className="dropdown-item"
                         key={currency.id}
                         onClick={() => currencySelectHandler(currency)}
                       >
-                        <span className="drop-item-text">
+                        <span className="dropdown-item-text">
                           {currency.name}{" "}
                           <span className="abbr">({currency.symbol})</span>
                         </span>
-                        <span className="drop-item-mark">
+                        <span className="dropdown-item-mark">
                           <Check size={16} />
                         </span>
                       </div>

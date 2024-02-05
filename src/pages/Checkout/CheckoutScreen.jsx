@@ -25,55 +25,62 @@ const CheckoutScreen = () => {
     <div className="pg-checkout">
       <Breadcrumb breadData={breadData} />
       <div className="container">
-        <div className="seg-checkout-gridbox">
-          <div className="elem-gbox-l">
+        <div className="segment-checkout-gridbox">
+          <div className="checkout-gridbox-left">
             <CheckoutForm />
           </div>
-          <div className="elem-gbox-r">
-            <div className="elem-ordersum">
-              <p className="ordsum-ttl">Order Summary</p>
-              <div className="ordsum-prods">
+          <div className="checkout-gridbox-right">
+            <div className="checkout-order-sum">
+              <p className="order-sum-ttl">Order Summary</p>
+              <div className="order-sum-products">
                 {cart &&
                   cart[0]?.items?.map((cartItem) => {
                     return (
-                      <div className="ordsum-proditem" key={cartItem.productId}>
-                        <div className="proditem-img">
+                      <div
+                        className="order-sum-product-item"
+                        key={cartItem.productId}
+                      >
+                        <div className="product-item-img">
                           <img src={cartItem.images[0]} alt="" />
                         </div>
-                        <div className="proditem-info">
-                          <p className="proditem-ttl">{cartItem.productName}</p>
-                          <div className="proditem-qty-price">
-                            <span className="proditem-qty">1</span>
-                            <span className="proditem-symbol">x</span>
-                            <span className="proditem-price">{cartItem.price}</span>
+                        <div className="product-item-info">
+                          <p className="product-item-ttl">
+                            {cartItem.productName}
+                          </p>
+                          <div className="product-item-qty-price">
+                            <span className="product-item-qty">1</span>
+                            <span className="product-item-symbol">x</span>
+                            <span className="product-item-price">
+                              {cartItem.price}
+                            </span>
                           </div>
                         </div>
                       </div>
                     );
                   })}
               </div>
-              <ul className="ordsum-list">
-                <li className="ordsum-item">
-                  <p className="ordsum-item-lbl">Sub-total</p>
-                  <div className="ordsum-item-val">$320</div>
+              <ul className="order-sum-list">
+                <li className="order-sum-item">
+                  <p className="order-sum-item-lbl">Sub-total</p>
+                  <div className="order-sum-item-val">$320</div>
                 </li>
-                <li className="ordsum-item">
-                  <p className="ordsum-item-lbl">Shipping</p>
-                  <div className="ordsum-item-val">Free</div>
+                <li className="order-sum-item">
+                  <p className="order-sum-item-lbl">Shipping</p>
+                  <div className="order-sum-item-val">Free</div>
                 </li>
-                <li className="ordsum-item">
-                  <p className="ordsum-item-lbl">Discount</p>
-                  <div className="ordsum-item-val">$24</div>
+                <li className="order-sum-item">
+                  <p className="order-sum-item-lbl">Discount</p>
+                  <div className="order-sum-item-val">$24</div>
                 </li>
-                <li className="ordsum-item">
-                  <p className="ordsum-item-lbl">Tax</p>
-                  <div className="ordsum-item-val">$61.99</div>
+                <li className="order-sum-item">
+                  <p className="order-sum-item-lbl">Tax</p>
+                  <div className="order-sum-item-val">$61.99</div>
                 </li>
               </ul>
-              <div className="ordsum-btm">
-                <div className="ordsum-total">
-                  <p className="ordsum-total-lbl">Total</p>
-                  <p className="ordsum-total-val">$357.99 USD</p>
+              <div className="order-sum-btm">
+                <div className="order-sum-total">
+                  <p className="order-sum-total-lbl">Total</p>
+                  <p className="order-sum-total-val">$357.99 USD</p>
                 </div>
                 <Link to="/" className="btn btn-primary">
                   <span className="btn-text">place order</span>

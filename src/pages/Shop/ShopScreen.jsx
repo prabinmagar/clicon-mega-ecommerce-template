@@ -26,7 +26,7 @@ const ShopScreen = () => {
     <div className="pg-shop">
       <Breadcrumb breadData={breadData} />
       <div className="container">
-        <div className="shop-grid">
+        <div className="segment-shop-gridbox">
           <ProductFilter />
           <ProductShop />
         </div>

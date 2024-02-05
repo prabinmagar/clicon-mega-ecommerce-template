@@ -1,4 +1,3 @@
-import "./SupportScreen.scss";
 import SupportTop from "../../components/pages/support/SupportTop/SupportTop";
 import Assistance from "../../components/pages/support/Assistance/Assistance";
 import PopularTopics from "../../components/pages/support/PopularTopics/PopularTopics";

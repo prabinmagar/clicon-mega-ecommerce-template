@@ -6,9 +6,9 @@ import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
 
 const CartList = () => {
   return (
-    <div className="comp-cartlist">
-      <div className="seg-cartlist">
-        <div className="elem-cart-tbl">
+    <div className="comp-cart-list">
+      <div className="segment-cart-list">
+        <div className="cart-list-table scrollbar">
           <table>
             <thead>
               <tr>
@@ -31,7 +31,7 @@ const CartList = () => {
             </tbody>
           </table>
         </div>
-        <div className="elem-cart-foot">
+        <div className="cart-list-foot">
           <Link to="/" className="btn btn-secondary btn-outline">
             <span className="btn-icon">
               <ArrowLeft size={16} />

@@ -1,5 +1,5 @@
-.comp-signin,
-.comp-signup {
+.comp-signin-form,
+.comp-signup-form {
   .form-elems-wrap {
     display: grid;
     row-gap: 16px;
@@ -11,7 +11,7 @@
       display: block;
     }
     .form-ctrl {
-      border: 1px solid #e4e7e9;
+      border: 1px solid var(--platinum);
       border-radius: 2px;
       height: 44px;
       padding: 0 12px;
@@ -31,18 +31,21 @@
     }
 
     .form-link {
-      color: #2da5f3;
+      color: var(--celes-blue);
       font-weight: 500;
     }
   }
+
   .form-btn {
     width: 100%;
     margin: 24px 0;
   }
+
   .form-ctrl-wrap {
     position: relative;
   }
-  .pwd-toggle-icobtn {
+
+  .pwd-toggle-icon-btn {
     position: absolute;
     right: 16px;
     top: 50%;
@@ -58,32 +61,32 @@
     column-gap: 8px;
     margin-bottom: 12px;
 
-    .sep-line {
+    .form-sep-line {
       height: 1px;
-      background: #e4e7e9;
+      background: var(--platinum);
       width: 100%;
     }
 
-    .sep-text {
-      color: #77878f;
+    .form-sep-text {
+      color: var(--slate-gray);
     }
   }
 
-  .form-sign-opts {
+  .form-sign-options {
     display: flex;
     flex-direction: column;
     row-gap: 12px;
 
-    .form-sign-opt {
-      border: 1px solid #e4e7e9;
+    .form-sign-option {
+      border: 1px solid var(--platinum);
       border-radius: 2px;
       padding: 12px 16px;
       text-align: center;
-      color: #475156;
+      color: var(--outerspace);
       position: relative;
     }
 
-    .sign-opt-icon {
+    .sign-option-icon {
       position: absolute;
       top: 50%;
       left: 16px;
@@ -99,61 +102,61 @@
     column-gap: 16px;
 
     .form-lbl {
-      color: #475156;
+      color: var(--outerspace);
+    }
 
-      .form-link{
-        color: #2DA5F3;
-        font-weight: 500;
-      }
+    .form-link {
+      color: var(--celes-blue);
+      font-weight: 500;
     }
 
     .check-wrap {
       position: relative;
       width: 20px;
       height: 20px;
+    }
 
-      .check-box {
-        width: 20px;
-        height: 20px;
-        border: 1px solid #c9cfd2;
-        border-radius: 2px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        pointer-events: none;
+    .check-box {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #c9cfd2;
+      border-radius: 2px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .check-icon {
+        color: var(--white);
         display: flex;
         align-items: center;
         justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 100ms ease-in-out;
+      }
+    }
+
+    .form-ctrl {
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+      z-index: 1;
+
+      &:checked + .check-box {
+        background: var(--pumpkin);
+        border-color: var(--pumpkin);
+        visibility: visible;
+        opacity: 1;
 
         .check-icon {
-          color: #fff;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          opacity: 0;
-          visibility: hidden;
-          transition: all 100ms ease-in-out;
-        }
-      }
-
-      .form-ctrl {
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        cursor: pointer;
-        z-index: 1;
-
-        &:checked + .check-box {
-          background: #fa8232;
-          border-color: #fa8232;
-          visibility: visible;
           opacity: 1;
-
-          .check-icon {
-            opacity: 1;
-            visibility: visible;
-          }
+          visibility: visible;
         }
       }
     }

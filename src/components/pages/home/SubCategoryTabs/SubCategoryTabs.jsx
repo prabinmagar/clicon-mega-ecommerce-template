@@ -37,20 +37,20 @@ const SubCategoryTabs = () => {
         );
 
   return (
-    <div className="comp-subfeat-tabs">
+    <div className="comp-subfeatured-tabs">
       <div className="container">
-        <div className="seg-gridbox">
-          <div className="elem-gbox-tabs">
+        <div className="segment-gridbox">
+          <div className="subfeatured-gridbox-tabs">
             <Tabs selectedIndex={selectedTab} onSelect={handleTabSelect}>
-              <div className="tabs-head">
+              <div className="subfeatured-tabs-head">
                 <Title titleText={selectedCategory} />
                 <TabList>
-                  <div className="tabs-btns">
+                  <div className="subfeatured-tabs-btns">
                     {subCategories.slice(0, 5)?.map((tabHead, index) => (
                       <Tab key={index}>
                         <button
                           type="button"
-                          className={`tab-btn ${
+                          className={`subfeatured-tab-btn ${
                             selectedTab === index ? "active" : ""
                           }`}
                         >
@@ -67,7 +67,7 @@ const SubCategoryTabs = () => {
                   </span>
                 </Link>
               </div>
-              <div className="tabs-body">
+              <div className="subfeatured-tabs-body">
                 {subCategories.slice(0, 5)?.map((subCategory, index) => (
                   <TabPanel key={index}>
                     <ProductList
@@ -80,7 +80,7 @@ const SubCategoryTabs = () => {
               </div>
             </Tabs>
           </div>
-          <div className="elem-gbox-offers">
+          <div className="subfeatured-gridbox-offers">
             <div className="offers-t">
               <div className="offers-content">
                 <img

@@ -23,7 +23,7 @@ const BlogScreen = () => {
     <div className="pg-blog">
       <Breadcrumb breadData={breadData} />
       <div className="container">
-        <div className="seg-blog-grid">
+        <div className="segment-blog-gridbox">
           <BlogSidebar />
           <BlogDisplay />
         </div>

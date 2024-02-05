@@ -1,8 +1,37 @@
 .pg-blog {
-  .seg-blog-grid {
+  .segment-blog-gridbox {
     padding: 72px 0;
     display: grid;
     grid-template-columns: 400px auto;
     gap: 48px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .pg-blog {
+    .segment-blog-gridbox {
+      padding: 60px 0;
+      gap: 24px;
+      grid-template-columns: 320px auto;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .pg-blog {
+    .segment-blog-gridbox {
+      padding: 40px 0;
+      gap: 20px;
+      grid-template-columns: 240px auto;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .pg-blog {
+    .segment-blog-gridbox {
+      padding: 32px 0;
+      grid-template-columns: 100%;
+    }
   }
 }

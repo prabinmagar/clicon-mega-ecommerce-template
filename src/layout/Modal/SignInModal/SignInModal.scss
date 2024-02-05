@@ -1,67 +1,89 @@
+.comp-modal-signin {
+  background: var(--white);
+  box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--platinum);
+  border-radius: 4px;
+  padding: 32px;
+  width: 424px;
+  z-index: 2;
+  margin-top: 12px;
+  position: relative;
 
-.comp-modal-signin{
-    background: #fff;
-    box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.12);
-    border: 1px solid #E4E7E9;
-    border-radius: 4px;
-    padding: 32px;
-    width: 424px;
-    z-index: 2;
+  .signin-close-btn{
+    position: absolute;
+    right: -16px;
+    top: -16px;
+    width: 32px;
+    height: 32px;
+    background-color: var(--pumpkin);
+    border-radius: 100%;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .signin-form-ttl {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .signin-form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+  .signin-form-lbl {
+    margin-bottom: 8px;
+  }
+  .signin-form-ctrl {
+    height: 44px;
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid #e4e7e4;
+    outline: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 14px;
+    font-family: inherit;
+  }
+  .btn {
+    width: 100%;
+
+    &.btn-login {
+      margin-top: 4px;
+    }
+
+    &.btn-create-ac {
+      border-color: var(--champagne-pink);
+    }
+  }
+
+  .signin-form-sep {
+    display: flex;
+    align-items: center;
     margin-top: 12px;
+    margin-bottom: 24px;
+    column-gap: 8px;
 
-    .form-ttl{
-        font-size: 20px;
-        font-weight: 600;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .form-item{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 16px;
-    }
-    .form-lbl{
-        margin-bottom: 8px;
-    }
-    .form-ctrl{
-        height: 44px;
-        width: 100%;
-        border-radius: 2px;
-        border: 1px solid #e4e7e4;
-        outline: 0;
-        padding-left: 16px;
-        padding-right: 16px;
-        font-size: 14px;
-        font-family: inherit;
-    }
-    .btn{
-        width: 100%;
-
-        &.btn-login{
-            margin-top: 4px;
-        }
-
-        &.btn-create-ac{
-            border-color: #FFE7D6;
-        }
+    .sep-line {
+      height: 1px;
+      background: var(--platinum);
+      width: 100%;
     }
 
-    .form-sep{
-        display: flex;
-        align-items: center;
-        margin-top: 12px;
-        margin-bottom: 24px;
-        column-gap: 8px;
-
-        .sep-line{
-            height: 1px;
-            background: #E4E7E9;
-            width: 100%;
-        }
-
-        .sep-text{
-            white-space: nowrap;
-            color: #77878F;
-        }
+    .sep-text {
+      white-space: nowrap;
+      color: var(--slate-gray);
     }
+  }
 }
+
+@media (max-width: 576px) {
+  .comp-modal-signin {
+    padding: 16px;
+    width: 360px;
+  }
+}
+

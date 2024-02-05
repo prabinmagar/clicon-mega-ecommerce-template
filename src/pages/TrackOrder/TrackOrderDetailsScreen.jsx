@@ -12,7 +12,7 @@ import {
   User,
 } from "@phosphor-icons/react";
 import Breadcrumb from "../../components/common/Breadcrumb/Breadcrumb";
-import "./TrackOrderDetails.scss";
+import "./TrackOrderDetailsScreen.scss";
 
 const TrackOrderDetailsScreen = () => {
   const breadData = [
@@ -34,169 +34,183 @@ const TrackOrderDetailsScreen = () => {
     },
   ];
   return (
-    <div className="pg-trkorder-det">
+    <div className="pg-track-order-details">
       <Breadcrumb breadData={breadData} />
       <div className="container">
-        <div className="seg-trkorder-det">
-          <div className="trkorder-top">
-            <div className="elem-trkorder-info">
-              <div className="trkorder-info-l">
+        <div className="segment-track-order-details">
+          <div className="track-order-top">
+            <div className="track-order-info">
+              <div className="track-order-info-l">
                 <div className="info-order-no">#986758700</div>
                 <p className="info-order-data">
                   4 Products <span className="dot"></span> Order Placed in 17
                   Jan, 2021 at 7:32 PM
                 </p>
               </div>
-              <div className="trkorder-info-r">
+              <div className="track-order-info-r">
                 <div className="info-order-total">$1199.00</div>
               </div>
             </div>
-            <div className="elem-trkorder-arrival">
+            <div className="track-order-arrival">
               Order expected arrival <span>23 Jan, 2021</span>
             </div>
-            <div className="elem-trkorder">
-              <div className="trkorder-bar">
-                <div className="ordertrk-step completed">
-                  <div className="ordertrk-status">
-                    <span className="ordertrk-status-dot">
+            <div className="track-order">
+              <div className="track-order-bar">
+                <div className="order-track-step completed">
+                  <div className="order-track-status">
+                    <span className="order-track-status-dot">
                       <span className="status-completed-icon">
                         <Check size={14} weight="bold" />
                       </span>
                     </span>
                   </div>
-                  <div className="ordertrk-info ordertrk-success">
-                    <div className="ordertrk-info-icon">
+                  <div className="order-track-info order-track-success">
+                    <div className="order-track-info-icon">
                       <Notebook />
                     </div>
-                    <p className="ordertrk-text-stat">Order Placed</p>
+                    <p className="order-track-text-stat">Order Placed</p>
                   </div>
                 </div>
 
-                <div className="ordertrk-line"></div>
+                <div className="order-track-line"></div>
 
-                <div className="ordertrk-step progress">
-                  <div className="ordertrk-status">
-                    <span className="ordertrk-status-dot">
+                <div className="order-track-step progress">
+                  <div className="order-track-status">
+                    <span className="order-track-status-dot">
                       <span className="status-completed-icon">
                         <Check size={14} weight="bold" />
                       </span>
                     </span>
                   </div>
-                  <div className="ordertrk-info ordertrk-success">
-                    <div className="ordertrk-info-icon">
+                  <div className="order-track-info order-track-success">
+                    <div className="order-track-info-icon">
                       <Package />
                     </div>
-                    <p className="ordertrk-text-stat">Packaging</p>
+                    <p className="order-track-text-stat">Packaging</p>
                   </div>
                 </div>
 
-                <div className="ordertrk-line"></div>
+                <div className="order-track-line"></div>
 
-                <div className="ordertrk-step">
-                  <div className="ordertrk-status">
-                    <span className="ordertrk-status-dot">
+                <div className="order-track-step">
+                  <div className="order-track-status">
+                    <span className="order-track-status-dot">
                       <span className="status-completed-icon">
                         <Check size={14} weight="bold" />
                       </span>
                     </span>
                   </div>
-                  <div className="ordertrk-info">
-                    <div className="ordertrk-info-icon">
+                  <div className="order-track-info">
+                    <div className="order-track-info-icon">
                       <Truck />
                     </div>
-                    <p className="ordertrk-text-stat">On The Road</p>
+                    <p className="order-track-text-stat">On The Road</p>
                   </div>
                 </div>
 
-                <div className="ordertrk-line"></div>
+                <div className="order-track-line"></div>
 
-                <div className="ordertrk-step">
-                  <div className="ordertrk-status">
-                    <span className="ordertrk-status-dot">
+                <div className="order-track-step">
+                  <div className="order-track-status">
+                    <span className="order-track-status-dot">
                       <span className="status-completed-icon">
                         <Check size={14} weight="bold" />
                       </span>
                     </span>
                   </div>
-                  <div className="ordertrk-info">
-                    <div className="ordertrk-info-icon">
+                  <div className="order-track-info">
+                    <div className="order-track-info-icon">
                       <Handshake />
                     </div>
-                    <p className="ordertrk-text-stat">Delivered</p>
+                    <p className="order-track-text-stat">Delivered</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="trkorder-btm">
-            <div className="elem-trkorder-act">
-              <h4 className="trkorder-act-ttl">Order Activity</h4>
-              <div className="act-list">
-                <div className="act-item act-green">
-                  <div className="item-icon">
+          <div className="track-order-btm">
+            <div className="track-order-act">
+              <h4 className="track-order-activity-ttl">Order Activity</h4>
+              <div className="activity-list">
+                <div className="activity-item activity-green">
+                  <div className="activity-item-icon">
                     <Checks size={22} />
                   </div>
-                  <div className="item-content">
-                    <p className="item-text">
+                  <div className="activity-item-content">
+                    <p className="activity-item-text">
                       Your order has been delivered. Thank you for shopping in
                       Clicon!
                     </p>
-                    <p className="item-date">23 Jan, 2021 at 7:32 PM</p>
+                    <p className="activity-item-date">
+                      23 Jan, 2021 at 7:32 PM
+                    </p>
                   </div>
                 </div>
-                <div className="act-item act-blue">
-                  <div className="item-icon">
+                <div className="activity-item activity-blue">
+                  <div className="activity-item-icon">
                     <User size={22} />
                   </div>
-                  <div className="item-content">
-                    <p className="item-text">
+                  <div className="activity-item-content">
+                    <p className="activity-item-text">
                       Our delivery man (John Wick) Has picked-up your order for
                       delvery.
                     </p>
-                    <p className="item-date">23 Jan, 2021 at 7:32 PM</p>
+                    <p className="activity-item-date">
+                      23 Jan, 2021 at 7:32 PM
+                    </p>
                   </div>
                 </div>
-                <div className="act-item act-blue">
-                  <div className="item-icon">
+                <div className="activity-item activity-blue">
+                  <div className="activity-item-icon">
                     <MapPinLine size={22} />
                   </div>
-                  <div className="item-content">
-                    <p className="item-text">
+                  <div className="activity-item-content">
+                    <p className="activity-item-text">
                       Your order has reached at last mile hub.
                     </p>
-                    <p className="item-date">23 Jan, 2021 at 7:32 PM</p>
+                    <p className="activity-item-date">
+                      23 Jan, 2021 at 7:32 PM
+                    </p>
                   </div>
                 </div>
-                <div className="act-item act-blue">
-                  <div className="item-icon">
+                <div className="activity-item activity-blue">
+                  <div className="activity-item-icon">
                     <MapTrifold size={22} />
                   </div>
-                  <div className="item-content">
-                    <p className="item-text">
+                  <div className="activity-item-content">
+                    <p className="activity-item-text">
                       Your order on the way to (last mile) hub.
                     </p>
-                    <p className="item-date">23 Jan, 2021 at 7:32 PM</p>
+                    <p className="activity-item-date">
+                      23 Jan, 2021 at 7:32 PM
+                    </p>
                   </div>
                 </div>
-                <div className="act-item act-green">
-                  <div className="item-icon">
+                <div className="activity-item activity-green">
+                  <div className="activity-item-icon">
                     <CheckCircle size={22} />
                   </div>
-                  <div className="item-content">
-                    <p className="item-text">
+                  <div className="activity-item-content">
+                    <p className="activity-item-text">
                       Your order is successfully verified.
                     </p>
-                    <p className="item-date">23 Jan, 2021 at 7:32 PM</p>
+                    <p className="activity-item-date">
+                      23 Jan, 2021 at 7:32 PM
+                    </p>
                   </div>
                 </div>
 
-                <div className="act-item act-blue">
-                  <div className="item-icon">
+                <div className="activity-item activity-blue">
+                  <div className="activity-item-icon">
                     <Notepad size={22} />
                   </div>
-                  <div className="item-content">
-                    <p className="item-text">Your order has been confirmed.</p>
-                    <p className="item-date">23 Jan, 2021 at 7:32 PM</p>
+                  <div className="activity-item-content">
+                    <p className="activity-item-text">
+                      Your order has been confirmed.
+                    </p>
+                    <p className="activity-item-date">
+                      23 Jan, 2021 at 7:32 PM
+                    </p>
                   </div>
                 </div>
               </div>

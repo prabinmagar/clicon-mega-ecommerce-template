@@ -3,17 +3,16 @@ import "./AboutBanner.scss";
 
 const AboutBanner = () => {
   return (
-    <div className="comp-abt-bnr">
+    <div className="comp-about-banner">
       <div className="container">
-        <div className="seg-abt-bnr">
-          <h3 className="seg-abt-bnr-ttl">
+        <div className="about-banner">
+          <h3 className="about-banner-ttl">
             Your trusted and reliable retail shop
           </h3>
-          <p className="seg-abt-bnr-lead">
-            Praesent sed semper metus. Nunc aliquet dolor mauris, et fringilla
-            elit gravida eget. Nunc consequat auctor urna a placerat.
+          <p className="about-banner-lead">
+          Explore our store and discover a world of reliability and trustworthiness. Thank you for choosing Clicon as your preferred destination for all your shopping needs. We look forward to serving you with dedication and integrity.
           </p>
-          <button type="button" className="seg-abt-bnr-btn">
+          <button type="button" className="about-banner-btn">
             <Play size={24} weight="fill" />
           </button>
         </div>

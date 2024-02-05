@@ -18,9 +18,9 @@ const SignUpForm = () => {
   };
 
   return (
-    <div className="comp-signup">
-      <div className="seg-signup">
-        <div className="elem-signup-form">
+    <div className="comp-signup-form">
+      <div className="seg-signup-form">
+        <div className="signup-form">
           <form>
             <div className="form-elems-wrap">
               <div className="form-elem">
@@ -47,7 +47,7 @@ const SignUpForm = () => {
                   />
                   <button
                     type="button"
-                    className="pwd-toggle-icobtn"
+                    className="pwd-toggle-icon-btn"
                     onClick={() => togglePwdVisibility()}
                   >
                     {showPassword ? <Eye size={20} /> : <EyeClosed size={20} />}
@@ -65,7 +65,7 @@ const SignUpForm = () => {
                   />
                   <button
                     type="button"
-                    className="pwd-toggle-icobtn"
+                    className="pwd-toggle-icon-btn"
                     onClick={() => toggleConfirmPwdVisibility()}
                   >
                     {showConfirmPassword ? (
@@ -86,7 +86,15 @@ const SignUpForm = () => {
                   </div>
                 </div>
                 <label htmlFor="" className="form-lbl">
-                  Are you agree to Clicon <Link to="" className="form-link">Terms of Condition</Link> and <Link to="" className="form-link">Privacy Policy</Link>.
+                  Are you agree to Clicon{" "}
+                  <Link to="" className="form-link">
+                    Terms of Condition
+                  </Link>{" "}
+                  and{" "}
+                  <Link to="" className="form-link">
+                    Privacy Policy
+                  </Link>
+                  .
                 </label>
               </div>
             </div>
@@ -97,19 +105,19 @@ const SignUpForm = () => {
               </span>
             </button>
             <div className="form-sep">
-              <span className="sep-line"></span>
-              <span className="sep-text">or</span>
-              <span className="sep-line"></span>
+              <span className="form-sep-line"></span>
+              <span className="form-sep-text">or</span>
+              <span className="form-sep-line"></span>
             </div>
-            <div className="form-sign-opts">
-              <Link to="/" className="form-sign-opt">
-                <span className="sign-opt-icon">
+            <div className="form-sign-options">
+              <Link to="/" className="form-sign-option">
+                <span className="sign-option-icon">
                   <img src={Icons.GoogleIcon} alt="" />
                 </span>
                 Login with Google
               </Link>
-              <Link to="/" className="form-sign-opt">
-                <span className="sign-opt-icon">
+              <Link to="/" className="form-sign-option">
+                <span className="sign-option-icon">
                   <img src={Icons.AppleIcon} alt="" />
                 </span>
                 Login with Google

@@ -5,26 +5,26 @@ import { useState } from "react";
 
 const Pagination = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = 6;
+  const totalPages = 6; // dummy value
   const handlePageChange = (pageVal) => setCurrentPage(pageVal);
 
   return (
     <div className="comp-paginate">
       <div className="container">
-        <div className="seg-paginate">
-          <div className="elem-pgt-list">
+        <div className="segment-paginate">
+          <div className="paginate-list">
             <button
               type="button"
-              className="pgt-item pgt-arrow"
+              className="paginate-item paginate-arrow"
               disabled={currentPage === 1 ? true : false}
             >
               <ArrowLeft size={24} />
             </button>
-            <div className="pgt-item-nums">
+            <div className="paginate-item-nums">
               {Array.from({ length: totalPages }).map((_, index) => (
                 <button
                   type="button"
-                  className={`pgt-item pgt-item-num ${
+                  className={`paginate-item paginate-item-num ${
                     currentPage === index + 1 ? "active" : ""
                   }`}
                   key={index}
@@ -36,7 +36,7 @@ const Pagination = () => {
             </div>
             <button
               type="button"
-              className="pgt-item pgt-arrow"
+              className="paginate-item paginate-arrow"
               disabled={currentPage === totalPages ? true : false}
             >
               <ArrowRight size={24} />

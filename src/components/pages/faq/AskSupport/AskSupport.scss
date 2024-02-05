@@ -1,19 +1,19 @@
-.comp-ask-sup {
-  .seg-ask-sup {
+.comp-ask-support {
+  .segment-ask-support {
     padding: 32px;
     background: #fbf4ce;
     border-radius: 4px;
   }
 
-  .ask-sup-ttl {
+  .ask-support-ttl {
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 12px;
   }
-  .ask-sup-lead {
-    color: #475156;
+  .ask-support-lead {
+    color: var(--outerspace);
   }
-  .ask-sup-form {
+  .ask-support-form {
     .form-elems-wrap {
       display: grid;
       row-gap: 12px;
@@ -22,16 +22,16 @@
 
     .form-elem {
       .form-ctrl {
-        border: 1px solid #f7e99e;
+        border: 1px solid var(--vanilla);
         border-radius: 2px;
         height: 44px;
         padding: 0 16px;
-        background: #fff;
+        background: var(--white);
         width: 100%;
         outline: 0;
 
         &::placeholder {
-          color: #77878f;
+          color: var(--slate-gray);
         }
       }
 
@@ -41,6 +41,42 @@
           height: 80px;
           resize: none;
         }
+      }
+    }
+  }
+}
+
+
+@media(max-width: 1200px){
+  .comp-ask-support{
+    .segment-ask-support{
+      padding: 20px;
+    }
+
+    .ask-support-form{
+      .form-elems-wrap{
+        margin: 20px 0;
+        row-gap: 10px;
+      }
+    }
+  }
+}
+
+@media(max-width: 992px){
+  .comp-ask-support{
+    .segment-ask-support{
+      padding: 16px;
+    }
+
+    .ask-support-ttl{
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .ask-support-form{
+      .form-elems-wrap{
+        margin: 12px 0;
+        row-gap: 8px;
       }
     }
   }

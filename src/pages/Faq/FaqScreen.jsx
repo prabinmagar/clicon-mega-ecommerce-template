@@ -20,15 +20,15 @@ const FaqScreen = () => {
   ];
 
   return (
-    <div className="pg-faq">
+    <div className="pg-help">
       <Breadcrumb breadData={breadData} />
       <div className="container">
-        <div className="seg-faq-gridbox">
-          <div className="elem-gbox-l">
-            <h3 className="elem-faq-ttl">Frequently Asked Questions</h3>
+        <div className="segment-help-gridbox">
+          <div className="help-gridbox-faq">
+            <h3 className="gridbox-faq-ttl">Frequently Asked Questions</h3>
             <Collapsible />
           </div>
-          <div className="elem-gbox-r">
+          <div className="help-gridbox-ask">
             <AskSupport />
           </div>
         </div>

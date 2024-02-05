@@ -19,16 +19,16 @@ const ForgotPasswordScreen = () => {
     },
     {
       text: "Forget Password",
-      link: "/forgot_pwd"
-    }
+      link: "/forgot_pwd",
+    },
   ];
 
   return (
-    <div className="pg-forgot-pwd">
+    <div className="pg-forgot-password">
       <Breadcrumb breadData={breadData} />
       <div className="container">
-        <div className="seg-forgot-pwd">
-          <div className="elem-forgot-form">
+        <div className="segment-forgot-password">
+          <div className="forgot-password-form">
             <div className="form-head">
               <h3 className="form-ttl">Forget Password</h3>
               <p className="form-lead-text">
@@ -66,7 +66,7 @@ const ForgotPasswordScreen = () => {
               <div className="form-foot">
                 <p>
                   You may contact
-                  <span className="hi-lighted-txt">Customer Service</span> for
+                  <span className="highlighted-txt">Customer Service</span> for
                   help restoring access to your account.
                 </p>
               </div>

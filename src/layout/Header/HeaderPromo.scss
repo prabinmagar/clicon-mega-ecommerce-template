@@ -1,17 +1,17 @@
 .comp-header-promo {
-  background: #191c1f;
+  background: var(--eerie-black);
   min-height: 80px;
   display: flex;
   align-items: center;
   position: relative;
 
-  .seg-header-promo {
+  .segment-header-promo {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  .elem-promo-ttl {
+  .header-promo-ttl {
     display: flex;
     column-gap: 12px;
 
@@ -20,19 +20,20 @@
     }
 
     .ttl-bg-text {
-      background: #f3de6d;
+      background: var(--arylide-yellow);
       font-size: 20px;
       padding: 6px 10px;
       transform: rotate(-3deg);
     }
+
     .ttl-plain-text {
       font-size: 24px;
-      color: #fff;
+      color: var(--white);
     }
   }
 
-  .elem-promo-discount {
-    color: #fff;
+  .header-promo-discount {
+    color: var(--white);
     display: flex;
     align-items: center;
     column-gap: 8px;
@@ -40,10 +41,11 @@
     .text-sm {
       font-size: 14px;
     }
+
     .text-lg {
       font-size: 40px;
       font-weight: 600;
-      color: #ebc80c;
+      color: var(--jonquil);
     }
 
     .text-md {
@@ -52,7 +54,7 @@
     }
   }
 
-  .elem-promo-btn {
+  .header-promo-btn {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -61,8 +63,8 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      background-color: #ebc80c;
-      color: #191c1f;
+      background-color: var(--jonquil);
+      color: var(--eerie-black);
       column-gap: 8px;
       min-width: 156px;
       height: 48px;
@@ -73,6 +75,7 @@
         font-weight: 700;
         font-size: 14px;
       }
+
       .btn-icon {
         display: flex;
         align-items: center;
@@ -88,9 +91,9 @@
     transform: translateY(-50%);
     width: 32px;
     height: 32px;
-    background-color: #303639;
+    background-color: var(--onyx);
     border-radius: 2px;
-    color: #fff;
+    color: var(--white);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -120,7 +123,7 @@
   .comp-header-promo {
     min-height: 70px;
 
-    .elem-promo-ttl {
+    .header-promo-ttl {
       column-gap: 10px;
       .ttl-bg-text {
         font-size: 18px;
@@ -130,12 +133,12 @@
       }
     }
 
-    .elem-promo-discount {
+    .header-promo-discount {
       .text-lg {
         font-size: 32px;
       }
     }
-    .elem-promo-btn {
+    .header-promo-btn {
       .btn {
         min-width: auto;
         padding-right: 16px;
@@ -153,7 +156,7 @@
 
 @media (max-width: 576px) {
   .comp-header-promo {
-    .elem-promo-ttl {
+    .header-promo-ttl {
       column-gap: 6px;
 
       .ttl-bg-text {
@@ -164,7 +167,8 @@
         font-size: 18px;
       }
     }
-    .elem-promo-discount {
+
+    .header-promo-discount {
       .text-lg {
         font-size: 20px;
       }
@@ -172,7 +176,8 @@
         font-size: 16px;
       }
     }
-    .elem-promo-btn {
+
+    .header-promo-btn {
       .btn {
         padding-right: 10px;
         padding-left: 10px;
@@ -188,8 +193,8 @@
 @media (max-width: 480px) {
   .comp-header-promo {
     min-height: 60px;
-    .seg-header-promo {
-      .elem-promo-discount {
+    .segment-header-promo {
+      .header-promo-discount {
         display: none;
       }
     }

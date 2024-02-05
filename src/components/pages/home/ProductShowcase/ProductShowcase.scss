@@ -2,14 +2,14 @@
   padding-top: 72px;
   padding-bottom: 72px;
 
-  .elem-gbox-ttl {
+  .showcase-gridbox-ttl {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 16px;
   }
 
-  .seg-gridbox {
+  .segment-showcase-gridbox {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
@@ -18,16 +18,16 @@
 
 @media (max-width: 1200px) {
   .comp-showcase {
-    .seg-gridbox {
+    .segment-showcase-gridbox {
       grid-template-columns: 100%;
       gap: 16px;
 
-      .elem-gbox-col {
-        .elem-gbox-ttl {
+      .showcase-gridbox-col {
+        .showcase-gridbox-ttl {
           margin-bottom: 10px;
         }
-        .comp-prodlist {
-          .seg-glist {
+        .comp-product-list {
+          .segment-product-list {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
           }
@@ -39,12 +39,12 @@
 
 @media (max-width: 992px) {
   .comp-showcase {
-    .seg-gridbox {
+    .segment-showcase-gridbox {
       grid-template-columns: repeat(2, 1fr);
 
-      .elem-gbox-col {
-        .comp-prodlist {
-          .seg-glist {
+      .showcase-gridbox-col {
+        .comp-product-list {
+          .segment-product-list {
             display: grid;
             grid-template-columns: 100%;
           }
@@ -54,9 +54,9 @@
   }
 }
 
-@media(max-width: 576px){
-  .comp-showcase{
-    .seg-gridbox{
+@media (max-width: 576px) {
+  .comp-showcase {
+    .segment-showcase-gridbox {
       grid-template-columns: 100%;
     }
   }

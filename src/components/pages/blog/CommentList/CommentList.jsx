@@ -4,29 +4,29 @@ import "./CommentList.scss";
 
 const CommentList = () => {
   return (
-    <div className="comp-cmtlist">
-      <div className="seg-cmtlist">
-        <h4 className="elem-cmtlist-ttl">Comments</h4>
-        <div className="elem-cmtlist">
+    <div className="comp-comment-list">
+      <div className="segment-comment-list">
+        <h4 className="comment-list-ttl">Comments</h4>
+        <div className="comment-list">
           {comments?.map((comment) => (
-            <div className="cmtitem" key={comment.id}>
-              <div className="cmtitem-avatar">
+            <div className="comment-item" key={comment.id}>
+              <div className="comment-item-avatar">
                 <img src={comment.authorImg} alt="" />
               </div>
-              <div className="cmtitem-info">
-                <div className="cmtitem-metainfo">
-                  <p className="cmtitem-author">{comment.author}</p>
-                  <span className="cmtitem-dot"></span>
-                  <p className="cmtitem-date">{comment.date}</p>
+              <div className="comment-item-info">
+                <div className="comment-item-metainfo">
+                  <p className="comment-item-author">{comment.author}</p>
+                  <span className="comment-item-dot"></span>
+                  <p className="comment-item-date">{comment.date}</p>
                 </div>
-                <div className="cmtitem-text">{comment.content}</div>
+                <div className="comment-item-text">{comment.content}</div>
               </div>
             </div>
           ))}
         </div>
         <button
           type="button"
-          className="elem-btn-load btn btn-primary btn-outline btn-sm"
+          className="btn-load btn btn-primary btn-outline btn-sm"
         >
           <span className="btn-icon">
             <ArrowsClockwise size={32} weight="fill" />

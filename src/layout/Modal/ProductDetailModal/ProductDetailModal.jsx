@@ -18,7 +18,7 @@ const ProductDetailModal = () => {
   useEffect(() => {
     const handleClickOutside = (event) => {
       const clickedElement = event.target;
-      if (clickedElement.classList.contains("comp-prodview")) {
+      if (clickedElement.classList.contains("comp-product-view")) {
         modalDispatch({
           type: "CLOSE_PROD_MODAL",
         });
@@ -31,14 +31,14 @@ const ProductDetailModal = () => {
 
   return (
     <div
-      className={`comp-prodview-mdl ${isProdModalOpen ? "show" : ""}`}
+      className={`comp-product-view-modal ${isProdModalOpen ? "show" : ""}`}
       ref={modalRef}
     >
-      <div className="seg-wrapper">
-        <button className="pv-close-btn" onClick={closeProdModal}>
+      <div className="segment-product-view-modal-wrapper">
+        <button className="product-view-close-btn" onClick={closeProdModal}>
           <X size={16} />
         </button>
-        <div className="seg-prodview-mdl scrollbar">
+        <div className="segment-product-view-modal scrollbar">
           <ProductDetails />
         </div>
       </div>

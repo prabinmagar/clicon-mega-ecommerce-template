@@ -4,8 +4,8 @@ import "./BlogList.scss";
 
 const BlogList = () => {
   return (
-    <div className="comp-bloglist">
-      <div className="seg-bloglist">
+    <div className="comp-blog-list">
+      <div className="segment-blog-list">
         {blogs?.map((blogItem) => {
           return <BlogListItem key={blogItem.id} blogItem={blogItem} />;
         })}

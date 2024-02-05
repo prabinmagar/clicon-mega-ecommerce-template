@@ -11,57 +11,58 @@ import "./Assistance.scss";
 
 const Assistance = () => {
   return (
-    <div className="comp-supp-ast">
+    <div className="comp-support-assist">
       <div className="container">
-        <div className="seg-supp-ast">
-          <div className="elem-supp-ast-list">
-            <div className="supp-ast-item">
-              <span className="ast-item-icon">
+        <div className="segment-support-assist">
+          <h3 className="support-assist-ttl">What can we assist you with today?</h3>
+          <div className="support-assist-list">
+            <div className="support-assist-item">
+              <span className="assist-item-icon">
                 <Truck size={32} color="#fa8232" weight="duotone" />
               </span>
-              <div className="ast-item-text">Track Order</div>
+              <div className="assist-item-text">Track Order</div>
             </div>
-            <div className="supp-ast-item">
-              <span className="ast-item-icon">
+            <div className="support-assist-item">
+              <span className="assist-item-icon">
                 <Lock size={32} color="#fa8232" weight="duotone" />
               </span>
-              <div className="ast-item-text">Reset Password</div>
+              <div className="assist-item-text">Reset Password</div>
             </div>
-            <div className="supp-ast-item">
-              <span className="ast-item-icon">
+            <div className="support-assist-item">
+              <span className="assist-item-icon">
                 <CreditCard size={32} color="#fa8232" weight="duotone" />
               </span>
-              <div className="ast-item-text">Payment Option</div>
+              <div className="assist-item-text">Payment Option</div>
             </div>
-            <div className="supp-ast-item">
-              <span className="ast-item-icon">
+            <div className="support-assist-item">
+              <span className="assist-item-icon">
                 <User size={32} color="#fa8232" weight="duotone" />
               </span>
-              <div className="ast-item-text">User & Account</div>
+              <div className="assist-item-text">User & Account</div>
             </div>
-            <div className="supp-ast-item">
-              <span className="ast-item-icon">
+            <div className="support-assist-item">
+              <span className="assist-item-icon">
                 <Stack size={32} color="#fa8232" weight="duotone" />
               </span>
-              <div className="ast-item-text">Wishlist & Compare</div>
+              <div className="assist-item-text">Wishlist & Compare</div>
             </div>
-            <div className="supp-ast-item">
-              <span className="ast-item-icon">
+            <div className="support-assist-item">
+              <span className="assist-item-icon">
                 <Notepad size={32} color="#fa8232" weight="duotone" />
               </span>
-              <div className="ast-item-text">Shipping & Billing</div>
+              <div className="assist-item-text">Shipping & Billing</div>
             </div>
-            <div className="supp-ast-item">
-              <span className="ast-item-icon">
+            <div className="support-assist-item">
+              <span className="assist-item-icon">
                 <CreditCard size={32} color="#fa8232" weight="duotone" />
               </span>
-              <div className="ast-item-text">Shopping Cart & Wallet</div>
+              <div className="assist-item-text">Shopping Cart & Wallet</div>
             </div>
-            <div className="supp-ast-item">
-              <span className="ast-item-icon">
+            <div className="support-assist-item">
+              <span className="assist-item-icon">
                 <Gift size={32} color="#fa8232" weight="duotone" />
               </span>
-              <div className="ast-item-text">Sell on  Clicon</div>
+              <div className="assist-item-text">Sell on  Clicon</div>
             </div>
           </div>
         </div>

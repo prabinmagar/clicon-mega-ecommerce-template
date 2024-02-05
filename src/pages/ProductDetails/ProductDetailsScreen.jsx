@@ -53,9 +53,9 @@ const ProductDetailsScreen = () => {
   ];
 
   return (
-    <div className="pg-prod-details">
+    <div className="pg-product-details">
       <Breadcrumb breadData={breadData} />
-      <section className="sec-prod-details">
+      <section className="segment-product-details">
         <div className="container">
           <ProductDetails />
         </div>

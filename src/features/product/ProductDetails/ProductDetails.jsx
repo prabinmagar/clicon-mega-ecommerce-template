@@ -67,10 +67,10 @@ const ProductDetails = () => {
   };
 
   return (
-    <div className={`comp-prodview`}>
-      <div className="seg-prodview">
-        <div className="elem-pv-img">
-          <div className="pv-active" onMouseMove={handleMouseMove}>
+    <div className={`comp-product-view`}>
+      <div className="segment-product-view">
+        <div className="product-view-img">
+          <div className="product-view-active" onMouseMove={handleMouseMove}>
             <figure
               style={{
                 backgroundImage: `url(${PREVIEW_IMAGES[previewActiveIndex]})`,
@@ -80,15 +80,41 @@ const ProductDetails = () => {
               <img src={PREVIEW_IMAGES[previewActiveIndex]} alt="" />
             </figure>
           </div>
-          <div className="pv-slider">
+          <div className="product-view-slider">
             <Swiper
               spaceBetween={8}
-              slidesPerView={6}
+              slidesPerView={2}
               modules={[Pagination, Navigation, A11y]}
               loop={true}
               navigation={{
                 nextEl: ".custom-sw-next",
                 prevEl: ".custom-sw-prev",
+              }}
+              breakpoints={{
+                320: {
+                  slidesPerView: 2,
+                },
+                420: {
+                  slidesPerView: 3,
+                },
+                480: {
+                  slidesPerView: 4,
+                },
+                600: {
+                  slidesPerView: 5,
+                },
+                768: {
+                  slidesPerView: 6,
+                },
+                992: {
+                  slidesPerView: 4,
+                },
+                1200: {
+                  slidesPerView: 5,
+                },
+                1400: {
+                  slidesPerView: 6,
+                },
               }}
             >
               <div className="custom-sw-prev">{customPrevIcon}</div>
@@ -99,11 +125,11 @@ const ProductDetails = () => {
                   onClick={() => handlePreviewSlider(index)}
                 >
                   <div
-                    className={`pv-item ${
+                    className={`product-view-item ${
                       index === previewActiveIndex ? "active" : ""
                     }`}
                   >
-                    <div className="pv-item-wrap">
+                    <div className="product-view-item-wrap">
                       <img src={preview} alt="" />
                     </div>
                   </div>
@@ -112,9 +138,9 @@ const ProductDetails = () => {
             </Swiper>
           </div>
         </div>
-        <div className="elem-pv-detail">
-          <div className="pv-rate-and-fb">
-            <div className="pv-rate">
+        <div className="product-view-detail">
+          <div className="product-view-rate-and-feed">
+            <div className="product-view-rate">
               {Array.from({ length: 5 }).map((_, index) => (
                 <span key={index} className="rate-icon">
                   <Star size={16} weight="fill" />
@@ -122,40 +148,42 @@ const ProductDetails = () => {
               ))}
               <span className="rate-val">4.7 Star Rating</span>
             </div>
-            <div className="pv-fb">
+            <div className="product-view-feed">
               <span>(21, 671 User feedback)</span>
             </div>
           </div>
-          <h3 className="pv-ttl">
+          <h3 className="product-view-ttl">
             2020 Apple MacBook Pro with Apple M1 Chip (13-inch, 8GB RAM, 256GB
             SSD Storage) - Space Gray
           </h3>
-          <div className="pv-metadata">
-            <div className="meta-item sku">
-              <span className="meta-label">Sku:</span>
-              <span className="meta-val">A26471</span>
+          <div className="product-view-mdata">
+            <div className="product-view-mdata-item sku">
+              <span className="product-view-mdata-label">Sku:</span>
+              <span className="product-view-mdata-val">A26471</span>
             </div>
-            <div className="meta-item avail">
-              <span className="meta-label">Availability:</span>
-              <span className="meta-val instock">In Stock</span>
+            <div className="product-view-mdata-item avail">
+              <span className="product-view-mdata-label">Availability:</span>
+              <span className="product-view-mdata-val instock">In Stock</span>
             </div>
-            <div className="meta-item brand">
-              <span className="meta-label">Brand:</span>
-              <span className="meta-val">Apple</span>
+            <div className="product-view-mdata-item brand">
+              <span className="product-view-mdata-label">Brand:</span>
+              <span className="product-view-mdata-val">Apple</span>
             </div>
-            <div className="meta-item cat">
-              <span className="meta-label">Category:</span>
-              <span className="meta-val">Electronics Devices</span>
+            <div className="product-view-mdata-item cat">
+              <span className="product-view-mdata-label">Category:</span>
+              <span className="product-view-mdata-val">
+                Electronics Devices
+              </span>
             </div>
           </div>
-          <div className="pv-price">
+          <div className="product-view-price">
             <span className="price-new">$1699</span>
             <span className="price-old">$1999.00</span>
             <span className="price-off">21% off</span>
           </div>
-          <div className="pv-blocks">
-            <div className="pv-block color">
-              <p className="block-ttl">Color</p>
+          <div className="product-view-blocks">
+            <div className="product-view-block color">
+              <p className="product-view-block-ttl">Color</p>
               <div className="color-list">
                 <div className="color-item">
                   <input type="radio" name="color" />
@@ -168,8 +196,8 @@ const ProductDetails = () => {
               </div>
             </div>
 
-            <div className="pv-block size">
-              <p className="block-ttl">Size</p>
+            <div className="product-view-block size">
+              <p className="product-view-block-ttl">Size</p>
               <div className="size-select">
                 <div className="select-wrap">
                   <select>
@@ -184,8 +212,8 @@ const ProductDetails = () => {
               </div>
             </div>
 
-            <div className="pv-block memory">
-              <p className="block-ttl">Memory</p>
+            <div className="product-view-block memory">
+              <p className="product-view-block-ttl">Memory</p>
               <div className="size-select">
                 <div className="select-wrap">
                   <select>
@@ -200,8 +228,8 @@ const ProductDetails = () => {
               </div>
             </div>
 
-            <div className="pv-block storage">
-              <p className="block-ttl">Storage</p>
+            <div className="product-view-block storage">
+              <p className="product-view-block-ttl">Storage</p>
               <div className="size-select">
                 <div className="select-wrap">
                   <select>
@@ -217,8 +245,8 @@ const ProductDetails = () => {
             </div>
           </div>
 
-          <div className="pv-btns">
-            <div className="pv-qty-btns">
+          <div className="product-view-btns">
+            <div className="product-view-qty-btns">
               <button
                 type="button"
                 className="qty-inc-btn"
@@ -237,7 +265,10 @@ const ProductDetails = () => {
                 <Plus size={18} />
               </button>
             </div>
-            <button type="button" className="pv-addtocart-btn btn btn-primary">
+            <button
+              type="button"
+              className="product-view-addtocart-btn btn btn-primary"
+            >
               <span className="btn-text">add to cart</span>
               <span className="btn-icon">
                 <ShoppingCartSimple size={24} />
@@ -245,14 +276,14 @@ const ProductDetails = () => {
             </button>
             <button
               type="button"
-              className="pv-buynow-btn btn btn-primary btn-outline"
+              className="product-view-buynow-btn btn btn-primary btn-outline"
             >
               <span className="btn-text">buy now</span>
             </button>
           </div>
 
-          <div className="pv-utils-and-social">
-            <div className="pv-utils">
+          <div className="product-view-utils-and-social">
+            <div className="product-view-utils">
               <div className="util-item">
                 <span className="util-icon">
                   <Heart size={16} />
@@ -266,7 +297,7 @@ const ProductDetails = () => {
                 <div className="util-text">Add to Compare</div>
               </div>
             </div>
-            <div className="pv-social">
+            <div className="product-view-social">
               <p className="social-label">Share product:</p>
               <div className="social-list">
                 <span className="social-item">
@@ -285,7 +316,7 @@ const ProductDetails = () => {
             </div>
           </div>
 
-          <div className="pv-cards">
+          <div className="product-view-cards">
             <p className="card-label">100% Guarantee Safe Checkout</p>
             <div className="card-list">
               <div className="card-item">

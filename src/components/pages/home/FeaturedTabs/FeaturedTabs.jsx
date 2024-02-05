@@ -32,10 +32,10 @@ const FeaturedTabs = () => {
         );
 
   return (
-    <div className="comp-feat-tabs">
+    <div className="comp-featured-tabs">
       <div className="container">
-        <div className="seg-gridbox">
-          <div className="elem-gbox-offers">
+        <div className="segment-gridbox">
+          <div className="featured-gridbox-offers">
             <div className="offers-content">
               <h4 className="text-md">computer & accessories</h4>
               <h2 className="text-lg">32% Discount</h2>
@@ -53,17 +53,17 @@ const FeaturedTabs = () => {
             </div>
             <img className="offers-img" src={Images.FeaturedOffers} alt="" />
           </div>
-          <div className="elem-gbox-tabs">
+          <div className="featured-gridbox-tabs">
             <Tabs selectedIndex={selectedTab} onSelect={handleTabSelect}>
-              <div className="tabs-head">
+              <div className="featured-tabs-head">
                 <Title titleText={"Featured Products"} />
                 <TabList>
-                  <div className="tabs-btns">
+                  <div className="featured-tabs-btns">
                     {categories?.map((tabHead, index) => (
                       <Tab key={index}>
                         <button
                           type="button"
-                          className={`tab-btn ${
+                          className={`featured-tab-btn ${
                             selectedTab === index ? "active" : ""
                           }`}
                         >
@@ -80,7 +80,7 @@ const FeaturedTabs = () => {
                   </span>
                 </Link>
               </div>
-              <div className="tabs-body">
+              <div className="featured-tabs-body">
                 {categories?.map((category, index) => (
                   <TabPanel key={index}>
                     <ProductList

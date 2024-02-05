@@ -32,8 +32,10 @@ const HeaderMain = () => {
       if (
         signinRef.current &&
         !signinRef.current.contains(event.target) &&
-        !clickedElement.closest(".icolink-user")
+        !clickedElement.closest(".icon-link-item-user")
       ) {
+        setSigninModal(false);
+      } else if (clickedElement.closest(".signin-close-btn")) {
         setSigninModal(false);
       }
     };
@@ -50,8 +52,10 @@ const HeaderMain = () => {
       if (
         cartRef.current &&
         !cartRef.current.contains(event.target) &&
-        !clickedElement.closest(".icolink-cart")
+        !clickedElement.closest(".icon-link-item-cart")
       ) {
+        setCartModal(false);
+      } else if (clickedElement.closest(".cart-modal-close-btn")) {
         setCartModal(false);
       }
     };
@@ -65,11 +69,11 @@ const HeaderMain = () => {
   return (
     <div className="comp-header-main">
       <div className="container">
-        <div className="seg-header-main">
-          <Link to="/" className="elem-brand">
+        <div className="segment-header-main">
+          <Link to="/" className="header-main-brand">
             <img src={Images.Logo} alt="" />
           </Link>
-          <div className="elem-search-form">
+          <div className="header-main-search-form">
             <form action="">
               <div className="input-group">
                 <input
@@ -83,10 +87,10 @@ const HeaderMain = () => {
               </div>
             </form>
           </div>
-          <div className="elem-shop-controls">
-            <ul className="icolink-list">
-              <li className="icolink-item icolink-cart">
-                <Link to="/" className="icolink">
+          <div className="header-main-shop-controls">
+            <ul className="icon-link-list">
+              <li className="icon-link-item icon-link-item-cart">
+                <Link to="/" className="icon-link">
                   <ShoppingCartSimple
                     size={32}
                     onClick={() => handleCartModal()}
@@ -95,13 +99,13 @@ const HeaderMain = () => {
                 </Link>
                 <div ref={cartRef}>{cartModal && <CartModal />}</div>
               </li>
-              <li className="icolink-item">
-                <Link to="/" className="icolink">
+              <li className="icon-link-item">
+                <Link to="/" className="icon-link">
                   <Heart size={32} />
                 </Link>
               </li>
-              <li className="icolink-item icolink-user">
-                <Link className="icolink" onClick={() => handleSigninModal()}>
+              <li className="icon-link-item icon-link-item-user">
+                <Link className="icon-link" onClick={() => handleSigninModal()}>
                   <User size={32} />
                 </Link>
                 <div ref={signinRef}>{signinModal && <SignInModal />}</div>

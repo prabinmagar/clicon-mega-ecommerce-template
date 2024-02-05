@@ -1,93 +1,166 @@
 .pg-checkout {
-  .seg-checkout-gridbox {
+  .segment-checkout-gridbox {
     padding: 72px 0;
     display: grid;
     column-gap: 24px;
     grid-template-columns: 872px auto;
   }
 
-  .elem-ordersum {
-    border: 1px solid #E4E7E9;
+  .checkout-order-sum {
+    border: 1px solid var(--platinum);
     border-radius: 4px;
     padding: 20px 24px 24px 24px;
+  }
 
-    .elem-cartsum {
-      padding: 20px 24px;
-      border: 1px solid #e4e7e9;
-      border-radius: 4px;
+  .checkout-cart-sum {
+    padding: 20px 24px;
+    border: 1px solid var(--platinum);
+    border-radius: 4px;
+  }
+
+  .order-sum-ttl {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .order-sum-products {
+    margin-top: 20px;
+    margin-bottom: 24px;
+    display: grid;
+    row-gap: 12px;
+  }
+
+  .order-sum-product-item {
+    display: grid;
+    grid-template-columns: 64px auto;
+    column-gap: 16px;
+
+    .product-item-img {
+      padding: 2px;
     }
 
-    .ordsum-ttl {
-      font-weight: 500;
-      font-size: 18px;
+    .product-item-info {
+      padding: 8px 0;
     }
 
-    .ordsum-prods{
-      margin-top: 20px;
-      margin-bottom: 24px;
-      display: grid;
-      row-gap: 12px;
-
-      .ordsum-proditem{
-        display: grid;
-        grid-template-columns: 64px auto;
-        column-gap: 16px;
-      }
-
-      .proditem-img{
-        padding: 2px;
-      }
-
-      .proditem-info{
-        padding: 8px 0;
-      }
-
-      .proditem-qty-price{
-        margin-top: 6px;
-        display: flex;
-        align-items: center;
-        column-gap: 4px;
-
-        .proditem-qty, .proditem-symbol{
-          color: #5F6C72;
-        }
-        .proditem-price{
-          font-weight: 600;
-          color: #2DA5F3;
-        }
-      }
+    .product-item-qty-price {
+      margin-top: 6px;
+      display: flex;
+      align-items: center;
+      column-gap: 4px;
     }
 
-    .ordsum-list {
-      padding-bottom: 16px;
-      display: grid;
-      gap: 10px;
+    .product-item-qty,
+    .product-item-symbol {
+      color: var(--payne-gray);
+    }
+    .product-item-price {
+      font-weight: 600;
+      color: var(--celes-blue);
+    }
+  }
 
-      .ordsum-item {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
+  .order-sum-list {
+    padding-bottom: 16px;
+    display: grid;
+    gap: 10px;
+  }
 
-      .ordsum-item-lbl {
-        color: #5f6c72;
-      }
+  .order-sum-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .order-sum-item-lbl {
+    color: var(--payne-gray);
+  }
+
+  .order-sum-btm {
+    border-top: 1px solid var(--platinum);
+
+    .btn {
+      width: 100%;
+    }
+  }
+
+  .order-sum-total {
+    padding: 16px 0 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .order-sum-total-val {
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 1400px) {
+  .pg-checkout {
+    .segment-checkout-gridbox {
+      padding: 60px 0;
+      grid-template-columns: 3fr 2fr;
     }
 
-    .ordsum-btm {
-      border-top: 1px solid #e4e7e9;
-      .ordsum-total {
-        padding: 16px 0 24px 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .ordsum-total-val {
-        font-weight: 600;
-      }
+    .checkout-order-sum {
+      padding: 20px;
+      margin-top: 16px;
+      margin-bottom: 20px;
+    }
 
-      .btn {
-        width: 100%;
+    .order-sum-products {
+      row-gap: 10px;
+    }
+
+    .order-sum-btm {
+      .order-sum-total {
+        padding: 16px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .pg-checkout {
+    .segment-checkout-gridbox {
+      padding: 40px 0;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .pg-checkout {
+    .segment-checkout-gridbox {
+      padding: 32px 0;
+      grid-template-columns: 100%;
+    }
+
+    .checkout-order-sum {
+      padding: 16px;
+      margin-top: 12px;
+      margin-bottom: 16px;
+      
+    }
+
+    .order-sum-products {
+      row-gap: 8px;
+    }
+
+    .order-sum-btm {
+      .order-sum-total {
+        padding: 12px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .pg-checkout {
+    .order-sum-product-item{
+      grid-template-columns: 48px auto;
+
+      .product-item-info{
+        padding: 4px 0;
       }
     }
   }

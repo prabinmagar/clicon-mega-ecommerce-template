@@ -4,25 +4,26 @@ import { MagnifyingGlass } from "@phosphor-icons/react";
 
 const SupportTop = () => {
   return (
-    <div className="comp-supp-top">
+    <div className="comp-support-top">
       <div className="container">
-        <div className="seg-supp-top-gridbox">
-          <div className="elem-gbox-content">
-            <div className="gbox-content-badge">help center</div>
-            <h3 className="gbox-content-ttl">How we can help you!</h3>
-            <div className="gbox-content-form">
+        <div className="segment-support-top-gridbox">
+          <div className="support-gridbox-content">
+            <div className="gridbox-content-badge">help center</div>
+            <h3 className="gridbox-content-ttl">How we can help you!</h3>
+            <div className="gridbox-content-form">
               <form action="">
                 <div className="input-group">
-                  <div className="input-group-ctrl">
-                    <div className="input-group-icon">
+                  <div className="form-elem-wrap">
+                    <div className="form-icon">
                       <MagnifyingGlass size={24} weight="bold" />
                     </div>
                     <input
                       type="text"
                       placeholder="Enter your question or keyword"
+                      className="form-ctrl"
                     />
                   </div>
-                  <button type="submit" className="input-group-btn">
+                  <button type="submit" className="form-btn">
                     search
                   </button>
                 </div>
@@ -30,7 +31,7 @@ const SupportTop = () => {
             </div>
           </div>
           <div
-            className="elem-gbox-img"
+            className="support-gridbox-img"
             style={{
               background: `url(${Images.SupportTop}) center right/70% no-repeat`,
             }}

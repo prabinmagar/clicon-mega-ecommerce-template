@@ -14,33 +14,35 @@ const ProductListItem = ({ productItem, viewRating, viewDescription }) => {
   };
 
   return (
-    <div className="comp-proditem">
-      <div className="seg-proditem">
-        <div className="elem-item-img">
+    <div className="comp-product-item">
+      <div className="segment-product-item">
+        <div className="product-item-img">
           <img src={productItem.images[0]} alt="" />
 
-          <div className="item-btns">
-            <button type="button" className="item-btn btn-wishlist">
+          <div className="product-item-btns">
+            <button type="button" className="product-item-btn btn-wishlist">
               <Heart size={24} />
             </button>
-            <button type="button" className="item-btn btn-addtocart">
+            <button type="button" className="product-item-btn btn-add-to-cart">
               <ShoppingCartSimple size={24} />
             </button>
             <button
               type="button"
               onClick={openProdModal}
-              className="item-btn btn-view"
+              className="product-item-btn btn-view"
             >
               <Eye size={24} />
             </button>
           </div>
         </div>
-        <div className="item-tags">
+        <div className="product-item-tags">
           {tags.length > 0 &&
             tags.map((tag, index) => (
               <div
                 key={index}
-                className={`item-tag ${tag?.toLowerCase().replace(" ", "-")}`}
+                className={`product-item-tag ${tag
+                  ?.toLowerCase()
+                  .replace(" ", "-")}`}
               >
                 {productItem?.promotion?.discountPercentage > 0 &&
                   tag === "off" && (
@@ -52,9 +54,9 @@ const ProductListItem = ({ productItem, viewRating, viewDescription }) => {
               </div>
             ))}
         </div>
-        <div className="elem-item-info">
+        <div className="product-item-info">
           {viewRating && (
-            <div className="item-rating">
+            <div className="product-item-rating">
               {Array.from({ length: 5 }).map((_, index) => (
                 <span key={index} className="rating-icon">
                   <Star size={16} weight="fill" />
@@ -63,15 +65,15 @@ const ProductListItem = ({ productItem, viewRating, viewDescription }) => {
               <span className="rating-val">({productItem.ratings || 0})</span>
             </div>
           )}
-          <h3 className="item-ttl">{productItem.name}</h3>
-          <div className="item-price">
+          <h3 className="product-item-ttl">{productItem.name}</h3>
+          <div className="product-item-price">
             {productItem.originalPrice > 0 && (
               <span className="price-old">${productItem.originalPrice}</span>
             )}
             <span className="price-new">${productItem.price}</span>
           </div>
           {viewDescription && (
-            <div className="item-desc">{productItem.description}</div>
+            <div className="product-item-desc">{productItem.description}</div>
           )}
         </div>
       </div>

@@ -4,54 +4,54 @@ import "./WhoWeAre.scss";
 
 const WhoWeAre = () => {
   return (
-    <div className="comp-wwr">
+    <div className="comp-about-who">
       <div className="container">
-        <div className="seg-wwr-gridbox">
-          <div className="elem-gbox-content">
-            <div className="elem-wwr-badge">who we are</div>
-            <h2 className="elem-wwr-ttl">
+        <div className="segment-about-who-gridbox">
+          <div className="about-who-gridbox-content">
+            <div className="about-who-badge">who we are</div>
+            <h2 className="about-who-ttl">
               Clico - largest electronics retail shop in the world.
             </h2>
-            <p className="elem-wwr-lead">
+            <p className="about-who-lead">
               Pellentesque ultrices, dui vel hendrerit iaculis, ipsum velit
               vestibulum risus, ac tincidunt diam lectus id magna. Praesent
               maximus lobortis neque sit amet rhoncus. Nullam tempus lectus a
               dui aliquet, non ultricies nibh elementum. Nulla ac nulla dolor.{" "}
             </p>
-            <ul className="elem-wwr-feats">
-              <li className="wwr-feat-item">
-                <span className="feat-item-bullet">
+            <ul className="about-who-list">
+              <li className="about-who-item">
+                <span className="who-item-bullet">
                   <Checks size={20} />
                 </span>
-                <span className="feat-item-txt">
+                <span className="who-item-txt">
                   Great 24/7 customer services.
                 </span>
               </li>
-              <li className="wwr-feat-item">
-                <span className="feat-item-bullet">
+              <li className="about-who-item">
+                <span className="who-item-bullet">
                   <Checks size={20} />
                 </span>
-                <span className="feat-item-txt">600+ Dedicated employe.</span>
+                <span className="who-item-txt">600+ Dedicated employe.</span>
               </li>
-              <li className="wwr-feat-item">
-                <span className="feat-item-bullet">
+              <li className="about-who-item">
+                <span className="who-item-bullet">
                   <Checks size={20} />
                 </span>
-                <span className="feat-item-txt">
+                <span className="who-item-txt">
                   50+ Branches all over the world.
                 </span>
               </li>
-              <li className="wwr-feat-item">
-                <span className="feat-item-bullet">
+              <li className="about-who-item">
+                <span className="who-item-bullet">
                   <Checks size={20} />
                 </span>
-                <span className="feat-item-txt">
+                <span className="who-item-txt">
                   Over 1 Million Electronics Products
                 </span>
               </li>
             </ul>
           </div>
-          <div className="elem-gbox-img">
+          <div className="about-who-gridbox-img">
             <img src={Images.AboutTop} alt="" />
           </div>
         </div>

@@ -1,15 +1,16 @@
-.comp-newsl {
-  background: #1b6392;
+.comp-newsletter {
+  background: var(--lapis);
   padding: 72px 0;
   text-align: center;
-  color: #fff;
+  color: var(--white);
 
-  .newsl-lead-ttl {
+  .newsletter-lead-ttl {
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 12px;
   }
-  .newsl-lead-text {
+
+  .newsletter-lead-text {
     opacity: 0.7;
     font-size: 16px;
     max-width: 536px;
@@ -17,7 +18,7 @@
     margin-left: auto;
   }
 
-  .newsl-form {
+  .newsletter-form {
     margin: 32px 0;
 
     .input-group {
@@ -28,50 +29,43 @@
       margin-left: auto;
       display: flex;
       align-items: center;
-      background-color: #fff;
+      background-color: var(--white);
       border-radius: 3px;
       box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.12);
 
-      .input-gp-ctrl {
+      .input-ctrl {
         width: 100%;
         height: 48px;
         border: 0;
         font-size: 16px;
         outline: 0;
         padding-left: 16px;
-        color: #77878f;
+        color: var(--slate-gray);
 
         &::placeholder {
-          color: #77878f;
-        }
-      }
-
-      .input-gp-btn {
-        height: 48px;
-
-        .btn-text {
-          font-size: 14px;
+          color: var(--slate-gray);
         }
       }
     }
   }
 
-  .newsl-sep-line {
+  .newsletter-line {
     height: 1px;
     max-width: 424px;
     background: rgba(255, 255, 255, 0.12);
     margin-right: auto;
     margin-left: auto;
   }
-  .seg-companies {
+  .segment-companies {
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 48px;
+    row-gap: 10px;
     flex-wrap: wrap;
   }
-  
-  .elem-company {
+
+  .companies-item {
     width: 72px;
     height: 72px;
     display: flex;
@@ -86,21 +80,56 @@
   }
 }
 
+@media (max-width: 1400px) {
+  .comp-newsletter {
+    padding: 60px 0;
+  }
+}
 
-@media(max-width: 576px){
-  .comp-newsl{
-    .newsl-lead-ttl{
+@media (max-width: 1200px) {
+  .comp-newsletter {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .comp-newsletter {
+    padding: 32px 0;
+
+    .newsletter-form {
+      .input-group {
+        .input-ctrl {
+          height: 44px;
+        }
+      }
+    }
+
+    .segment-companies {
+      column-gap: 24px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .comp-newsletter {
+    .newsletter-lead-ttl {
       font-size: 24px;
     }
-    .newsl-form{
+    .newsletter-form {
       margin: 24px 0;
-      .input-group{
+
+      .input-group {
         flex-direction: column;
 
-        .input-gp-btn{
+        .input-btn {
           width: 100%;
         }
       }
+    }
+
+    .companies-item {
+      width: 52px;
+      height: 52px;
     }
   }
 }

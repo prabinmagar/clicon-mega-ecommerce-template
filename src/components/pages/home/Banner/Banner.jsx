@@ -5,17 +5,17 @@ import BannerSlider from "./BannerSlider";
 
 const Banner = () => {
   return (
-    <div className="comp-sc-banner">
+    <div className="comp-home-banner">
       <div className="container">
-        <div className="seg-banner">
-          <div className="elem-banner-single">
+        <div className="segment-banner">
+          <div className="home-banner-single">
             <BannerSlider />
           </div>
-          <div className="elem-banner-group">
+          <div className="home-banner-group">
             <div className="banner-item">
-              <div className="item-l">
-                <p className="item-text-t">summer sales</p>
-                <h3 className="item-ttl">New Goolge Pixel 6 Pro</h3>
+              <div className="banner-item-l">
+                <p className="banner-item-text-t">summer sales</p>
+                <h3 className="banner-item-ttl">New Goolge Pixel 6 Pro</h3>
                 <button className="btn btn-primary">
                   <span className="btn-text">shop now</span>
                   <span className="btn-icon">
@@ -23,23 +23,23 @@ const Banner = () => {
                   </span>
                 </button>
               </div>
-              <div className="item-r">
-                <div className="item-img">
+              <div className="banner-item-r">
+                <div className="banner-item-img">
                   <img src={Images.Banner2} alt="" />
-                  <div className="item-tag discount">29% off</div>
+                  <div className="banner-item-tag discount">29% off</div>
                 </div>
               </div>
             </div>
 
             <div className="banner-item">
-              <div className="item-l">
-                <div className="item-img">
+              <div className="banner-item-l">
+                <div className="banner-item-img">
                   <img src={Images.Banner3} alt="" />
                 </div>
               </div>
-              <div className="item-r">
-                <h3 className="item-ttl">Xiaomi FlipBuds Pro</h3>
-                <div className="item-tag price">$299 USD</div>
+              <div className="banner-item-r">
+                <h3 className="banner-item-ttl">Xiaomi FlipBuds Pro</h3>
+                <div className="banner-item-tag price">$299 USD</div>
                 <button className="btn btn-primary">
                   <span className="btn-text">shop now</span>
                   <span className="btn-icon">

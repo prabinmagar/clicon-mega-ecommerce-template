@@ -6,10 +6,10 @@ import "./ProductShop.scss";
 
 const ProductShop = () => {
   return (
-    <div className="comp-prodshop">
-      <div className="seg-prodshop">
-        <div className="prodshop-head">
-          <div className="prodshop-search-form">
+    <div className="comp-product-shop">
+      <div className="segment-product-shop">
+        <div className="product-shop-head">
+          <div className="product-shop-search-form">
             <form action="">
               <div className="input-group">
                 <input
@@ -23,7 +23,7 @@ const ProductShop = () => {
               </div>
             </form>
           </div>
-          <div className="prodshop-sort-select">
+          <div className="product-shop-sort-select">
             <p className="select-lbl">Sort by:</p>
             <div className="select-wrap">
               <select defaultValue={"trending"}>
@@ -37,29 +37,33 @@ const ProductShop = () => {
             </div>
           </div>
         </div>
-        <div className="prodshop-filter">
-          <div className="act-filter">
-            <p className="act-filt-lbl">Active Filters:</p>
-            <ul className="act-filt-list">
-              <li className="act-filt-item">
-                <span className="filt-item-txt">Electronics Devices</span>
-                <button type="button" className="filt-item-btn">
+        <div className="product-shop-filter">
+          <div className="active-filter">
+            <p className="active-filter-lbl">Active Filters:</p>
+            <ul className="active-filter-list">
+              <li className="active-filter-item">
+                <span className="filter-item-txt">Electronics Devices</span>
+                <button type="button" className="filter-item-btn">
                   <X size={12} weight="bold" />
                 </button>
               </li>
-              <li className="act-filt-item">
-                <span className="filt-item-txt">5 Star Rating</span>
-                <button type="button" className="filt-item-btn">
+              <li className="active-filter-item">
+                <span className="filter-item-txt">5 Star Rating</span>
+                <button type="button" className="filter-item-btn">
                   <X size={12} weight="bold" />
                 </button>
               </li>
             </ul>
           </div>
-          <div className="act-result">
-            <span className="act-res-val">65, 867</span> Results found
+          <div className="active-result">
+            <span className="active-result-val">65, 867</span> Results found
           </div>
         </div>
-        <ProductList productItems={products.slice(0, 24)} viewGap={true} viewRating={true} />
+        <ProductList
+          productItems={products.slice(0, 24)}
+          viewGap={true}
+          viewRating={true}
+        />
         <Pagination />
       </div>
     </div>

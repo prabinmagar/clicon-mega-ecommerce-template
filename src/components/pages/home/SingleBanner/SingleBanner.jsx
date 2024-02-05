@@ -4,13 +4,13 @@ import "./SingleBanner.scss";
 
 const SingleBanner = () => {
   return (
-    <div className="comp-single-bnr">
+    <div className="comp-single-banner">
       <div className="container">
-        <div className="seg-banner">
-          <div className="elem-bnr-content">
-            <div className="bnr-badge">save up to $200.00</div>
-            <h3 className="bnr-title">Mackbook Pro</h3>
-            <div className="bnr-lead-text">
+        <div className="segment-banner">
+          <div className="single-banner-content">
+            <div className="banner-badge">save up to $200.00</div>
+            <h3 className="banner-title">Mackbook Pro</h3>
+            <div className="banner-lead-text">
               Apple MI MAx Chip. 32 GB Unified Memory, 1 TB SSD Storage
             </div>
             <button className="btn btn-primary">
@@ -20,9 +20,9 @@ const SingleBanner = () => {
               </span>
             </button>
           </div>
-          <div className="elem-bnr-img">
+          <div className="single-banner-img">
             <img src={Images.SingleBanner} alt="" />
-            <div className="bnr-tag price">$1999</div>
+            <div className="banner-tag price">$1999</div>
           </div>
         </div>
       </div>

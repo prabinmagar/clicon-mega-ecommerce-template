@@ -18,9 +18,9 @@ const BestDeals = () => {
   );
 
   return (
-    <div className="comp-sc-best-deals">
+    <div className="comp-best-deals">
       <div className="container">
-        <div className="seg-head">
+        <div className="segment-deals-head">
           <Title titleText={"Best Deals"} />
           <Countdown />
           <Link to="/" className="link link-secondary">
@@ -30,30 +30,36 @@ const BestDeals = () => {
             </span>
           </Link>
         </div>
-        <div className="seg-body">
-          <div className="seg-gridbox">
-            <div className="elem-gbox-l">
+        <div className="segment-deals-body">
+          <div className="segment-deals-gridbox">
+            <div className="deals-gridbox-l">
               <ProductListItem
                 productItem={productItems[0]}
                 viewDescription={true}
                 viewRating={true}
                 viewButtons={false}
               />
-              <div className="item-btns item-btns-lg">
-                <button type="button" className="item-btn btn-wishlist">
+              <div className="product-item-btns product-item-btns-lg">
+                <button type="button" className="product-item-btn btn-wishlist">
                   <Heart size={24} />
                 </button>
-                <button type="button" className="item-btn btn-addtocart">
+                <button
+                  type="button"
+                  className="product-item-btn btn-add-to-cart"
+                >
                   <ShoppingCartSimple size={24} />
                   <span className="btn-text">add to cart</span>
                 </button>
-                <button type="button" className="item-btn btn-view">
+                <button type="button" className="product-item-btn btn-view">
                   <Eye size={24} />
                 </button>
-              </div>
+              </div> 
             </div>
-            <div className="elem-gbox-r">
-              <ProductList viewGap={false} productItems={productItems?.slice(1, 9)} />
+            <div className="deals-gridbox-r">
+              <ProductList
+                viewGap={false}
+                productItems={productItems?.slice(1, 9)}
+              />
             </div>
           </div>
         </div>

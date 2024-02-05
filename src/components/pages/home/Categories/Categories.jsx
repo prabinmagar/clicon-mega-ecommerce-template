@@ -15,12 +15,12 @@ const Categories = () => {
   const customNextIcon = <ArrowRight size={24} />;
 
   return (
-    <div className="comp-sc-categories">
+    <div className="comp-categories">
       <div className="container">
-        <div className="seg-head">
+        <div className="segment-categories-head">
           <Title titleText={"Shop with categories"} />
         </div>
-        <div className="seg-slider">
+        <div className="segment-categories-slider">
           <Swiper
             spaceBetween={18}
             loop={true}
@@ -54,12 +54,12 @@ const Categories = () => {
             {categories?.map((category) => {
               return (
                 <SwiperSlide key={category.id}>
-                  <div className="elem-cat-item">
-                    <div className="item-img">
+                  <div className="categories-item">
+                    <div className="categories-item-img">
                       <img src={category.image[0]} alt="" />
                     </div>
-                    <div className="item-content">
-                      <h4 className="item-ttl">{category.name}</h4>
+                    <div className="categories-item-content">
+                      <h4 className="categories-item-ttl">{category.name}</h4>
                     </div>
                   </div>
                 </SwiperSlide>

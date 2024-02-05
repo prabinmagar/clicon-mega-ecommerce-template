@@ -25,14 +25,14 @@ const BlogDetailsScreen = () => {
   ];
 
   return (
-    <div className="pg-blog-dets">
+    <div className="pg-blog-details">
       <Breadcrumb breadData={breadData} />
       <div className="container">
-        <div className="seg-blog-dets blog-dets-gridbox">
-          <div className="elem-gbox-top">
+        <div className="segment-blog-details-wrap">
+          <div className="blog-details-hero">
             <img src={Images.BlogDetailsImg} alt="" />
           </div>
-          <div className="elem-gbox-grid">
+          <div className="blog-details-gridbox">
             <BlogDetails />
             <BlogSidebar />
           </div>

@@ -1,0 +1,100 @@
+.pg-track-order {
+  .segment-track-order {
+    padding: 48px 0 124px 0;
+  }
+
+  .track-order-ttl {
+    margin-bottom: 16px;
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .track-order-text {
+    color: var(--payne-gray);
+  }
+
+  .track-order-form {
+    margin-top: 24px;
+    max-width: 872px;
+
+    .form-cols {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      align-items: start;
+    }
+
+    .form-elem {
+      display: grid;
+      row-gap: 8px;
+    }
+
+    .form-lbl {
+      display: block;
+    }
+
+    .form-input {
+      height: 44px;
+      padding: 0 12px;
+      border-radius: 2px;
+      border: 1px solid var(--platinum);
+      outline: none;
+
+      &::placeholder {
+        color: var(--slate-gray);
+      }
+    }
+    .form-info {
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      column-gap: 6px;
+    }
+
+    .form-info-icon {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 24px;
+      height: 24px;
+    }
+    .form-info-txt {
+      color: var(--payne-gray);
+    }
+
+    .btn-track-order {
+      margin-top: 32px;
+    }
+  }
+}
+
+@media(max-width: 992px){
+  .pg-track-order{
+    .segment-track-order{
+      padding: 40px 0;
+    }
+    .track-order-ttl{
+      font-size: 28px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .pg-track-order {
+    .segment-track-order{
+      padding: 32px 0;
+    }
+    .track-order-ttl{
+      font-size: 24px;
+    }
+    .track-order-form {
+      .form-cols {
+        grid-template-columns: 100%;
+      }
+
+      .btn-track-order {
+        width: 100%;
+      }
+    }
+  }
+}

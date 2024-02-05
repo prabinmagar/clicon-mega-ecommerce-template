@@ -4,34 +4,34 @@ import "./CartSummary.scss";
 
 const CartSummary = () => {
   return (
-    <div className="comp-cartsum">
-      <div className="seg-cartsum">
-        <div className="elem-cartsum">
-          <div className="ctsum-top">
-            <p className="ctsum-ttl">Cart Totals</p>
-            <ul className="ctsum-list">
-              <li className="ctsum-item">
-                <p className="ctsum-item-lbl">Sub-total</p>
-                <div className="ctsum-item-val">$320</div>
+    <div className="comp-cart-sum">
+      <div className="segment-cart-sum">
+        <div className="cart-sum">
+          <div className="cart-sum-top">
+            <p className="cart-sum-ttl">Cart Totals</p>
+            <ul className="cart-sum-list">
+              <li className="cart-sum-item">
+                <p className="cart-sum-item-lbl">Sub-total</p>
+                <div className="cart-sum-item-val">$320</div>
               </li>
-              <li className="ctsum-item">
-                <p className="ctsum-item-lbl">Shipping</p>
-                <div className="ctsum-item-val">Free</div>
+              <li className="cart-sum-item">
+                <p className="cart-sum-item-lbl">Shipping</p>
+                <div className="cart-sum-item-val">Free</div>
               </li>
-              <li className="ctsum-item">
-                <p className="ctsum-item-lbl">Discount</p>
-                <div className="ctsum-item-val">$24</div>
+              <li className="cart-sum-item">
+                <p className="cart-sum-item-lbl">Discount</p>
+                <div className="cart-sum-item-val">$24</div>
               </li>
-              <li className="ctsum-item">
-                <p className="ctsum-item-lbl">Tax</p>
-                <div className="ctsum-item-val">$61.99</div>
+              <li className="cart-sum-item">
+                <p className="cart-sum-item-lbl">Tax</p>
+                <div className="cart-sum-item-val">$61.99</div>
               </li>
             </ul>
           </div>
-          <div className="ctsum-btm">
-            <div className="ctsum-total">
-              <p className="ctsum-total-lbl">Total</p>
-              <p className="ctsum-total-val">$357.99 USD</p>
+          <div className="cart-sum-btm">
+            <div className="cart-sum-total">
+              <p className="cart-sum-total-lbl">Total</p>
+              <p className="cart-sum-total-val">$357.99 USD</p>
             </div>
             <Link to="/" className="btn btn-primary">
               <span className="btn-text">proceed to checkout</span>

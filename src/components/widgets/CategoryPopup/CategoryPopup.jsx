@@ -116,17 +116,17 @@ const CategoryPopup = forwardRef(function CategoryPopup(props, ref) {
       ref={ref}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="seg-cats">
-        <div className="cat-list">
+      <div className="segment-categories">
+        <div className="categories-list">
           {CATEGORIES?.map((category) => {
             return (
               <Link
                 key={category.id}
-                className="cat-item"
+                className="category-item"
                 onMouseEnter={() => handleMouseEnter(category)}
               >
-                <span className="cat-item-text">{category.name}</span>
-                <span className="cat-item-icon">
+                <span className="category-item-text">{category.name}</span>
+                <span className="category-item-icon">
                   <CaretRight size={16} />
                 </span>
               </Link>
@@ -136,8 +136,8 @@ const CategoryPopup = forwardRef(function CategoryPopup(props, ref) {
       </div>
 
       {hoveredCategory && (
-        <div className="seg-subcats" onMouseLeave={handleMouseLeave2}>
-          <div className="subcat-list">
+        <div className="segment-subcategories" onMouseLeave={handleMouseLeave2}>
+          <div className="subcategories-list">
             {CATEGORIES?.find((category) => category.id === hoveredCategory.id)
               ?.subCategories?.length > 0 ? (
               CATEGORIES?.find(
@@ -146,7 +146,7 @@ const CategoryPopup = forwardRef(function CategoryPopup(props, ref) {
                 return (
                   <Link
                     key={index}
-                    className="subcat-item"
+                    className="subcategory-item"
                     onMouseEnter={() => handleMouseEnter2(subCategory)}
                   >
                     {subCategory}
@@ -159,9 +159,9 @@ const CategoryPopup = forwardRef(function CategoryPopup(props, ref) {
           </div>
 
           {hoveredSubCategory && (
-            <div className="subcat-feats">
-              <div className="feats-gbox-prods">
-                <h3 className="feats-gbox-ttl">
+            <div className="subcategory-featured">
+              <div className="featured-products">
+                <h3 className="featured-category-ttl">
                   featured {hoveredSubCategory}
                 </h3>
                 <ProductList
@@ -170,16 +170,16 @@ const CategoryPopup = forwardRef(function CategoryPopup(props, ref) {
                   viewList={true}
                 />
               </div>
-              <div className="feats-gbox-prod">
-                <div className="prod-img">
+              <div className="featured-product">
+                <div className="featured-product-img">
                   <img src={Images.CatPopupProduct} alt="" />
                 </div>
-                <h3 className="prod-ttl">21% Discount</h3>
-                <p className="prod-text">
+                <h3 className="featured-product-ttl">21% Discount</h3>
+                <p className="featured-product-text">
                   Escape the noise, it&apos;s time to hear the magic with Xiaomi
                   Earbuds.
                 </p>
-                <div className="prod-price">
+                <div className="featured-product-price">
                   <p className="price-lbl">Starting price:</p>
                   <span className="price-val">$99 USD</span>
                 </div>

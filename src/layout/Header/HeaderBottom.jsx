@@ -38,13 +38,11 @@ const HeaderBottom = () => {
     };
   }, []);
 
-  console.log(categoryVisible);
-
   return (
     <div className="comp-header-bottom">
       <div className="container">
-        <div className="seg-bottom">
-          <div className="elem-bottom-category">
+        <div className="segment-bottom">
+          <div className="header-bottom-category">
             <div
               className="category-toggle-btn"
               onClick={() => handleCategoryVisibility()}
@@ -60,43 +58,43 @@ const HeaderBottom = () => {
             </div>
             {categoryVisible && <CategoryPopup ref={categoryRef} />}
           </div>
-          <div className="elem-bottom-utils">
-            <ul className="utils-list">
-              <li className="utils-item">
+          <div className="header-bottom-utils">
+            <ul className="header-utils-list">
+              <li className="header-utils-item">
                 <Link to="/track_order">
-                  <span className="utils-icon">
+                  <span className="header-utils-icon">
                     <MapPinLine size={16} />
                   </span>
-                  <div className="utils-text">Track Order</div>
+                  <div className="header-utils-text">Track Order</div>
                 </Link>
               </li>
-              <li className="utils-item">
+              <li className="header-utils-item">
                 <Link to="/compare">
-                  <span className="utils-icon">
+                  <span className="header-utils-icon">
                     <ArrowsCounterClockwise size={16} />
                   </span>
-                  <div className="utils-text">Compare</div>
+                  <div className="header-utils-text">Compare</div>
                 </Link>
               </li>
-              <li className="utils-item">
+              <li className="header-utils-item">
                 <Link to="/support">
-                  <span className="utils-icon">
+                  <span className="header-utils-icon">
                     <Headphones size={16} />
                   </span>
-                  <div className="utils-text">Customer Support</div>
+                  <div className="header-utils-text">Customer Support</div>
                 </Link>
               </li>
-              <li className="utils-item">
+              <li className="header-utils-item">
                 <Link to="/faq">
-                  <span className="utils-icon">
+                  <span className="header-utils-icon">
                     <Info size={16} />
                   </span>
-                  <div className="utils-text">Need Help</div>
+                  <div className="header-utils-text">Need Help</div>
                 </Link>
               </li>
             </ul>
           </div>
-          <div className="elem-bottom-contact">
+          <div className="header-bottom-contact">
             <span className="contact-icon">
               <PhoneCall size={20} />
             </span>

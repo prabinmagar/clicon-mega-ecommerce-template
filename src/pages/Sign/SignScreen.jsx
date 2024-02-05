@@ -24,7 +24,7 @@ const SignScreen = () => {
     <div className="pg-sign">
       <Breadcrumb breadData={breadData} />
       <div className="container">
-        <div className="seg-sign-tabs">
+        <div className="segment-sign-tabs">
           <Tabs>
             <div className="tabs-head">
               <TabList>
@@ -53,7 +53,6 @@ const SignScreen = () => {
               </TabPanel>
             </div>
           </Tabs>
-          <form action="" className="elem-sign-form"></form>
         </div>
       </div>
     </div>

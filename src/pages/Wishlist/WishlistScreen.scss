@@ -1,11 +1,11 @@
 .pg-wishlist {
-  .seg-wishlist {
-    border: 1px solid #e4e7e9;
+  .segment-wishlist {
+    border: 1px solid var(--platinum);
     margin: 72px 0;
     border-radius: 4px;
   }
 
-  .elem-wish-head {
+  .wishlist-head {
     padding: 20px 24px;
     h3 {
       font-size: 18px;
@@ -13,22 +13,26 @@
     }
   }
 
-  .elem-wish-tbl {
+  .wishlist-table {
+    overflow-x: scroll;
+
     table {
       width: 100%;
       border-collapse: collapse;
+      min-width: 800px;
     }
 
     thead {
-      background: #f2f4f5;
+      background: var(--antiflash-white);
 
       th {
         padding: 12px 24px;
-        color: #475156;
+        color: var(--outerspace);
         text-transform: uppercase;
         font-size: 12px;
         font-weight: 500;
         text-align: left;
+        white-space: nowrap;
       }
     }
 
@@ -51,7 +55,7 @@
         }
       }
 
-      .tbl-prod {
+      .table-product {
         display: grid;
         grid-template-columns: 72px auto;
         max-width: 580px;
@@ -59,60 +63,147 @@
         align-items: center;
       }
 
-      .tbl-prod-img {
+      .table-product-img {
         width: 72px;
         height: 72px;
       }
-      .tbl-prod-ttl {
-        color: #475156;
+      .table-product-ttl {
+        color: var(--outerspace);
         font-weight: 400;
       }
 
-      .tbl-old-price {
-        color: #929fa5;
+      .table-old-price {
+        color: var(--cadet-gray);
       }
-      .tbl-price {
+      .table-price {
         display: flex;
         align-items: center;
         column-gap: 4px;
 
-        .tbl-old-price {
+        .table-old-price {
           text-decoration: line-through;
         }
       }
 
-      .tbl-new-price {
+      .table-new-price {
         font-weight: 500;
       }
 
-      .tbl-status {
+      .table-status {
         font-weight: 600;
         text-transform: uppercase;
 
         &.in-stock {
-          color: #2db224;
+          color: var(--kelly-green);
         }
         &.out-of-stock {
-          color: #ee5858;
+          color: var(--indian-red);
         }
       }
 
-      .tbl-btns{
+      .table-btns {
         display: flex;
         column-gap: 24px;
 
-        .btn-text{
-            font-weight: 700;
+        .btn-remove {
+          color: var(--cadet-gray);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .pg-wishlist {
+    .wishlist-head {
+      padding: 16px 20px;
+    }
+    .wishlist-table {
+      tbody {
+        tr {
+          &:first-child {
+            td {
+              padding-top: 16px;
+            }
+          }
+          &:last-child {
+            td {
+              padding-bottom: 16px;
+            }
+          }
+          td {
+            padding: 10px 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .pg-wishlist {
+    .wishlist-table {
+      tbody {
+        tr {
+          &:first-child {
+            td {
+              padding-top: 12px;
+            }
+          }
+          &:last-child {
+            td {
+              padding-bottom: 12px;
+            }
+          }
+          td {
+            padding: 10px 12px;
+          }
         }
 
-        .btn-addtocart{
-            height: 48px;
-            font-size: 14px;
-            column-gap: 8px;
+        .table-product {
+          column-gap: 8px;
+          grid-template-columns: 52px auto;
         }
 
-        .btn-remove{
-            color: #929FA5;
+        .table-product-img {
+          width: 52px;
+          height: 52px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .pg-wishlist {
+    .wishlist-table {
+      tbody {
+        tr {
+          td {
+            padding: 10px;
+          }
+        }
+
+        .table-product {
+          max-width: 360px;
+          grid-template-columns: 48px auto;
+        }
+
+        .table-product-ttl {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          -webkit-line-clamp: 2;
+        }
+
+        .table-product-img {
+          width: 48px;
+          height: 48px;
+        }
+
+        .table-price {
+          flex-direction: column;
+          align-items: flex-start;
         }
       }
     }

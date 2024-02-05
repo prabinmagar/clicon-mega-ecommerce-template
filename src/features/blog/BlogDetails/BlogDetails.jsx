@@ -12,69 +12,69 @@ import CommentList from "../../../components/pages/blog/CommentList/CommentList"
 
 const BlogDetails = () => {
   return (
-    <div className="comp-blog-det">
-      <div className="seg-blog-det">
-        <div className="blog-det-metadat">
-          <div className="metadat-list">
-            <div className="metadat-item">
-              <span className="metadat-icon">
+    <div className="comp-blog-details">
+      <div className="segment-blog-details">
+        <div className="blog-details-mdata">
+          <div className="blog-details-mdata-list">
+            <div className="blog-details-mdata-item">
+              <span className="blog-details-mdata-icon">
                 <Stack size={24} />
               </span>
-              <span className="metadat-text">Electronics</span>
+              <span className="blog-details-mdata-text">Electronics</span>
             </div>
-            <div className="metadat-item">
-              <span className="metadat-icon">
+            <div className="blog-details-mdata-item">
+              <span className="blog-details-mdata-icon">
                 <UserCircle size={24} />
               </span>
-              <span className="metadat-text">Marvin McKinney</span>
+              <span className="blog-details-mdata-text">Marvin McKinney</span>
             </div>
-            <div className="metadat-item">
-              <span className="metadat-icon">
+            <div className="blog-details-mdata-item">
+              <span className="blog-details-mdata-icon">
                 <CalendarBlank size={24} />
               </span>
-              <span className="metadat-text">8 Sep, 2020</span>
+              <span className="blog-details-mdata-text">8 Sep, 2020</span>
             </div>
-            <div className="metadat-item">
-              <span className="metadat-icon">
+            <div className="blog-details-mdata-item">
+              <span className="blog-details-mdata-icon">
                 <ChatCircleDots size={24} />
               </span>
-              <span className="metadat-text">738</span>
+              <span className="blog-details-mdata-text">738</span>
             </div>
           </div>
         </div>
-        <h2 className="blog-det-ttl">
+        <h2 className="blog-details-ttl">
           How artist collective Meow Wolf’s website complements their immersive
           venues
         </h2>
-        <div className="blog-det-top">
-          <div className="blog-det-auth">
-            <div className="det-auth-img">
+        <div className="blog-details-top">
+          <div className="blog-details-author">
+            <div className="details-author-img">
               <img src={Images.Author} alt="" />
             </div>
-            <span className="det-auth-name">Cameron Williamson</span>
+            <span className="details-author-name">Cameron Williamson</span>
           </div>
-          <div className="blog-det-links">
-            <Link to="/" className="det-link-item">
+          <div className="blog-details-links">
+            <Link to="/" className="details-link-item">
               <img src={Images.WhatsappIcon} alt="" />
             </Link>
-            <Link to="/" className="det-link-item">
+            <Link to="/" className="details-link-item">
               <img src={Images.FacebookIcon} alt="" />
             </Link>
-            <Link to="/" className="det-link-item">
+            <Link to="/" className="details-link-item">
               <img src={Images.TwitterIcon} alt="" />
             </Link>
-            <Link to="/" className="det-link-item">
+            <Link to="/" className="details-link-item">
               <img src={Images.LinkedinIcon} alt="" />
             </Link>
-            <Link to="/" className="det-link-item">
+            <Link to="/" className="details-link-item">
               <img src={Images.PinterestIcon} alt="" />
             </Link>
-            <Link to="/" className="det-link-item">
+            <Link to="/" className="details-link-item">
               <img src={Images.LinkIcon} alt="" />
             </Link>
           </div>
         </div>
-        <div className="blog-det-content">
+        <div className="blog-details-content">
           <div className="content-stylings">
             <p>
               Sed a laoreet erat, in vehicula erat. Vivamus a viverra ipsum, ut

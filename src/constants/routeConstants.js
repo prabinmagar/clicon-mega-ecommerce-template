@@ -16,10 +16,10 @@ const routeConstants = {
   MAIL_VERIFY: "/mail_verify",
   FAQ: "/faq",
   ABOUT: "/about",
-  PAGE_NOT_FOUND: "/*",
   SUPPORT: "/support",
   BLOG: "/blog",
-  BLOG_DETAIL: "/blog/details"
+  BLOG_DETAIL: "/blog/details",
+  PAGE_NOT_FOUND: "/*",
 };
 
 export default routeConstants;

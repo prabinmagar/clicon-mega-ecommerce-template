@@ -2,10 +2,10 @@ import "./CommentForm.scss";
 
 const CommentForm = () => {
   return (
-    <div className="comp-cmtform">
-      <div className="seg-cmtform">
-        <form className="elem-cmtform">
-          <h4 className="elem-cmtform-ttl">Leave a Comments</h4>
+    <div className="comp-comment-form">
+      <div className="segment-comment-form">
+        <form className="comment-form">
+          <h4 className="comment-form-ttl">Leave a Comments</h4>
           <div className="form-wrapper">
             <div className="form-elem-cols-2">
               <div className="form-elem">

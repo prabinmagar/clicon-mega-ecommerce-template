@@ -13,9 +13,9 @@ const SignInForm = () => {
   };
 
   return (
-    <div className="comp-signin">
-      <div className="seg-signin">
-        <div className="elem-signin-form">
+    <div className="comp-signin-form">
+      <div className="segment-signin-form">
+        <div className="signin-form">
           <form>
             <div className="form-elems-wrap">
               <div className="form-elem">
@@ -40,7 +40,7 @@ const SignInForm = () => {
                   />
                   <button
                     type="button"
-                    className="pwd-toggle-icobtn"
+                    className="pwd-toggle-icon-btn"
                     onClick={() => togglePwdVisibility()}
                   >
                     {showPassword ? <Eye size={20} /> : <EyeClosed size={20} />}
@@ -55,19 +55,19 @@ const SignInForm = () => {
               </span>
             </button>
             <div className="form-sep">
-              <span className="sep-line"></span>
-              <span className="sep-text">or</span>
-              <span className="sep-line"></span>
+              <span className="form-sep-line"></span>
+              <span className="form-sep-text">or</span>
+              <span className="form-sep-line"></span>
             </div>
-            <div className="form-sign-opts">
-              <Link to="/" className="form-sign-opt">
-                <span className="sign-opt-icon">
+            <div className="form-sign-options">
+              <Link to="/" className="form-sign-option">
+                <span className="sign-option-icon">
                   <img src={Icons.GoogleIcon} alt="" />
                 </span>
                 Login with Google
               </Link>
-              <Link to="/" className="form-sign-opt">
-                <span className="sign-opt-icon">
+              <Link to="/" className="form-sign-option">
+                <span className="sign-option-icon">
                   <img src={Icons.AppleIcon} alt="" />
                 </span>
                 Login with Google

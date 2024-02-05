@@ -1,6 +1,5 @@
 import { ArrowRight, Eye, EyeClosed } from "@phosphor-icons/react";
 import "./ResetPasswordScreen.scss";
-import { Link } from "react-router-dom";
 import Breadcrumb from "../../components/common/Breadcrumb/Breadcrumb";
 import { useState } from "react";
 
@@ -40,11 +39,11 @@ const ResetPasswordScreen = () => {
   };
 
   return (
-    <div className="pg-reset-pwd">
+    <div className="pg-reset-password">
       <Breadcrumb breadData={breadData} />
       <div className="container">
-        <div className="seg-reset-pwd">
-          <div className="elem-reset-form">
+        <div className="segment-reset-password">
+          <div className="reset-password-form">
             <div className="form-head">
               <h3 className="form-ttl">Reset Password</h3>
               <p className="form-lead-text">
@@ -66,7 +65,7 @@ const ResetPasswordScreen = () => {
                     />
                     <button
                       type="button"
-                      className="pwd-toggle-icobtn"
+                      className="pwd-toggle-icon-btn"
                       onClick={() => togglePwdVisibility()}
                     >
                       {showPassword ? (
@@ -88,7 +87,7 @@ const ResetPasswordScreen = () => {
                     />
                     <button
                       type="button"
-                      className="pwd-toggle-icobtn"
+                      className="pwd-toggle-icon-btn"
                       onClick={() => toggleConfirmPwdVisibility()}
                     >
                       {showConfirmPassword ? (
@@ -112,6 +111,6 @@ const ResetPasswordScreen = () => {
       </div>
     </div>
   );
-}; 
+};
 
 export default ResetPasswordScreen;

@@ -20,12 +20,12 @@ const CartScreen = () => {
     <div className="pg-cart">
       <Breadcrumb breadData={breadData} />
       <div className="container">
-        <div className="seg-cart-gridbox">
-          <div className="elem-gbox-l">
-            <h3 className="elem-gbox-ttl">Shopping Card</h3>
+        <div className="segment-cart-gridbox">
+          <div className="cart-gridbox-left">
+            <h3 className="cart-gridbox-ttl">Shopping Card</h3>
             <CartList />
           </div>
-          <div className="elem-gbox-r">
+          <div className="cart-gridbox-right">
             <CartSummary />
             <Coupon />
           </div>

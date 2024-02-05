@@ -26,11 +26,11 @@ const WishlistScreen = () => {
     <div className="pg-wishlist">
       <Breadcrumb breadData={breadData} />
       <div className="container">
-        <div className="seg-wishlist">
-          <div className="elem-wish-head">
+        <div className="segment-wishlist">
+          <div className="wishlist-head">
             <h3>Wishlist</h3>
           </div>
-          <div className="elem-wish-tbl">
+          <div className="wishlist-table scrollbar">
             <table>
               <thead>
                 <tr>
@@ -45,26 +45,26 @@ const WishlistScreen = () => {
                   return (
                     <tr key={product.id}>
                       <td>
-                        <div className="tbl-prod">
+                        <div className="table-product">
                           <img
                             src={product.images[0]}
-                            className="tbl-prod-img"
+                            className="table-product-img"
                             alt=""
                           />
-                          <h4 className="tbl-prod-ttl">{product.name}</h4>
+                          <h4 className="table-product-ttl">{product.name}</h4>
                         </div>
                       </td>
                       <td>
                         {product.promotion.discountPercentage === 0 ? (
-                          <div className="tbl-new-price">
+                          <div className="table-new-price">
                             ${product.originalPrice}
                           </div>
                         ) : (
-                          <div className="tbl-price">
-                            <div className="tbl-old-price">
+                          <div className="table-price">
+                            <div className="table-old-price">
                               ${product.originalPrice}
                             </div>
-                            <div className="tbl-new-price">
+                            <div className="table-new-price">
                               $
                               {getPriceAfterDiscount(
                                 product.originalPrice,
@@ -76,7 +76,7 @@ const WishlistScreen = () => {
                       </td>
                       <td>
                         <div
-                          className={`tbl-status ${
+                          className={`table-status ${
                             product.availability.inStock
                               ? "in-stock"
                               : "out-of-stock"
@@ -88,10 +88,10 @@ const WishlistScreen = () => {
                         </div>
                       </td>
                       <td>
-                        <div className="tbl-btns">
+                        <div className="table-btns">
                           <Link
                             to="/cart"
-                            className={`btn btn-primary btn-addtocart ${
+                            className={`btn btn-sm btn-primary btn-add-to-cart ${
                               product.availability.inStock === false
                                 ? "disabled"
                                 : ""

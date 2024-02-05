@@ -87,105 +87,131 @@ const FilterPriceRange = () => {
     }
   };
 
+  const [isFilterVisible, setIsFilterVisible] = useState(false);
+  const filterRef = useRef(null);
+
+  const handleFilterVisibility = () =>
+    setIsFilterVisible((prevVal) => !prevVal);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (filterRef.current && !filterRef.current.contains(event.target)) {
+        setIsFilterVisible(false);
+      }
+    };
+
+    window.addEventListener("click", handleClickOutside);
+    return () => {
+      window.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className="fltr-block fltr-block-prange">
-      <h3 className="fltr-block-ttl">price range</h3>
-      <div className="fltr-range-box">
-        <div className="fltr-range-slider">
-          <div className="progress" ref={rangeRef}></div>
-        </div>
-        <div className="fltr-range-input">
-          <input
-            type="range"
-            className="range-min"
-            min="0"
-            max="10000"
-            defaultValue={defaultMinPrice}
-            step="100"
-            ref={rangeInput1Ref}
-            onChange={handleRangeInputChange}
-          />
-          <input
-            type="range"
-            className="range-max"
-            min="0"
-            max="10000"
-            defaultValue={defaultMaxPrice}
-            step="100"
-            onChange={handleRangeInputChange}
-            ref={rangeInput2Ref}
-          />
-        </div>
-        <div className="fltr-price-input">
-          <input
-            type="number"
-            className="input-min"
-            defaultValue={defaultMinPrice}
-            placeholder="Min price"
-            step={50}
-            onChange={handlePriceInputChange}
-            ref={(el) => (priceInputsRef.current[0] = el)}
-          />
-          <input
-            type="number"
-            className="input-max"
-            defaultValue={defaultMaxPrice}
-            placeholder="Max price"
-            step={50}
-            onChange={handlePriceInputChange}
-            ref={(el) => (priceInputsRef.current[1] = el)}
-          />
-        </div>
-      </div>
-      <div className="fltr-block-radlist">
-        <div className="fltr-radio-item">
-          <div className="fltr-radio-input">
-            <input type="radio" name="price_range" />
-            <span className="fltr-radio-check"></span>
+    <div className="filter-block filter-block-price-range" ref={filterRef}>
+      <h3
+        className={`filter-block-ttl ${isFilterVisible ? "active" : ""}`}
+        onClick={handleFilterVisibility}
+      >
+        price range
+      </h3>
+      <div className={`filter-block-content ${isFilterVisible ? "show" : ""}`}>
+        <div className="filter-range-box">
+          <div className="filter-range-slider">
+            <div className="progress" ref={rangeRef}></div>
           </div>
-          <span className="fltr-radio-lbl">All Price</span>
-        </div>
-        <div className="fltr-radio-item">
-          <div className="fltr-radio-input">
-            <input type="radio" name="price_range" />
-            <span className="fltr-radio-check"></span>
+          <div className="filter-range-input">
+            <input
+              type="range"
+              className="range-min"
+              min="0"
+              max="10000"
+              defaultValue={defaultMinPrice}
+              step="100"
+              ref={rangeInput1Ref}
+              onChange={handleRangeInputChange}
+            />
+            <input
+              type="range"
+              className="range-max"
+              min="0"
+              max="10000"
+              defaultValue={defaultMaxPrice}
+              step="100"
+              onChange={handleRangeInputChange}
+              ref={rangeInput2Ref}
+            />
           </div>
-          <span className="fltr-radio-lbl">Under $20</span>
-        </div>
-        <div className="fltr-radio-item">
-          <div className="fltr-radio-input">
-            <input type="radio" name="price_range" />
-            <span className="fltr-radio-check"></span>
+          <div className="filter-price-input">
+            <input
+              type="number"
+              className="input-min"
+              defaultValue={defaultMinPrice}
+              placeholder="Min price"
+              step={50}
+              onChange={handlePriceInputChange}
+              ref={(el) => (priceInputsRef.current[0] = el)}
+            />
+            <input
+              type="number"
+              className="input-max"
+              defaultValue={defaultMaxPrice}
+              placeholder="Max price"
+              step={50}
+              onChange={handlePriceInputChange}
+              ref={(el) => (priceInputsRef.current[1] = el)}
+            />
           </div>
-          <span className="fltr-radio-lbl">$25 to $100</span>
         </div>
-        <div className="fltr-radio-item">
-          <div className="fltr-radio-input">
-            <input type="radio" name="price_range" />
-            <span className="fltr-radio-check"></span>
+        <div className="filter-block-radlist">
+          <div className="filter-radio-item">
+            <div className="filter-radio-input">
+              <input type="radio" name="price_range" />
+              <span className="filter-radio-check"></span>
+            </div>
+            <span className="filter-radio-lbl">All Price</span>
           </div>
-          <span className="fltr-radio-lbl">$100 to $300</span>
-        </div>
-        <div className="fltr-radio-item">
-          <div className="fltr-radio-input">
-            <input type="radio" name="price_range" />
-            <span className="fltr-radio-check"></span>
+          <div className="filter-radio-item">
+            <div className="filter-radio-input">
+              <input type="radio" name="price_range" />
+              <span className="filter-radio-check"></span>
+            </div>
+            <span className="filter-radio-lbl">Under $20</span>
           </div>
-          <span className="fltr-radio-lbl">$300 to $500</span>
-        </div>
-        <div className="fltr-radio-item">
-          <div className="fltr-radio-input">
-            <input type="radio" name="price_range" />
-            <span className="fltr-radio-check"></span>
+          <div className="filter-radio-item">
+            <div className="filter-radio-input">
+              <input type="radio" name="price_range" />
+              <span className="filter-radio-check"></span>
+            </div>
+            <span className="filter-radio-lbl">$25 to $100</span>
           </div>
-          <span className="fltr-radio-lbl">$500 to $1000</span>
-        </div>
-        <div className="fltr-radio-item">
-          <div className="fltr-radio-input">
-            <input type="radio" name="price_range" />
-            <span className="fltr-radio-check"></span>
+          <div className="filter-radio-item">
+            <div className="filter-radio-input">
+              <input type="radio" name="price_range" />
+              <span className="filter-radio-check"></span>
+            </div>
+            <span className="filter-radio-lbl">$100 to $300</span>
           </div>
-          <span className="fltr-radio-lbl">$1000 to $10000</span>
+          <div className="filter-radio-item">
+            <div className="filter-radio-input">
+              <input type="radio" name="price_range" />
+              <span className="filter-radio-check"></span>
+            </div>
+            <span className="filter-radio-lbl">$300 to $500</span>
+          </div>
+          <div className="filter-radio-item">
+            <div className="filter-radio-input">
+              <input type="radio" name="price_range" />
+              <span className="filter-radio-check"></span>
+            </div>
+            <span className="filter-radio-lbl">$500 to $1000</span>
+          </div>
+          <div className="filter-radio-item">
+            <div className="filter-radio-input">
+              <input type="radio" name="price_range" />
+              <span className="filter-radio-check"></span>
+            </div>
+            <span className="filter-radio-lbl">$1000 to $10000</span>
+          </div>
         </div>
       </div>
     </div>

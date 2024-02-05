@@ -10,9 +10,9 @@ const ProductList = ({
   viewList,
 }) => {
   return (
-    <div className="comp-prodlist">
+    <div className="comp-product-list">
       <div
-        className={`seg-glist ${viewGap ? "gap" : ""} ${
+        className={`segment-product-list ${viewGap ? "gap" : ""} ${
           viewList ? "list-view" : ""
         }`}
       >

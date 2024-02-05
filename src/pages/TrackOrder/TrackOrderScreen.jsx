@@ -1,4 +1,4 @@
-import "./TrackOrder.scss";
+import "./TrackOrderScreen.scss";
 import Breadcrumb from "../../components/common/Breadcrumb/Breadcrumb";
 import { Info } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
@@ -19,19 +19,19 @@ const TrackOrderScreen = () => {
       link: "/pages/track_order",
     },
   ];
-  
+
   return (
     <div className="pg-track-order">
       <Breadcrumb breadData={breadData} />
       <div className="container">
-        <div className="seg-trkorder">
-          <h3 className="elem-trkorder-ttl">Track Order</h3>
-          <p className="elem-trkorder-text">
+        <div className="segment-track-order">
+          <h3 className="track-order-ttl">Track Order</h3>
+          <p className="track-order-text">
             To track your order please enter your order ID in the input field
             below and press the “Track Order” button. this was given to you on
             your receipt and in the confirmation email you should have received.
           </p>
-          <div className="elem-trkorder-form">
+          <div className="track-order-form">
             <form action="">
               <div className="form-cols">
                 <div className="form-elem-wrap">
@@ -46,10 +46,10 @@ const TrackOrderScreen = () => {
                     />
                   </div>
                   <div className="form-info">
-                    <span className="form-infoicon">
+                    <span className="form-info-icon">
                       <Info size={16} weight="bold" />
                     </span>
-                    <span className="form-infotxt">
+                    <span className="form-info-txt">
                       Order ID that we sended to you in your email address.
                     </span>
                   </div>
@@ -65,7 +65,7 @@ const TrackOrderScreen = () => {
                   />
                 </div>
               </div>
-              <Link to="/" className="btn btn-primary btn-trkorder">
+              <Link to="/" className="btn btn-primary btn-track-order">
                 <span className="btn-text">track order</span>
                 <span className="btn-icon">
                   <ArrowRight size={24} />

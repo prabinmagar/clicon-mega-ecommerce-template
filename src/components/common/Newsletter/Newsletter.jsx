@@ -4,45 +4,46 @@ import { Images } from "../../../assets/images";
 
 const Newsletter = () => {
   return (
-    <div className="comp-newsl">
+    <div className="comp-newsletter">
       <div className="container">
-        <div className="seg-newsl">
-          <h3 className="newsl-lead-ttl">Subscribe to our newsletter</h3>
-          <p className="newsl-lead-text">
-            Praesent fringilla erat a lacinia egestas. Donec vehicula tempor
-            libero et cursus. Donec non quam urna. Quisque vitae porta ipsum.
+        <div className="segment-newsletter">
+          <h3 className="newsletter-lead-ttl">Subscribe to our newsletter</h3>
+          <p className="newsletter-lead-text">
+            Stay in the loop with the latest trends and exclusive offers! Simply
+            enter your email below and embrace a future filled with
+            fashion-forward finds and unbeatable deals.
           </p>
-          <div className="newsl-form">
+          <div className="newsletter-form">
             <div className="input-group">
               <input
                 type="text"
                 placeholder="Email address"
-                className="input-gp-ctrl"
+                className="input-ctrl"
               />
-              <button className="btn btn-primary input-gp-btn">
+              <button className="btn btn-primary input-btn">
                 <span className="btn-text">subscribe</span>
                 <span className="btn-icon">
-                  <ArrowRight size={16} />
+                  <ArrowRight size={20} />
                 </span>
               </button>
             </div>
           </div>
         </div>
-        <div className="newsl-sep-line"></div>
-        <div className="seg-companies">
-          <div className="elem-company">
+        <div className="newsletter-line"></div>
+        <div className="segment-companies">
+          <div className="companies-item">
             <img src={Images.Google} alt="" />
           </div>
-          <div className="elem-company">
+          <div className="companies-item">
             <img src={Images.Amazon} alt="" />
           </div>
-          <div className="elem-company">
+          <div className="companies-item">
             <img src={Images.Philips} alt="" />
           </div>
-          <div className="elem-company">
+          <div className="companies-item">
             <img src={Images.Toshiba} alt="" />
           </div>
-          <div className="elem-company">
+          <div className="companies-item">
             <img src={Images.Samsung} alt="" />
           </div>
         </div>

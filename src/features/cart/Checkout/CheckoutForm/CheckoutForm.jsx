@@ -4,11 +4,11 @@ import { paymentOpts } from "../../../../data/mockData";
 
 const CheckoutForm = () => {
   return (
-    <div className="comp-chkout-form">
-      <div className="seg-chkout-form">
-        <div className="elem-chkout-billinfo">
-          <h4 className="elem-chkout-ttl">Billing Information</h4>
-          <div className="billinfo-form">
+    <div className="comp-checkout-form">
+      <div className="segment-checkout-form">
+        <div className="checkout-billing-info">
+          <h4 className="checkout-form-ttl">Billing Information</h4>
+          <div className="billing-info-form">
             <div className="form-elem-cols-2">
               <div className="form-elem">
                 <label htmlFor="" className="form-lbl">
@@ -136,16 +136,16 @@ const CheckoutForm = () => {
           </div>
         </div>
 
-        <div className="elem-chkout-payopt">
-          <h4 className="elem-chkout-ttl">Payment Option</h4>
-          <div className="payopt-list">
+        <div className="checkout-pay-options">
+          <h4 className="checkout-form-ttl">Payment Option</h4>
+          <div className="pay-options-list">
             {paymentOpts?.map((payOpt, index) => {
               return (
-                <div className="payopt-item" key={index}>
-                  <div className="payopt-img">
+                <div className="pay-options-item" key={index}>
+                  <div className="pay-options-img">
                     <img src={`${payOpt.image}`} alt="" />
                   </div>
-                  <p className="payopt-name">{payOpt.name}</p>
+                  <p className="pay-options-name">{payOpt.name}</p>
                   <div className="radio-wrap">
                     <input type="radio" name="payment_opts" />
                     <span className="radio-check"></span>
@@ -154,7 +154,7 @@ const CheckoutForm = () => {
               );
             })}
           </div>
-          <div className="payopt-form">
+          <div className="pay-options-form">
             <div className="form-elem">
               <label htmlFor="" className="form-lbl">
                 Name on Card
@@ -185,13 +185,16 @@ const CheckoutForm = () => {
           </div>
         </div>
 
-        <div className="elem-chkout-addinfo">
-          <h4 className="elem-chkout-ttl">Additional Information</h4>
+        <div className="checkout-additional-info">
+          <h4 className="checkout-form-ttl">Additional Information</h4>
           <div className="form-elem">
             <label htmlFor="" className="form-lbl">
               Order Notes <span className="form-ctrl-opt">(Optional)</span>
             </label>
-            <textarea className="form-ctrl" placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+            <textarea
+              className="form-ctrl"
+              placeholder="Notes about your order, e.g. special notes for delivery"
+            ></textarea>
           </div>
         </div>
       </div>

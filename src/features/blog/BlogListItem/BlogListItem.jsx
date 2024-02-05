@@ -10,36 +10,38 @@ import { PropTypes } from "prop-types";
 
 const BlogListItem = ({ blogItem }) => {
   return (
-    <div className="comp-blogitem">
-      <div className="seg-blogitem">
-        <div className="blogitem-img">
+    <div className="comp-blog-item">
+      <div className="segment-blog-item">
+        <div className="blog-item-img">
           <img src={blogItem.image} alt="" />
         </div>
-        <div className="blogitem-body">
-          <div className="blogitem-metadata">
-            <div className="metadata-byline">
-              <span className="meta-icon">
+        <div className="blog-item-body">
+          <div className="blog-item-mdata">
+            <div className="blog-item-mdata-byline">
+              <span className="blog-item-mdata-icon">
                 <UserCircle size={24} />
               </span>
-              <span className="meta-text">{blogItem.author}</span>
+              <span className="blog-item-mdata-text">{blogItem.author}</span>
             </div>
-            <div className="metadata-date">
-              <span className="meta-icon">
+            <div className="blog-item-mdata-date">
+              <span className="blog-item-mdata-icon">
                 <CalendarBlank size={24} />
               </span>
-              <span className="meta-text">{blogItem.publishedDate}</span>
+              <span className="blog-item-mdata-text">
+                {blogItem.publishedDate}
+              </span>
             </div>
-            <div className="metadata-comment">
-              <span className="meta-icon">
+            <div className="blog-item-mdata-comment">
+              <span className="blog-item-mdata-icon">
                 <ChatTeardropDots size={24} />
               </span>
-              <span className="meta-text">{blogItem.comments}</span>
+              <span className="blog-item-mdata-text">{blogItem.comments}</span>
             </div>
           </div>
-          <h3 className="blogitem-title">{blogItem.title}</h3>
-          <div className="blogitem-text">{blogItem.description}</div>
+          <h3 className="blog-item-title">{blogItem.title}</h3>
+          <div className="blog-item-text">{blogItem.description}</div>
         </div>
-        <div className="blogitem-foot">
+        <div className="blog-item-foot">
           <button className="btn btn-primary btn-outline">
             <span className="btn-text">read more</span>
             <span className="btn-icon">

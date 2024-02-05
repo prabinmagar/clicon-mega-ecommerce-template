@@ -7,23 +7,23 @@ const Breadcrumb = ({ breadData }) => {
   return (
     <div className="comp-breadcrumb">
       <div className="container">
-        <div className="seg-breadcrumb">
+        <div className="segment-breadcrumb">
           <div className="breadcrumb-list">
             {breadData?.map((item, index) => {
               return (
-                <div key={index} className="bc-item-wrap">
-                  <div className="bc-item">
+                <div key={index} className="breadcrumb-item-wrap">
+                  <div className="breadcrumb-item">
                     <span
-                      className={`bc-item-icon ${
+                      className={`breadcrumb-item-icon ${
                         item.link === "/" ? "show" : ""
                       }`}
                     >
                       <House size={16} weight="bold" />
                     </span>
-                    <Link className="bc-item-text">{item.text}</Link>
+                    <Link className="breadcrumb-item-text">{item.text}</Link>
                   </div>
                   {index !== breadData.length - 1 && (
-                    <div className="bc-sep">
+                    <div className="breadcrumb-sep">
                       <CaretRight size={16} weight="bold" />
                     </div>
                   )}
