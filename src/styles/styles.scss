@@ -233,6 +233,10 @@ input {
     background: var(--celes-blue);
     color: var(--white);
   }
+  &.sale{
+    background: var(--kelly-green);
+    color: var(--white);
+  }
 }
 
 .scrollbar {

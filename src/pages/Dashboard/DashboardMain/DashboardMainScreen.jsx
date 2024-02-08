@@ -58,6 +58,20 @@ const DashboardMainScreen = () => {
               nextEl: ".custom-sw-next",
               prevEl: ".custom-sw-prev",
             }}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+              },
+              480: {
+                slidesPerView: 2,
+              },
+              576: {
+                slidesPerView: 3,
+              },
+              768: {
+                slidesPerView: 4,
+              },
+            }}
           >
             <div className="custom-sw-prev">{customPrevIcon}</div>
             <div className="custom-sw-next">{customNextIcon}</div>

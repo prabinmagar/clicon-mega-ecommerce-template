@@ -129,14 +129,143 @@
     gap: 24px;
   }
 
-  .form-ctrl-wrap{
+  .form-ctrl-wrap {
     position: relative;
   }
 
-  .password-toggle-btn{
+  .password-toggle-btn {
     position: absolute;
     top: 50%;
     right: 16px;
     transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 1400px) {
+  .pg-setting {
+    .setting-block-account {
+      .setting-block-content {
+        grid-template-columns: 140px auto;
+      }
+    }
+
+    .setting-account-img {
+      width: 140px;
+      height: 140px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .pg-setting {
+    gap: 20px;
+
+    .setting-block-account {
+      .setting-block-content {
+        grid-template-columns: 100%;
+      }
+    }
+
+    .setting-account-img {
+      width: 120px;
+      height: 120px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .setting-block-head {
+      padding: 12px 20px;
+    }
+
+    .setting-block-content {
+      padding: 16px;
+    }
+
+    .setting-block-group {
+      gap: 16px;
+    }
+
+    .form-btn {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .pg-setting {
+    .setting-block-account {
+      .form-elem-cols-2 {
+        &.has-subcols {
+          grid-template-columns: 1fr 2fr;
+        }
+      }
+    }
+
+    .form-elem {
+      row-gap: 6px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .pg-setting {
+    .setting-block-billing,
+    .setting-block-shipping {
+      .form-elem-cols-2 {
+        grid-template-columns: 100%;
+      }
+    }
+
+    .setting-block-group {
+      gap: 12px;
+    }
+
+    .setting-block-head {
+      padding: 12px;
+    }
+
+    .setting-block-content {
+      padding: 12px;
+    }
+
+    .form-elems-wrap {
+      gap: 12px;
+    }
+
+    .form-elem-cols-2,
+    .form-elem-cols-3 {
+      gap: 12px;
+    }
+
+    .form-elem {
+      row-gap: 4px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .pg-setting {
+    .setting-block-account {
+      .form-elem-cols-2 {
+        grid-template-columns: 100%;
+        &.has-subcols {
+          grid-template-columns: 100%;
+        }
+
+        .form-elem-subcols-2 {
+          grid-template-columns: 100%;
+        }
+      }
+    }
+
+    .setting-block-group {
+      grid-template-columns: 100%;
+    }
+
+    .setting-block-password {
+      .form-elem-cols-3 {
+        grid-template-columns: 100%;
+      }
+    }
   }
 }

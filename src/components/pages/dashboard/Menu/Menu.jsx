@@ -3,22 +3,29 @@ import {
   ClockClockwise,
   Gear,
   Heart,
+  List,
   MapPinLine,
   Notebook,
   ShoppingCartSimple,
   SignOut,
   Stack,
   Storefront,
+  X,
 } from "@phosphor-icons/react";
 import "./Menu.scss";
 import { Link, useLocation } from "react-router-dom";
 import routeConstants from "../../../../constants/routeConstants";
+import { useState } from "react";
 
 const Menu = () => {
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
   const location = useLocation();
+
+  const handleMenuVisibility = () => setIsMenuVisible((prevVal) => !prevVal);
+
   return (
     <div className="comp-dashboard-menu">
-      <div className="segment-dashboard-menu">
+      <div className={`segment-dashboard-menu ${isMenuVisible ? "show" : ""}`}>
         <div className="dashboard-menu-list">
           <Link
             to={routeConstants.DASHBOARD}
@@ -111,6 +118,13 @@ const Menu = () => {
           </Link>
         </div>
       </div>
+      <button
+        type="button"
+        className="dashboard-menu-toggle-btn"
+        onClick={handleMenuVisibility}
+      >
+        {isMenuVisible ? <X size={25} /> : <List size={28} />}
+      </button>
     </div>
   );
 };

@@ -121,3 +121,15 @@
     }
   }
 }
+
+
+@media(max-width: 1200px){
+  .comp-payment-option{
+    .payment-option-head{
+      padding: 12px 16px;
+    }
+    .payment-option-cards{
+      padding: 16px;
+    }
+  }
+}

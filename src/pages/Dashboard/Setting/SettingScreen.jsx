@@ -60,7 +60,7 @@ const SettingScreen = () => {
                     <input type="text" className="form-ctrl" />
                   </div>
                 </div>
-                <div className="form-elem-cols-2">
+                <div className="form-elem-cols-2 has-subcols">
                   <div className="form-elem">
                     <label htmlFor="" className="form-lbl">
                       Country/Region
@@ -223,7 +223,7 @@ const SettingScreen = () => {
           </div>
         </div>
 
-        <div className="setting-block setting-block-billing">
+        <div className="setting-block setting-block-shipping">
           <div className="setting-block-head">
             <h4 className="setting-block-ttl">shipping address</h4>
           </div>

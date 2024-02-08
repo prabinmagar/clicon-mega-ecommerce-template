@@ -2,7 +2,34 @@
   .segment-dashboard-gridbox {
     padding: 40px 0;
     display: grid;
-    grid-template-columns: 300px auto;
+    grid-template-columns: 300px calc(100% - 300px - 72px);
     column-gap: 72px;
+  }
+}
+
+
+@media(max-width: 1400px){
+  .pg-dashboard{
+    .segment-dashboard-gridbox{
+      column-gap: 40px;
+      grid-template-columns: 260px calc(100% - 260px - 40px);
+    }
+  }
+}
+
+@media(max-width: 1200px){
+  .pg-dashboard{
+    .segment-dashboard-gridbox{
+      column-gap: 24px;
+      grid-template-columns: 220px calc(100% - 220px - 24px);
+    }
+  }
+}
+
+@media(max-width: 992px){
+  .pg-dashboard{
+    .segment-dashboard-gridbox{
+      grid-template-columns: 100%;
+    }
   }
 }

@@ -1,7 +1,13 @@
 .comp-order-table {
+  .segment-order-table {
+    overflow-x: scroll;
+    width: 100%;
+  }
+  
   table {
     border-collapse: collapse;
     width: 100%;
+    min-width: 800px;
 
     thead {
       border-top: 1px solid #e4e7e9;
@@ -28,7 +34,8 @@
       tr {
         td {
           padding: 12px;
-          color: #5F6C72;
+          color: #5f6c72;
+          white-space: nowrap;
 
           &:first-child {
             padding-left: 24px;
@@ -37,23 +44,56 @@
             padding-right: 24px;
           }
 
-          &.order-data-id{
-            color: #191C1F;
+          &.order-data-id {
+            color: #191c1f;
             font-weight: 500;
           }
 
-          &.order-data-status{
+          &.order-data-status {
             font-weight: 600;
             text-transform: uppercase;
 
-            &.in-progress{
-              color: #FA8232;
+            &.in-progress {
+              color: #fa8232;
             }
-            &.completed{
+            &.completed {
               color: var(--kelly-green);
             }
-            &.canceled{
-              color: #EE5858;
+            &.canceled {
+              color: #ee5858;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media(max-width: 1200px){
+  .comp-order-table{
+    table{
+      thead{
+        th{
+          &:first-child{
+            padding-left: 16px;
+          }
+          &:last-child{
+            padding-right: 16px;
+          }
+        }
+      }
+
+      tbody{
+        tr{
+          td{
+            padding: 10px;
+
+            &:first-child{
+              padding-left: 16px;
+            }
+            &:last-child{
+              padding-right: 16px;
             }
           }
         }

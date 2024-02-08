@@ -92,7 +92,7 @@ const ORDER_HISTORY_DATA = [
 const OrderHistory = () => {
   return (
     <div className="comp-order-table">
-      <div className="seg-order-table">
+      <div className="segment-order-table scrollbar">
         <table>
           <thead>
             <tr>
