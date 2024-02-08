@@ -1,0 +1,8 @@
+.pg-dashboard {
+  .segment-dashboard-gridbox {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 300px auto;
+    column-gap: 72px;
+  }
+}

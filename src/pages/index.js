@@ -21,3 +21,13 @@ export { default as ForgotPassword } from "./Sign/ForgotPasswordScreen";
 export { default as ResetPassword } from "./Sign/ResetPasswordScreen";
 export { default as Verify } from "./Sign/VerifyScreen";
 export { default as Faq } from "./Faq/FaqScreen";
+
+// dashboard pages
+export { default as DashboardContainer } from "./Dashboard/DashboardContainer";
+export { default as DashboardMain } from "./Dashboard/DashboardMain/DashboardMainScreen";
+export { default as OrderHistory } from "./Dashboard/OrderHistory/OrderHistoryScreen";
+export { default as OrderHistoryDetails } from "./Dashboard/OrderDetails/OrderDetailsScreen";
+export { default as CardsAddress } from "./Dashboard/CardsAddress/CardsAddressScreen";
+export { default as Setting } from "./Dashboard/Setting/SettingScreen";
+export { default as BrowseHistory } from "./Dashboard/BrowsingHistory/BrowsingHistoryScreen";
+

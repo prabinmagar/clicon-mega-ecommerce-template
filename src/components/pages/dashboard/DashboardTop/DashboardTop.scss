@@ -1,0 +1,133 @@
+.comp-dboard-top {
+  .dboard-top-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  .dboard-top-lead {
+    color: #475156;
+    max-width: 420px;
+
+    span {
+      color: #2da5f3;
+      font-weight: 500;
+      display: inline-block;
+    }
+  }
+
+  .dboard-top-gridbox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 24px;
+    gap: 24px;
+  }
+
+  .dboard-account-block,
+  .dboard-billing-block {
+    border: 1px solid #e4e7e9;
+    border-radius: 4px;
+
+    .dboard-block-ttl {
+      padding: 16px 24px;
+      text-transform: uppercase;
+      color: #191c1f;
+      font-weight: 500;
+      border-bottom: 1px solid #e4e7e9;
+    }
+
+    .dboard-block-content {
+      padding: 22px 24px;
+      display: grid;
+      row-gap: 20px;
+    }
+
+    .dboard-account-user {
+      display: grid;
+      grid-template-columns: 48px auto;
+      gap: 16px;
+      align-items: center;
+
+      .account-user {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+    }
+
+    .dboard-account-user-img {
+      width: 48px;
+      height: 48px;
+      border-radius: 100%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .dboard-block-list {
+      display: grid;
+      row-gap: 8px;
+    }
+
+    .dboard-block-item-text {
+      color: #5f6c72;
+      .block-text-label {
+        font-weight: 500;
+        color: #191c1f;
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .dboard-order-sum {
+    display: grid;
+    row-gap: 24px;
+  }
+
+  .dboard-order-sum-item {
+    display: grid;
+    column-gap: 16px;
+    padding: 16px;
+    grid-template-columns: 56px auto;
+    border-radius: 4px;
+
+    &:nth-child(1) {
+      background: #eaf6fe;
+    }
+
+    &:nth-child(2) {
+      background: #fff3eb;
+    }
+
+    &:nth-child(3) {
+      background: #eaf7e9;
+    }
+
+    .order-sum-item-icon {
+      width: 56px;
+      height: 56px;
+      background: #fff;
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .order-sum-item-text {
+      display: grid;
+      row-gap: 4px;
+    }
+
+    .order-sum-val {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .order-sum-text {
+      color: #475156;
+    }
+  }
+}

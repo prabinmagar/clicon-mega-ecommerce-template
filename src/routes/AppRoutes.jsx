@@ -22,6 +22,13 @@ import {
   Support,
   Blog,
   BlogDetails,
+  DashboardContainer,
+  DashboardMain,
+  OrderHistory,
+  OrderHistoryDetails,
+  CardsAddress,
+  Setting,
+  BrowseHistory,
 } from "../pages";
 
 const AppRoutes = () => {
@@ -49,8 +56,8 @@ const AppRoutes = () => {
         />
         <Route path={routeConstants.ABOUT} element={<About />} />
         <Route path={routeConstants.SUPPORT} element={<Support />} />
-        <Route path={routeConstants.BLOG} element = {<Blog />} />
-        <Route path = {routeConstants.BLOG_DETAIL} element = {<BlogDetails />} />
+        <Route path={routeConstants.BLOG} element={<Blog />} />
+        <Route path={routeConstants.BLOG_DETAIL} element={<BlogDetails />} />
 
         {/* auth routes */}
         <Route path={routeConstants.SIGN} element={<Sign />} />
@@ -64,6 +71,29 @@ const AppRoutes = () => {
         />
         <Route path={routeConstants.MAIL_VERIFY} element={<Verify />} />
         <Route path={routeConstants.FAQ} element={<Faq />} />
+
+        {/* dashboard */}
+        <Route path={routeConstants.DASHBOARD} element={<DashboardContainer />}>
+          <Route path={routeConstants.DASHBOARD} element={<DashboardMain />} />
+          <Route
+            path={routeConstants.ORDER_HISTORY}
+            element={<OrderHistory />}
+          />
+          <Route
+            path={routeConstants.ORDER_HISTORY_DETAILS}
+            element={<OrderHistoryDetails />}
+          />
+          <Route
+            path={routeConstants.CARDS_ADDRESS}
+            element={<CardsAddress />}
+          />
+          <Route path={routeConstants.SETTING} element={<Setting />} />
+          <Route
+            path={routeConstants.BROWSE_HISTORY}
+            element={<BrowseHistory />}
+          />
+        </Route>
+
         <Route path={routeConstants.PAGE_NOT_FOUND} element={<NotFound />} />
       </Route>
     </Routes>

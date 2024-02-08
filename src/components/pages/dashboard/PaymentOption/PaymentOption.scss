@@ -1,0 +1,123 @@
+.comp-payment-option {
+  border: 1px solid #e4e7e9;
+  border-radius: 4px;
+
+  .payment-option-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #e4e7e9;
+    padding: 16px 24px;
+
+    .payment-option-ttl {
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+
+  .payment-option-cards {
+    padding: 22px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .option-card {
+    border-radius: 4px;
+    padding: 24px;
+    max-width: 296px;
+    color: var(--white);
+    width: 100%;
+
+    &:nth-child(1) {
+      background: radial-gradient(circle, #1b6392, #124261);
+    }
+
+    &:nth-child(2) {
+      background: radial-gradient(circle, #248e1d, #2db224);
+    }
+
+    .option-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .option-card-lbl {
+      text-transform: uppercase;
+      font-size: 11px;
+      opacity: 0.9;
+      margin-bottom: 8px;
+    }
+
+    .option-card-number {
+      display: flex;
+      align-items: center;
+      column-gap: 6px;
+    }
+
+    .card-number-val {
+      display: flex;
+      column-gap: 10px;
+      font-size: 20px;
+    }
+
+    .option-card-action {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .card-action-dots {
+      color: var(--white);
+    }
+
+    .card-actions-list {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 140px;
+      box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.12);
+      border-radius: 2px;
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      padding: 8px 0;
+      z-index: 2;
+    }
+
+    .card-action-item {
+      color: #5f6c72;
+      padding: 8px 16px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .option-card-details {
+      margin: 24px 0 8px 0;
+    }
+
+    .card-number-btn {
+      color: var(--white);
+    }
+
+    .option-card-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .option-card-company {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+    }
+
+    .option-card-owner {
+      font-weight: 500;
+    }
+  }
+}

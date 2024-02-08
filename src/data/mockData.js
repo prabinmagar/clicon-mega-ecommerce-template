@@ -710,6 +710,52 @@ export const cart = [
   },
 ];
 
+export const orders = [
+  {
+    id: 1,
+    items: [
+      {
+        productId: "P001",
+        productName: "Canon EOS 1500D DSLR Camera Body+ 18-55 mm",
+        quantity: 2,
+        price: 1500,
+        images: [`${Images.Cart1}`],
+        discountPercentage: 12,
+        category: "smartphone"
+      },
+      {
+        productId: "P002",
+        productName: "Simple Mobile 5G LTE Galexy 12 Mini 512GB Gaming Phone",
+        quantity: 7,
+        price: 269,
+        images: [`${Images.Cart2}`],
+        discountPercentage: 0,
+        category: "smartphone"
+      },
+      {
+        productId: "P003",
+        productName: "4K UHD LED Smart TV with Chromecast Built-in",
+        quantity: 1,
+        price: 70,
+        images: [`${Images.Cart3}`],
+        discountPercentage: 12,
+        category: "TV & Desktops"
+      },
+      {
+        productId: "P004",
+        productName: "Wired Over-Ear Gaming Headphones with USB",
+        quantity: 8,
+        price: 250,
+        images: [`${Images.Cart4}`],
+        discountPercentage: 0,
+        category: "accessories"
+      },
+    ],
+    totalItems: 2,
+    totalPrice: 2038.0,
+  },
+];
+
 export const paymentOpts = [
   {
     name: "Cash on Delivery",

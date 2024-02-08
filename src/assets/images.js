@@ -130,6 +130,9 @@ import Person3 from "./images/person3.png";
 import Person4 from "./images/person4.png";
 import Person5 from "./images/person5.png";
 
+import UserProfile from "./images/user_profile.png";
+import AccountAvatar from "./images/account_avatar.png";
+
 export const Images = {
   Logo,
   LogoPrimary,
@@ -252,4 +255,6 @@ export const Images = {
   Person3,
   Person4,
   Person5,
+  UserProfile,
+  AccountAvatar
 };

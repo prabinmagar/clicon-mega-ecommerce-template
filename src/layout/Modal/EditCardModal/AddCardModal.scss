@@ -1,0 +1,86 @@
+.comp-add-card-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+
+  &.show{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .segment-add-card-modal {
+    background: var(--white);
+    position: relative;
+    border-radius: 4px;
+    max-width: 424px;
+    width: 100%;
+  }
+
+  .modal-close-btn {
+    position: absolute;
+    right: -16px;
+    top: -16px;
+    width: 32px;
+    height: 32px;
+    background-color: var(--pumpkin);
+    border-radius: 100%;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-add-card-head {
+    padding: 16px 24px;
+    border-bottom: 1px solid #E4E7E9;
+
+    .add-card-ttl {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  .modal-add-card-body {
+    padding: 24px;
+  }
+
+  .form-elems-wrap{
+    display: grid;
+    row-gap: 16px;
+  }
+
+  .form-elem{
+    display: grid;
+    row-gap: 8px;
+
+    .form-ctrl{
+        border: 1px solid #E4E7E9;
+        border-radius: 2px;
+        height: 44px;
+        outline: 0;
+        padding: 0 12px;
+        width: 100%;
+    }
+  }
+
+  .form-elem-cols-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .form-btn{
+    margin-top: 24px;
+  }
+}

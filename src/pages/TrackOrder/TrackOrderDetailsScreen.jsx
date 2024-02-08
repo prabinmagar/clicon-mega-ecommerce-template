@@ -129,7 +129,7 @@ const TrackOrderDetailsScreen = () => {
             </div>
           </div>
           <div className="track-order-btm">
-            <div className="track-order-act">
+            <div className="track-order-activity">
               <h4 className="track-order-activity-ttl">Order Activity</h4>
               <div className="activity-list">
                 <div className="activity-item activity-green">
